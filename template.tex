@@ -58,13 +58,13 @@
 %==================================================
 \title{
     \textbf{Final Project Manuscript}\\
-    \textbf{Mathematical Modeling of [Your Biological System]}\\[0.5em]
+    \textbf{Mathematical Modeling of Chocolate Toxcity for Dogs}\\[0.5em]
     \large BS-3-S2-EC-PHYMAT / Systèmes physiologiques et modélisation mathématique
 }
 
 \author{
-    Team [Number] -- Third-Year Biotechnology and Bioinformatics, INSA Lyon\\[0.5em]
-    Student 1, Student 2, Student 3, Student 4, Student 5, Student 6
+    Team 6 -- Third-Year Biotechnology and Bioinformatics, INSA Lyon\\[0.5em]
+    Olinda Mendes, Coppélia Reynaert-Verbiese, Doriane Rombaut, Capucine Schmidt, Thao Van Tran, Marion Venerucci
 }
 
 \date{Academic year 2025--2026}
@@ -219,20 +219,27 @@ State what is inside and outside the model.
 \(M{_{choc}}\) & \emph{Masse de chocolat ingérée} & \emph{g} \\
 \(C{_{type}}\) & \emph{Concentration en théobromine selon le type de chocolat} & \emph{mg/g} \\
 \(W\) & \emph{Masse du chien} & \emph{kg} \\
-\(f\) & \emph{Fraction de théobromine absorbée} & \emph{\%} \\
+\(f\) & \emph{Fraction de théobromine no évacuée directement par l'organisme} & \emph{\%} \\
 \(k{_{abs}}\) & \emph{Taux d'absorption de théobromine dans le sang} & \emph{$h^{-1}$} \\
 \(k{_{e}}\) & \emph{Taux d'élimination de la théobromine} & \emph{$h^{-1}$} \\
 \(\rho\) & \emph{Taux d'activation des symptômes} & \emph{$h^{-1}$} \\
+\(K{_{D}}\) & \emph{Seuil d'activation des symptômes } & \emph{mg/kg} \\
+\(n\) & \emph{Coefficient de Hill} & \emph{Sans unité} \\
+\(\mu{_S}\) & \emph{Taux de récupération des symptômes} & \emph{$h^{-1}$} \\
 
 \bottomrule
 \end{tabularx}
 \end{center}
 
 \subsection{Inputs and observables}
-
-Clearly distinguish external inputs from model observables.
-
 \paragraph{Inputs.}
+Nos variables d'entrée sont toutes celles liées à l'ingestion de chocolat. On compte ainsi : 
+\begin{itemize}
+        \item {La masse de chocolat ingérée : \(M{_{choc}}\)}
+        \item {La concentration en théobromine pour le type de chocolat ingéré : \(C{_{type}}\)}
+        \item {La fraction de théobromine non évacuée direactement par l'organisme : \(f\)}
+    \end{itemize}
+
 Inputs are imposed from outside the model, for example:
 
 \[
