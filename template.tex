@@ -128,8 +128,7 @@ Do not include technical details, long equations, or references in the abstract.
 
 \subsection{Biological context}
 
-Describe the biological, physiological, neural, or ecotoxicological system. \\
-\\
+
 Chez le chien, c'est la théobromine qui est responsable de la toxicité du chocolat. En effet, 
 une fois dans le système gastrique, elle est absorbée dans le sang et diffusée dans l'ogranisme,
 impactant ainsi des systèmes essentiels tels que le système nerveux ou cardiovasculaire. \\
@@ -141,20 +140,12 @@ C'est le lien entre cette concentration et ces signes naissants que nous chercho
 Cette réaction peut être observée sur plusieurs heures. 
 \\
 
-Questions to answer:
 
-\begin{itemize}
-    \item What is the system?
-    \item Why is it biologically relevant?
-    \item What process, response, or transition are you trying to understand?
-    \item What is the relevant time scale?
-\end{itemize}
 
 \subsection{Modeling question}
 
 State the precise modeling question.
 
-For example:
 
 \begin{quote}
 \itshape
@@ -165,35 +156,11 @@ chez le chien ? A partir de quelle seuil la dose ingérée est-elle mortelle ?
 
 \subsection{Reference regime and perturbation}
 
-Define the reference regime.
-\\
 Pour répondre à cette question, nous prendrons comme régime de référence un modèle sain, c'est-à-dire
 un chien n'ayant pas ingéré de chocolat. La perturbation étudiée est l'entrée dans le système
 de chocolat, et donc de théobromine, à un instant $t{_0}$. 
 
-Examples:
 
-\begin{itemize}
-    \item no exposure;
-    \item basal hormone level;
-    \item healthy equilibrium;
-    \item resting physiological condition;
-    \item untreated condition;
-    \item low-inflammatory state.
-\end{itemize}
-
-Then define the perturbation studied.
-
-Examples:
-
-\begin{itemize}
-    \item increased exposure;
-    \item reduced clearance;
-    \item receptor blockade;
-    \item stronger feedback;
-    \item delayed treatment;
-    \item repeated stimulation.
-\end{itemize}
 
 %==================================================
 \section{System Boundary, Variables, Parameters, and Assumptions}
@@ -235,9 +202,9 @@ State what is inside and outside the model.
 \toprule
 \textbf{Symbol} & \textbf{Meaning} & \textbf{Unit} \\
 \midrule
-\(X(t)\) & {[Meaning of first state variable]} & {[unit]} \\
-\(Y(t)\) & {[Meaning of second state variable, if any]} & {[unit]} \\
-\(Z(t)\) & {[Meaning of third state variable, if any]} & {[unit]} \\
+\(Q(t)\) & {Masse de théobromine présente dans le système digestif} & {mg} \\
+\(D(t)\) & {Concentration de théobromine absorbée dans le sang par la masse corporelle} & {mg/kg} \\
+\(S(t)\) & {Intensité des symptômes} & {\%} \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -249,9 +216,14 @@ State what is inside and outside the model.
 \toprule
 \textbf{Symbol} & \textbf{Meaning} & \textbf{Unit} \\
 \midrule
-\(X(t)\) & \emph{Meaning of first state variable} & \emph{unit} \\
-\(Y(t)\) & \emph{Meaning of second state variable, if any} & \emph{unit} \\
-\(Z(t)\) & \emph{Meaning of third state variable, if any} & \emph{unit} \\
+\(M{_{choc}}\) & \emph{Masse de chocolat ingérée} & \emph{g} \\
+\(C{_{type}}\) & \emph{Concentration en théobromine selon le type de chocolat} & \emph{mg/g} \\
+\(W\) & \emph{Masse du chien} & \emph{kg} \\
+\(f\) & \emph{Fraction de théobromine absorbée} & \emph{\%} \\
+\(k{_{abs}}\) & \emph{Taux d'absorption de théobromine dans le sang} & \emph{$h^{-1}$} \\
+\(k{_{e}}\) & \emph{Taux d'élimination de la théobromine} & \emph{$h^{-1}$} \\
+\(\rho\) & \emph{Taux d'activation des symptômes} & \emph{$h^{-1}$} \\
+
 \bottomrule
 \end{tabularx}
 \end{center}
