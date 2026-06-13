@@ -238,18 +238,27 @@ Nos variables d'entrée sont toutes celles liées à l'ingestion de chocolat. On
         \item {La masse de chocolat ingérée : \(M{_{choc}}\)}
         \item {La concentration en théobromine pour le type de chocolat ingéré : \(C{_{type}}\)}
         \item {La fraction de théobromine non évacuée direactement par l'organisme : \(f\)}
-    \end{itemize}
-
-Inputs are imposed from outside the model, for example:
-
-\[
-u(t), \quad D_{\mathrm{ext}}(t), \quad S(t).
-\]
+\end{itemize}
 
 Describe your input protocol.
 
 \paragraph{Observables.}
-Observables are quantities computed from the model and interpreted biologically.
+Les observables sont des points caractéristiques des courbes, apportant des précisions
+sur le modèle biologique et ses limites. \\
+\begin{itemize}
+    \item {La quantité de théobromine présente dans le système digestif décroit linéairement :
+    il n'y a pas d'observables}
+    \item {La concentration en théobromine dans le sang commence d'abord par augmenter
+    puis diminue. Elle atteint un maximum : \(D{_{max}}=\lim_{t \to \infty} D(t)\)}
+    \item {L'intensité des symptômes évolue en suivant une courbe sigmoïdale. Elle atteint
+    donc une saturation maximale : \(S{_{max}}=\lim_{t \to \infty} S(t)\)}
+    \item {Certains temps peuvent être caractéristiques. On y inclut : 
+    \begin{itemize}
+        \item {Le temps d'atteinte du seuil d'activation des symptômes : 
+        \(T{_{thr}}|S(T{_{thr}}-1)=0 \cap S(T{_{thr}})\ge 0\)}
+        \item {Le temps de rétablissemnt : \(T{_{ret}}|S(T{_{thr}-1})\ge 0 \cap S(T{_{thr}})=0\)}
+    \end{itemize}}
+\end{itemize}
 
 Examples:
 
@@ -272,11 +281,25 @@ List the observables used in your project.
 \toprule
 \textbf{Assumption} & \textbf{Reason} & \textbf{Possible limitation} \\
 \midrule
-\emph{Assumption 1} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 2} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 3} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 4} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 5} & \emph{Why it is made} & \emph{Limit or bias} \\
+\emph{Le taux d'absorption est constant (et le même chez tous les chiens)} 
+& \emph{Pour simplifier le modèle} 
+& \emph{Le taux d'absorption pourrait dépendre de plusieurs facteurs 
+comme la digestion/ aliments dans l'intestin (poids ? race ?)} \\
+\emph{Il n'y a pas d'intervention vétérinaire pendant la simulation} 
+& \emph{Pour simplifier le modèle et étudier son évolution naturelle} 
+& \emph{Ne représente pas forcément une situation réelle} \\
+\emph{Le taux d'élimination est constant (et le même chez tous les chiens)} 
+& \emph{Pour simplifier le modèle} 
+& \emph{Le taux d'élimination peut varier chez différents types de chien. (poids ?)} \\
+\emph{La quantité de théobromine est la même pour tous les marques de chocolat} 
+& \emph{Conserver un nombre raisonnable de comparaisons} 
+& \emph{En réalité, la quantité de théobromine peut varier selon la marque du chocolat} \\
+\emph{Les seuils de symptômes sont applicables pour tous les chiens} 
+& \emph{Obtenir une liste exhaustive de comparaisons, tirer des conclusions groupées} 
+& \emph{Les seuils de toxicité sont approximatifs et peuvent dépendre de la sensibilité individuelle.} \\
+\emph{Une seule ingestion de théobromine } 
+& \emph{Simplifier le modèle en supprimant une évolution de la quantité de matière ingérée} 
+& \emph{L'impact d'une dose augmentée au cours du temps est ignorée de même qu'une potentielle diminution de l'efficacité du métabolisme } \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -313,32 +336,27 @@ Write the final model.
 For example:
 
 \[
-\frac{dX}{dt}
+\frac{dD}{dt}
 =
-\text{production}
+\text{absorbtion}
 -
-\text{clearance}
-+
-\text{activation}
--
-\text{inhibition}.
+\text{élimination}.
 \]
 
 Then give the actual equations:
 
 \[
-\frac{dX}{dt}=F(X,Y,Z,t;\theta),
+\frac{dQ}{dt}=-k{_{abs}}Q,
 \]
 
 \[
-\frac{dY}{dt}=G(X,Y,Z,t;\theta),
+\frac{dD}{dt}=\frac{k{_{abs}}}{W}Q-k{_{e}}D,
 \]
 
 \[
-\frac{dZ}{dt}=H(X,Y,Z,t;\theta).
+\frac{dS}{dt}=\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S.
 \]
 
-Remove unused equations if your model has only one or two variables.
 
 \subsection{Meaning of each term}
 
@@ -347,10 +365,11 @@ Explain each term.
 For example:
 
 \[
--kX
+-k{_{abs}}Q
 \]
 
-represents linear clearance of \(X\), with clearance rate \(k>0\).
+réprésente la sortie de théobromine du système digestif vers le sang avec un taux d'absorption
+\(k{_{abs}} \ge 0\).
 
 \[
 \alpha\frac{Y^n}{K^n+Y^n}
