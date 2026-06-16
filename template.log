@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  12 JUN 2026 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  16 JUN 2026 10:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -640,8 +640,111 @@ Underfull \hbox (badness 2229) in paragraph at lines 231--231
 []|\T1/lmr/m/it/10.95 (+20) Fraction de théo-bromine no évac-uée di-recte-ment par
  []
 
-[3{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [4{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [5] [6] [7]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 581.
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--249
+
+ []
+
+[3{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Underfull \hbox (badness 7238) in paragraph at lines 287--288
+[]|\T1/lmr/m/it/10.95 (+20) Le taux d'absorption
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 287--288
+\T1/lmr/m/it/10.95 (+20) pour-rait dépen-dre de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+\T1/lmr/m/it/10.95 (+20) plusieurs fac-teurs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+\T1/lmr/m/it/10.95 (+20) comme la di-ges-tion/
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 288--289
+[]|\T1/lmr/m/it/10.95 (+20) Il n'y a pas d'intervention
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 293--294
+[]|\T1/lmr/m/it/10.95 (+20) Le taux d'élimination
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 293--294
+\T1/lmr/m/it/10.95 (+20) peut varier chez dif-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+[]|\T1/lmr/m/it/10.95 (+20) Conserver un nom-bre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+\T1/lmr/m/it/10.95 (+20) raisonnable de com-para-
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 296--297
+[]|\T1/lmr/m/it/10.95 (+20) En réal-ité, la quan-
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 299--300
+[]|\T1/lmr/m/it/10.95 (+20) Les seuils de tox-i-c-ité
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 299--300
+\T1/lmr/m/it/10.95 (+20) sont ap-prox-i-mat-ifs et
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+[]|\T1/lmr/m/it/10.95 (+20) L'impact d'une dose
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 302--303
+\T1/lmr/m/it/10.95 (+20) temps est ig-norée de
+ []
+
+[4{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6]
+
+LaTeX Warning: Command \' invalid in math mode on input line 436.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 436.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+Overfull \hbox (307.13432pt too wide) detected at line 444
+\OML/lmm/m/it/10.95 ^^Z[]\OT1/lmr/m/n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 S\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ^^V[]S \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 temps[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 h[]\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^B []\OT1/lmr/m/n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 intensit\OT1/lmr/m/n/10.95 é(\OML/lmm/m/it/10.95 sansunit\OT1/lmr/m/n/10.95 é)) \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 temps\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 h[]\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^B \OML/lmm/m/it/10.95 intensit\OT1/lmr/m/n/10.95 é(\OML/lmm/m/it/10.95 sansunit\OT1/lmr/m/n/10.95 é)\OML/lmm/m/it/10.95 :
+ []
+
+[7] [8] [9]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 658.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -649,7 +752,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [8] [9] [10] [11] [12] [13] [14] (template.aux)
+ [10] [11] [12] [13] [14] [15] [16] (template.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -658,17 +761,17 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 74AD3E998AAE32686996CE806CD569C3;8000.
  ) 
 Here is how much of TeX's memory you used:
- 16973 strings out of 467682
- 279003 string characters out of 5414700
- 750958 words of memory out of 5000000
+ 16987 strings out of 467682
+ 279151 string characters out of 5414700
+ 750962 words of memory out of 5000000
  45628 multiletter control sequences out of 15000+600000
- 690957 words of font info for 130 fonts, out of 8000000 for 9000
+ 691690 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1094b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on template.pdf (14 pages, 302008 bytes).
+Output written on template.pdf (16 pages, 310036 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
  39817 words of extra memory for PDF output out of 42996 (max. 10000000)
 

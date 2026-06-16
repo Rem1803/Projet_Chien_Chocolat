@@ -238,18 +238,27 @@ Nos variables d'entrée sont toutes celles liées à l'ingestion de chocolat. On
         \item {La masse de chocolat ingérée : \(M{_{choc}}\)}
         \item {La concentration en théobromine pour le type de chocolat ingéré : \(C{_{type}}\)}
         \item {La fraction de théobromine non évacuée direactement par l'organisme : \(f\)}
-    \end{itemize}
-
-Inputs are imposed from outside the model, for example:
-
-\[
-u(t), \quad D_{\mathrm{ext}}(t), \quad S(t).
-\]
+\end{itemize}
 
 Describe your input protocol.
 
 \paragraph{Observables.}
-Observables are quantities computed from the model and interpreted biologically.
+Les observables sont des points caractéristiques des courbes, apportant des précisions
+sur le modèle biologique et ses limites. \\
+\begin{itemize}
+    \item {La quantité de théobromine présente dans le système digestif décroit linéairement :
+    il n'y a pas d'observables}
+    \item {La concentration en théobromine dans le sang commence d'abord par augmenter
+    puis diminue. Elle atteint un maximum : \(D{_{max}}=\lim_{t \to \infty} D(t)\)}
+    \item {L'intensité des symptômes évolue en suivant une courbe sigmoïdale. Elle atteint
+    donc une saturation maximale : \(S{_{max}}=\lim_{t \to \infty} S(t)\)}
+    \item {Certains temps peuvent être caractéristiques. On y inclut : 
+    \begin{itemize}
+        \item {Le temps d'atteinte du seuil d'activation des symptômes : 
+        \(T{_{thr}}|S(T{_{thr}}-1)=0 \cap S(T{_{thr}})\ge 0\)}
+        \item {Le temps de rétablissemnt : \(T{_{ret}}|S(T{_{thr}-1})\ge 0 \cap S(T{_{thr}})=0\)}
+    \end{itemize}}
+\end{itemize}
 
 Examples:
 
@@ -272,11 +281,25 @@ List the observables used in your project.
 \toprule
 \textbf{Assumption} & \textbf{Reason} & \textbf{Possible limitation} \\
 \midrule
-\emph{Assumption 1} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 2} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 3} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 4} & \emph{Why it is made} & \emph{Limit or bias} \\
-\emph{Assumption 5} & \emph{Why it is made} & \emph{Limit or bias} \\
+\emph{Le taux d'absorption est constant (et le même chez tous les chiens)} 
+& \emph{Pour simplifier le modèle} 
+& \emph{Le taux d'absorption pourrait dépendre de plusieurs facteurs 
+comme la digestion/ aliments dans l'intestin (poids ? race ?)} \\
+\emph{Il n'y a pas d'intervention vétérinaire pendant la simulation} 
+& \emph{Pour simplifier le modèle et étudier son évolution naturelle} 
+& \emph{Ne représente pas forcément une situation réelle} \\
+\emph{Le taux d'élimination est constant (et le même chez tous les chiens)} 
+& \emph{Pour simplifier le modèle} 
+& \emph{Le taux d'élimination peut varier chez différents types de chien. (poids ?)} \\
+\emph{La quantité de théobromine est la même pour tous les marques de chocolat} 
+& \emph{Conserver un nombre raisonnable de comparaisons} 
+& \emph{En réalité, la quantité de théobromine peut varier selon la marque du chocolat} \\
+\emph{Les seuils de symptômes sont applicables pour tous les chiens} 
+& \emph{Obtenir une liste exhaustive de comparaisons, tirer des conclusions groupées} 
+& \emph{Les seuils de toxicité sont approximatifs et peuvent dépendre de la sensibilité individuelle.} \\
+\emph{Une seule ingestion de théobromine } 
+& \emph{Simplifier le modèle en supprimant une évolution de la quantité de matière ingérée} 
+& \emph{L'impact d'une dose augmentée au cours du temps est ignorée de même qu'une potentielle diminution de l'efficacité du métabolisme } \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -313,32 +336,27 @@ Write the final model.
 For example:
 
 \[
-\frac{dX}{dt}
+\frac{dD}{dt}
 =
-\text{production}
+\text{absorbtion}
 -
-\text{clearance}
-+
-\text{activation}
--
-\text{inhibition}.
+\text{élimination}.
 \]
 
 Then give the actual equations:
 
 \[
-\frac{dX}{dt}=F(X,Y,Z,t;\theta),
+\frac{dQ}{dt}=-k{_{abs}}Q,
 \]
 
 \[
-\frac{dY}{dt}=G(X,Y,Z,t;\theta),
+\frac{dD}{dt}=\frac{k{_{abs}}}{W}Q-k{_{e}}D,
 \]
 
 \[
-\frac{dZ}{dt}=H(X,Y,Z,t;\theta).
+\frac{dS}{dt}=\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S.
 \]
 
-Remove unused equations if your model has only one or two variables.
 
 \subsection{Meaning of each term}
 
@@ -347,53 +365,112 @@ Explain each term.
 For example:
 
 \[
--kX
+-k{_{abs}}Q
 \]
 
-represents linear clearance of \(X\), with clearance rate \(k>0\).
+réprésente la sortie de théobromine du système digestif vers le sang avec un taux d'absorption
+\(k{_{abs}} \ge 0\).
 
 \[
-\alpha\frac{Y^n}{K^n+Y^n}
+\frac{k{_{abs}}}{W}Q
 \]
 
-represents saturating activation by \(Y\), with maximal activation rate
-\(\alpha\), half-activation scale \(K\), and Hill coefficient \(n\).
+répresente la concentration de théobromine absorbée dans le sang depuis le système digestif, 
+en fonction du poids du chien. 
+
+\[
+-k{_{e}}D
+\]
+
+représente l'élimination de la théobromine du sang avec un taux d'élimination \(k{_{e}} \ge 0\).
+
+\[
+\rho\frac{D^n}{K{_D}^n + D^n}
+\]
+
+représente l'évolution des symptômes avec saturation. Une fonction de Hill est utilisée de 
+manière à encadrer la variable avec deux limites. La constante $\rho$ fait évoluer ce terme 
+à un certain taux. 
+
+\[
+(1-S)
+\]
+
+permet de maintenir S entre 0 et 1. 
+
+\[
+-\mu{_S}S
+\]
+
+représente la diminution des symptômes, c'est-à-dire le rétablissement du chien, à un taux
+$\mu{_S}$
 
 \subsection{Units and dimensional consistency}
 
-Check that every term in each equation has the same unit as the corresponding
-left-hand side.
-
-For example, if \(X\) is a concentration, then
-
 \[
-\left[\frac{dX}{dt}\right]
-=
-\frac{\text{concentration}}{\text{time}}.
+\frac{dQ}{dt}=\frac{masse (mg)}{temps (h)},
 \]
 
-Therefore every term in the equation for \(X\) must have units of concentration
-per time.
+et
+
+\[
+-k{_{abs}}Q=temps^{-1} (h^{-1}) \times masse (mg),
+\]
+
+donc les dimensions sont cohérentes. 
+
+\[
+\frac{dD}{dt}=\frac{concentration (mg/kg)}{temps (h)}
+\]
+
+et 
+
+\[
+\frac{k{_{abs}}}{W}Q-k{_{e}}D=\frac{temps^{-1} (h^{-1})}{masse (kg)} \times masse (mg)-temps^{-1} (h^{-1})
+\times concentration (mg/kg),
+\]
+
+Les dimensions sont cohérentes.
+
+\[
+\frac{dS}{dt}=\frac{intensité (sans unité)}{temps (h)}.
+\]
+
+et
+
+\[
+\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S=temps^{-1} (h^{-1}) \times \frac{concentration^n (mg/kg)^n}{concentration^n (mg/kg)^n 
++ concentration^n (mg/kg)^n}(1-intensité (sans unité))-temps (h^{-1})\times intensité (sans unité).
+\]
 
 \subsection{Biological domain}
 
-State the domain of the variables.
-
-Examples:
+Les variables sont comprises dans les domaines suivants :
 
 \[
-X(t)\geq 0,
+Q(t)\geq 0,
 \]
 
 \[
-0\leq B(t)\leq 1,
+D(t)\geq 0,
 \]
 
 \[
-0\leq V(t)\leq 1.
+0\leq S(t)\leq 1.
 \]
 
-Explain whether the model preserves this domain.
+Les formules précédemment définies permettent bien de rester dans ces domaines. En effet :
+\begin{itemize}
+    \item {Pour $Q(t)$, la variable décroît à partir d'un $Q_0 \geq 0$. Ainsi, $Q(t)$ est
+    positive jusqu'à atteindre 0, valeur à laquelle elle restera, d'après la formule, constante.}
+    \item {Pour $D(t)$, la formule $\frac{dD}{dt}$ possède un terme croissant dépendant de 
+    $Q(t)$ et un terme décroissant dépendant de $D(t)$. Ainsi, puisque $Q(t)\geq 0$, le terme 
+    croissant est toujours positif. D'autre part, la valeur initiale de 
+    $D_0$ est fixée à 0 puisqu'il n'y a pas de théobromine dans le sang du chien au moment de
+    l'ingestion. Ainsi, la valeur de $D$ juste après la prise de chocolat ne dépend que du terme 
+    croissant et est donc positive. De plus, le terme décroissant s'annule pour $D(t)=0$. 
+    Puisque }
+\end{itemize}
 
 %==================================================
 \section{Mathematical Analysis}
