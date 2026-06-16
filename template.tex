@@ -372,27 +372,75 @@ réprésente la sortie de théobromine du système digestif vers le sang avec un
 \(k{_{abs}} \ge 0\).
 
 \[
-\alpha\frac{Y^n}{K^n+Y^n}
+\frac{k{_{abs}}}{W}Q
 \]
 
-represents saturating activation by \(Y\), with maximal activation rate
-\(\alpha\), half-activation scale \(K\), and Hill coefficient \(n\).
+répresente la concentration de théobromine absorbée dans le sang depuis le système digestif, 
+en fonction du poids du chien. 
+
+\[
+-k{_{e}}D
+\]
+
+représente l'élimination de la théobromine du sang avec un taux d'élimination \(k{_{e}} \ge 0\).
+
+\[
+\rho\frac{D^n}{K{_D}^n + D^n}
+\]
+
+représente l'évolution des symptômes avec saturation. Une fonction de Hill est utilisée de 
+manière à encadrer la variable avec deux limites. La constante $\rho$ fait évoluer ce terme 
+à un certain taux. 
+
+\[
+(1-S)
+\]
+
+permet de maintenir S entre 0 et 1. 
+
+\[
+-\mu{_S}S
+\]
+
+représente la diminution des symptômes, c'est-à-dire le rétablissement du chien, à un taux
+$\mu{_S}$
 
 \subsection{Units and dimensional consistency}
 
-Check that every term in each equation has the same unit as the corresponding
-left-hand side.
-
-For example, if \(X\) is a concentration, then
-
 \[
-\left[\frac{dX}{dt}\right]
-=
-\frac{\text{concentration}}{\text{time}}.
+\frac{dQ}{dt}=\frac{masse (mg)}{temps (h)},
 \]
 
-Therefore every term in the equation for \(X\) must have units of concentration
-per time.
+et
+
+\[
+-k{_{abs}}Q=temps^{-1} (h^{-1}) \times masse (mg),
+\]
+
+donc les dimensions sont cohérentes. 
+
+\[
+\frac{dD}{dt}=\frac{concentration (mg/kg)}{temps (h)}
+\]
+
+et 
+
+\[
+\frac{k{_{abs}}}{W}Q-k{_{e}}D=\frac{temps^{-1} (h^{-1})}{masse (kg)} \times masse (mg)-temps^{-1} (h^{-1})
+\times concentration (mg/kg),
+\]
+
+Les dimensions sont cohérentes.
+
+\[
+\frac{dS}{dt}=\frac{intensité (sans unité)}{temps (h)}.
+\]
+
+et
+
+\[
+\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S=\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S.
+\]
 
 \subsection{Biological domain}
 
