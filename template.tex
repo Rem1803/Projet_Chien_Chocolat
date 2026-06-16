@@ -439,28 +439,38 @@ Les dimensions sont cohérentes.
 et
 
 \[
-\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S=\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S.
+\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S=temps^{-1} (h^{-1}) \times \frac{concentration^n (mg/kg)^n}{concentration^n (mg/kg)^n 
++ concentration^n (mg/kg)^n}(1-intensité (sans unité))-temps (h^{-1})\times intensité (sans unité).
 \]
 
 \subsection{Biological domain}
 
-State the domain of the variables.
-
-Examples:
+Les variables sont comprises dans les domaines suivants :
 
 \[
-X(t)\geq 0,
+Q(t)\geq 0,
 \]
 
 \[
-0\leq B(t)\leq 1,
+D(t)\geq 0,
 \]
 
 \[
-0\leq V(t)\leq 1.
+0\leq S(t)\leq 1.
 \]
 
-Explain whether the model preserves this domain.
+Les formules précédemment définies permettent bien de rester dans ces domaines. En effet :
+\begin{itemize}
+    \item {Pour $Q(t)$, la variable décroît à partir d'un $Q_0 \geq 0$. Ainsi, $Q(t)$ est
+    positive jusqu'à atteindre 0, valeur à laquelle elle restera, d'après la formule, constante.}
+    \item {Pour $D(t)$, la formule $\frac{dD}{dt}$ possède un terme croissant dépendant de 
+    $Q(t)$ et un terme décroissant dépendant de $D(t)$. Ainsi, puisque $Q(t)\geq 0$, le terme 
+    croissant est toujours positif. D'autre part, la valeur initiale de 
+    $D_0$ est fixée à 0 puisqu'il n'y a pas de théobromine dans le sang du chien au moment de
+    l'ingestion. Ainsi, la valeur de $D$ juste après la prise de chocolat ne dépend que du terme 
+    croissant et est donc positive. De plus, le terme décroissant s'annule pour $D(t)=0$. 
+    Puisque }
+\end{itemize}
 
 %==================================================
 \section{Mathematical Analysis}

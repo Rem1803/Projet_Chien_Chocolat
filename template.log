@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  16 JUN 2026 08:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  16 JUN 2026 10:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,8 +726,25 @@ LaTeX Warning: Command \' invalid in math mode on input line 436.
 
 LaTeX Warning: Command \' invalid in math mode on input line 436.
 
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 443.
+
+
+Overfull \hbox (307.13432pt too wide) detected at line 444
+\OML/lmm/m/it/10.95 ^^Z[]\OT1/lmr/m/n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 S\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ^^V[]S \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 temps[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 h[]\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^B []\OT1/lmr/m/n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 intensit\OT1/lmr/m/n/10.95 é(\OML/lmm/m/it/10.95 sansunit\OT1/lmr/m/n/10.95 é)) \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 temps\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 h[]\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^B \OML/lmm/m/it/10.95 intensit\OT1/lmr/m/n/10.95 é(\OML/lmm/m/it/10.95 sansunit\OT1/lmr/m/n/10.95 é)\OML/lmm/m/it/10.95 :
+ []
+
 [7] [8] [9]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 648.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 658.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -744,15 +761,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 74AD3E998AAE32686996CE806CD569C3;8000.
  ) 
 Here is how much of TeX's memory you used:
- 16985 strings out of 467682
- 279131 string characters out of 5414700
- 750961 words of memory out of 5000000
+ 16987 strings out of 467682
+ 279151 string characters out of 5414700
+ 750962 words of memory out of 5000000
  45628 multiletter control sequences out of 15000+600000
- 691607 words of font info for 135 fonts, out of 8000000 for 9000
+ 691690 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1094b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on template.pdf (16 pages, 308854 bytes).
+Output written on template.pdf (16 pages, 310036 bytes).
 PDF statistics:
  371 PDF objects out of 1000 (max. 8388607)
  78 named destinations out of 1000 (max. 500000)
