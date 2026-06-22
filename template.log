@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  22 JUN 2026 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  22 JUN 2026 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -748,47 +748,47 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 835--843
+Underfull \hbox (badness 10000) in paragraph at lines 823--831
 
  []
 
 [12] [13] [14]
-Underfull \hbox (badness 3713) in paragraph at lines 966--967
+Underfull \hbox (badness 3713) in paragraph at lines 954--955
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 969--970
+Underfull \hbox (badness 2818) in paragraph at lines 957--958
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
+Underfull \hbox (badness 10000) in paragraph at lines 957--958
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
+Underfull \hbox (badness 10000) in paragraph at lines 957--958
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 970--972
+Underfull \hbox (badness 10000) in paragraph at lines 958--960
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 970--972
+Underfull \hbox (badness 2261) in paragraph at lines 958--960
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 970--972
+Underfull \hbox (badness 4634) in paragraph at lines 958--960
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 970--972
+Underfull \hbox (badness 10000) in paragraph at lines 958--960
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
@@ -798,20 +798,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 9ECEF9C38E0EC6451B0A384E9D7B066F;8562.
+(rerunfilecheck)             Checksum: 7B83EAB7B47035B4FD5F32B066CB4C36;8562.
  ) 
 Here is how much of TeX's memory you used:
- 17029 strings out of 467682
- 279584 string characters out of 5414700
- 751014 words of memory out of 5000000
- 45631 multiletter control sequences out of 15000+600000
+ 17027 strings out of 467682
+ 279554 string characters out of 5414700
+ 750876 words of memory out of 5000000
+ 45630 multiletter control sequences out of 15000+600000
  693322 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1094b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (16 pages, 394784 bytes).
+Output written on template.pdf (16 pages, 394714 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
  39814 words of extra memory for PDF output out of 42996 (max. 10000000)
 
