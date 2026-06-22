@@ -771,7 +771,7 @@ This section shows whether your conclusion depends on one arbitrary parameter
 choice or remains true across a reasonable range.
 \end{guidancebox}
 
-\subsection{One-parameter sweep}
+\subsection{Variation de paramètres}
 
 Choose one important parameter \(\lambda\) and vary it.
 
@@ -819,6 +819,22 @@ or
 The conclusion depends strongly on the feedback strength \(\alpha\), so the
 result should be interpreted cautiously.
 \end{quote}
+
+En utilisant la formule de la sensibilité $S_{p}^{X^*}=\frac{p}{X^*}\frac{\partial X^*}{p}$, nous obtenons :
+\\
+$S_{W}^{D^*}=\frac{W}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{k_e}\frac{-1}{W^2}=\frac{-W^2}{W^2}=-1$ \\
+$S_{k_e}^{D^*}=\frac{k_e}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{W}\frac{-1}{k_{e}^2}=\frac{-k_{e}^2}{k_{e}^2}=-1$ \\
+$S_{k_{abs}}^{D^*}=\frac{k_{abs}}{\frac{k_{abs}Q}{k_eW}}\frac{Q}{k_eW}=1$ \\
+et
+$S_{\mu_S}^{S^*}=\frac{\mu_S}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{-(\mu_S+\frac{\rho D^n}{K_D^n + D^n})+\mu_S}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{-\mu_S}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}$ \\
+$S_{\mu_S}^{S^*}=\frac{\rho}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{\mu_S\frac{D^n}{K_D^n + D^n}}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{1}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}$ \\
+
+D'après les résultats obtenus pour $D^*$, tous les paramètres agissent sur l'équilibre de façon
+équivalente, soit dans la même direction, soit dans des directions opposées. Cette variable ne
+dépend pas plus d'un paramètre que d'un autre donc sa définition est assez robuste et les 
+conclusions obtenues également. (?????)
+
+
 
 %==================================================
 \section{Discussion et Critique du modèle}
