@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  22 JUN 2026 18:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  22 JUN 2026 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -457,6 +457,9 @@ File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:conceptual-diagram' multiply defined.
 
+
+LaTeX Warning: Label `fig:perturbation' multiply defined.
+
 )
 \openout1 = `template.aux'.
 
@@ -749,61 +752,74 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<baseline_dynamic.png, id=254, 502.2765pt x 339.669pt>
+ [10]
+<baseline_dynamic.png, id=259, 502.2765pt x 339.669pt>
 File: baseline_dynamic.png Graphic file (type png)
 <use baseline_dynamic.png>
 Package pdftex.def Info: baseline_dynamic.png  used on input line 705.
 (pdftex.def)             Requested size: 364.19667pt x 246.30295pt.
+ [11 <./baseline_dynamic.png>]
+<var_type.png, id=266, 502.2765pt x 339.669pt>
+File: var_type.png Graphic file (type png)
+<use var_type.png>
+Package pdftex.def Info: var_type.png  used on input line 734.
+(pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
+ [12 <./var_type.png>]
+<low_high_exp.png, id=273, 502.2765pt x 339.669pt>
+File: low_high_exp.png Graphic file (type png)
+<use low_high_exp.png>
+Package pdftex.def Info: low_high_exp.png  used on input line 753.
+(pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11 <./baseline_dynamic.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 826--834
+[13 <./low_high_exp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 835--843
 
  []
 
-[12] [13] [14]
-Underfull \hbox (badness 3713) in paragraph at lines 957--958
+[14] [15] [16]
+Underfull \hbox (badness 3713) in paragraph at lines 966--967
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 960--961
+Underfull \hbox (badness 2818) in paragraph at lines 969--970
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 960--961
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 960--961
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 961--963
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 961--963
+Underfull \hbox (badness 2261) in paragraph at lines 970--972
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 961--963
+Underfull \hbox (badness 4634) in paragraph at lines 970--972
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 961--963
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
-[15] [16] (template.aux)
+[17] [18] (template.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
@@ -813,20 +829,20 @@ L3 programming layer <2026-05-26>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 9ECEF9C38E0EC6451B0A384E9D7B066F;8562.
+(rerunfilecheck)             Checksum: E1CA4A176EFEC33EF4DD9F5C808C8515;8562.
  ) 
 Here is how much of TeX's memory you used:
- 17025 strings out of 467509
- 280298 string characters out of 5407322
- 753595 words of memory out of 5000000
- 45801 multiletter control sequences out of 15000+600000
+ 17042 strings out of 467509
+ 280620 string characters out of 5407322
+ 753664 words of memory out of 5000000
+ 45815 multiletter control sequences out of 15000+600000
  689214 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,10n,79p,1098b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (16 pages, 429825 bytes).
+Output written on template.pdf (18 pages, 523574 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 37771 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
+ 37781 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -693,10 +693,10 @@ t\geq 0:
 \]
 
 %==================================================
+\newpage
 \section{Résultats}
 \label{sec:results}
 %==================================================
-
 
 \subsection{Dynamique initiale}
 
@@ -706,7 +706,7 @@ t\geq 0:
     \fbox{\parbox{0.8\textwidth}{
     \centering
     }}
-    \caption{Diagramme dynamique de la quantité de la concentration de théobromine dans le sang pendant 48 heures}
+    \caption{Diagramme dynamique de la quantité de la concentration de théobromine dans le sang pendant 48 heures, avec une masse de chocolat noir ingérée de 200g}
     \label{fig:conceptual-diagram}
 \end{figure}
 
@@ -714,43 +714,52 @@ Questions:
 
 \begin{itemize}
     \item Does the system approach equilibrium? 
-    Les courbes tendent vers 0, ce qui correspond à l'état d'équilibre du système.
+    \newline Les courbes décroissent progressivement vers l'équilibre D*=0, sans l'atteindre exactement sur l'intervalle simulé.
     \item Is the response transient or persistent?
+    \newline La réponse est transitoire puisque la concentration augmente avant de diminuer et de revenir proche de 0.
     \item Is there overshoot?
+    \newline Il y a un dépassement puisque la concentration atteint un maximum avant de diminuer.
     \item What is the recovery time?
+    \newline Le temps de récupération pour revenir en dessous du seuil des symptômes légers (20mg/kg) dépend de la masse du chien. Pour un chien de 60 kg (gros chien), il est de 14h. Pour un chien de 40 kg (moyen chien), il est de 24h. Pour un chien de 15 kg (petit chien), il dépasse 48h et ne peut pas être déterminé avec la simulation.
     \item Does the result match the stability analysis?
+    \newline Oui, le système revient à l'état d'équilibre, ce qui correspond à l'analyse de stabilité.
 \end{itemize}
 
+\newpage
 \subsection{Perturbation}
 
-Present the main perturbation scenario.
 
 \begin{figure}[h]
     \centering
-    %\includegraphics[width=0.75\textwidth]{figures/perturbation_scenario.pdf}
+    \includegraphics[width=0.75\textwidth]{var_type.png}
     \fbox{\parbox{0.75\textwidth}{
     \centering
-    Insert perturbation or treatment figure here.
     }}
-    \caption{Effect of the selected perturbation on model dynamics.}
+    \caption{Effets du type de chocolat ingéré sur la dynamique du modèle.}
     \label{fig:perturbation}
 \end{figure}
 
-Interpret the result.
+Interprétation:
+\newline On observe que la concentration de théobromine dans le sang est bien plus élevée pour le chocolat noir que pour le chocolat au lait, ce qui est cohérent avec la concentration en théobromine plus élevée dans le chocolat noir. De plus, le temps de récupération est plus long pour le chocolat noir que pour le chocolat au lait, ce qui est également cohérent avec la toxicité plus élevée du chocolat noir.
+\newline Quant au chocolat blanc, la conentration de théobromine dans le sang est trop proche de 0 pour être visible sur la figure, ce qui est cohérent avec la faible concentration en théobromine dans le chocolat blanc.
+
+
+\newpage 
 
 \subsection{Comparaison des scénarios}
 
-Compare at least two scenarios.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{low_high_exp.png}
+    \fbox{\parbox{0.75\textwidth}{
+    \centering
+    }}
+    \caption{Effets de la quantité de chocolat ingéré sur la dynamique du modèle.}
+    \label{fig:perturbation}
+\end{figure}
 
-Examples:
-
-\begin{itemize}
-    \item low versus high exposure;
-    \item weak versus strong feedback;
-    \item fast versus slow clearance;
-    \item early versus late treatment;
-    \item different initial conditions.
-\end{itemize}
+Interprétation :
+\newline On observe que plus la quantité de chocolat ingérée est importante, plus la concentration de théobromine dans le sang est élevée et plus le temps de récupération est long. Cela est cohérent avec l'idée que plus la dose ingérée est importante, plus les symptômes sont sévères et durables.
 
 %==================================================
 \section{Analyse de la sensibilité et de la robustesse}
