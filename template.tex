@@ -254,7 +254,7 @@ sur le modèle biologique et ses limites. \\
 \toprule
 \textbf{Hypothèse} & \textbf{Raison} & \textbf{Limites} \\
 \midrule
-\emph{Le taux d'absorption est constant (et le même chez tous les chiens)} 
+\emph{Le taux d'absorption est constant (et le même chez tous les chiens) (A enlever d'après la def de kabs)} 
 & \emph{Pour simplifier le modèle} 
 & \emph{Le taux d'absorption pourrait dépendre de plusieurs facteurs 
 comme la digestion/ aliments dans l'intestin, le poids, la race...} \\
@@ -551,32 +551,39 @@ Les échelles de temps dépendent du paramètre régulant la variable principale
 \tau_3=\frac{1}{\mu_S}
 \]
 
-Interpret them biologically.
+Le temps caractéristique est le temps pour lequel une grande partie de la perturbation a été
+corrigée de façon à se rapprocher de l'équilibre. De notre cas, nous avons estimé, à l'aide
+de la bibliographie les valeurs suivantes : 
+
+\[
+k_{abs}=\frac{0,9 \times M_{choc} \times c_{type}}{W \times 3} h^{-1},
+\qquad
+k_e \backsimeq 0,04 h^{-1}
+\qquad
+\mu_S \backsimeq 0,026 h^{-1}
+\]
+
+Plus le temps caractéristique est court, plus le retour à l'équilibre est rapide. Ainsi, pour
+$Q(t)$, plus la masse de chocolat ingéré et la concentration en théobromine seront grandes,
+plus le retour à l'équilibre sera rapide. De même, plus la masse du chien sera faible, plus 
+le retour sera rapide. Cela est cohérent : pour un petit chien et/ou une grande dose de 
+théobromine ingérée, l'absorption dans le sang sera plus rapide. La variable caractérisant 
+la quantité de théobromine toujours présente dans le système digestif retrouve alors plus 
+rapidement son équilibre, à savoir, 0. \\
+Concernant $D(t)$ et $S(t)$, leurs temps caractéristiques ne dépendent, au vu de notre
+modèle et de nos hypothèses, d'aucun paramètres extérieurs. Ainsi, le temps caractéristique
+est plus élevé dans le cas de $S(t)$ que de $D(t)$. Cela est une nouvelle fois cohérent : 
+une fois que la théobromine a été éliminée de l'organisme, c'est-à-dire une fois que $D(t)$ vaut 0, il faut encore du temps au chien
+pour se remettre de ses symptômes, et donc que $S(t)$ revienne également à 0. 
 
 \subsection{Seuils, retours ou bifurcation}
 
-Use this subsection only if relevant.
+Les équations précédemment énoncées démontre une rétroaction négative. En effet, dans chacun
+des cas, l'augmentation de la variable au sein de l'équation différentielle diminue sa dérivée. 
 
-State clearly whether the project involves:
-
-\begin{itemize}
-    \item an operational threshold;
-    \item a dynamical threshold;
-    \item positive feedback;
-    \item negative feedback;
-    \item bistability;
-    \item hysteresis;
-    \item bifurcation;
-    \item irreversible loss.
-\end{itemize}
-
-\begin{limitationbox}
-Do not claim bistability, hysteresis, Hopf bifurcation, or point of no return
-unless your equations actually support that interpretation.
-\end{limitationbox}
 
 %==================================================
-\section{Simulation Protocol}
+\section{Protocole de simulation}
 \label{sec:simulation-protocol}
 %==================================================
 
@@ -584,14 +591,14 @@ unless your equations actually support that interpretation.
 A simulation is an experiment on the model. It must be reproducible.
 \end{guidancebox}
 
-\subsection{Parameter values}
+\subsection{Valeur des paramètres}
 
 Give the parameter set used for baseline simulations.
 
 \begin{center}
 \begin{tabular}{p{2.5cm}p{3cm}p{3cm}p{5cm}}
 \toprule
-\textbf{Parameter} & \textbf{Value} & \textbf{Unit} & \textbf{Justification} \\
+\textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
 \(k\) &  &  &  \\
 \(\alpha\) &  &  &  \\
@@ -601,7 +608,7 @@ Give the parameter set used for baseline simulations.
 \end{tabular}
 \end{center}
 
-\subsection{Initial conditions}
+\subsection{Conditions initiales}
 
 State the initial conditions:
 
@@ -615,7 +622,7 @@ Z(0)=Z_0.
 
 Explain their biological meaning.
 
-\subsection{Input protocol}
+\subsection{Protocole d'entrée}
 
 Describe any external input.
 
@@ -629,7 +636,7 @@ u_0, & 0\leq t\leq T_{\mathrm{stim}},\\
 \end{cases}
 \]
 
-\subsection{Numerical method}
+\subsection{Méthode numérique}
 
 State the software and solver used.
 
@@ -647,7 +654,7 @@ or
 The ODE system was integrated in MATLAB using \texttt{ode45}.
 \end{quote}
 
-\subsection{Simulation observables}
+\subsection{Simulation des observables}
 
 Define the quantities extracted from simulations.
 
@@ -677,7 +684,7 @@ t\geq 0:
 \]
 
 %==================================================
-\section{Results}
+\section{Résultats}
 \label{sec:results}
 %==================================================
 
@@ -686,7 +693,7 @@ Each figure must answer a question. Do not include plots only because they look
 nice.
 \end{guidancebox}
 
-\subsection{Baseline dynamics}
+\subsection{Dynamique initiale}
 
 Present the baseline simulation.
 
@@ -714,7 +721,7 @@ Questions:
     \item Does the result match the stability analysis?
 \end{itemize}
 
-\subsection{Perturbation or treatment scenario}
+\subsection{Perturbation}
 
 Present the main perturbation scenario.
 
@@ -731,7 +738,7 @@ Present the main perturbation scenario.
 
 Interpret the result.
 
-\subsection{Scenario comparison}
+\subsection{Comparaison des scénarios}
 
 Compare at least two scenarios.
 
@@ -746,7 +753,7 @@ Examples:
 \end{itemize}
 
 %==================================================
-\section{Sensitivity and Robustness Analysis}
+\section{Analyse de la sensibilité et de la robustesse}
 \label{sec:sensitivity}
 %==================================================
 
@@ -786,7 +793,7 @@ D \longmapsto X_{\max}(D),
     \label{fig:parameter-sweep}
 \end{figure}
 
-\subsection{Robustness of the main conclusion}
+\subsection{Robustesse de la conclusion principale}
 
 State whether the main conclusion is robust.
 
@@ -805,7 +812,7 @@ result should be interpreted cautiously.
 \end{quote}
 
 %==================================================
-\section{Discussion and Model Criticism}
+\section{Discussion et Critique du modèle}
 \label{sec:discussion}
 %==================================================
 
@@ -814,67 +821,101 @@ This section is not a place to repeat the results. It is where you explain what
 the model suggests and what it cannot prove.
 \end{guidancebox}
 
-\subsection{Main biological interpretation}
+\subsection{Interprétation biologique principale}
 
-Explain the biological meaning of the results.
+\underline{Conclusion clé :} Le modèle suggère que la sévérité des symptômes dus à l'ingestion de chocolat est liée à la 
+quantité de théobromine ingérée puis absorbée dans le sang, ainsi qu'à la sensibilité propre 
+du chien vis-à-vis de la molécule (par rapport au poids tu veux dire ?). Le rétablissement du chien dépend de la vitesse 
+d'élimination de la théobromine par son métabolisme. La tendance globale associe une grande 
+quantité initiale de chocolat ingérée (je dirai peut-être plutôt un fort rapport entre la quantité ingérée vis à vis du poids du chien
+même si là comme ça c'est trèèèès mal dit) avec une réaction plus forte et qui s'étend dans le 
+temps.
+\\
 
-\begin{claimbox}
-State your main claim in one or two sentences.
+\underline{Interprétation biologique détaillée :} Les résultats prouvent d'une part qu'il existe un risque avéré associé à la prise de 
+chocolat chez les chiens, pouvant induire la mort. D'après le modèle, elle surviendrait 
+pour une ingestion de …g de chocolat pour un chien de …kg. D'autre part, ils présentent une 
+grande variabilité selon le gabarit c'est-à-dire selon la taille et selon le poids du chien. 
+Par exemple, il faudrait …g de chocolat pour qu'un chien de [insérer poids d'un gros gros 
+chien] kg meure. (A voir peut-être si on l'aura pas déjà mis dans la partie résultat) Ainsi, les résultats permettent de conclure à des effets physiologiques 
+potentiellement graves avérés sur le chien mais ils permettent aussi de réaliser une 
+échelle dose/risque hypothétique. De ce fait, les résultats tendent à prouver qu'une 
+ingestion accidentelle de chocolat par un chien ne met pas sa vie en danger 
+significativement et ce, quel que soit son gabarit. Elle peut cependant atteindre des seuils 
+d'apparition des symptômes mettant l'animal dans l'inconfort. En effet, en remettant les 
+équations dans leur contexte réel, on suppose le fait que les ingestions sont accidentelles 
+(et non criminelles). Ainsi, les quantités ingérées sont faibles (une tablette de chocolat 
+pesant généralement 100g) et dépassent très rarement la dose de …g qu'il faut pour qu'un 
+chien de …kg y succombe. (compléter avec les valeurs des graphes que j'ai pas). Enfin, le 
+modèle n'intègre pas l'élimination de la théobromine par un traitement ni aucune forme 
+d'augmentation de la quantité éliminée dans l'équation. Cela limite les conclusions au cas 
+le plus grave : celui qui se ferait sans la prise en charge du chien. 
 
-Example: The model suggests that recovery time is controlled primarily by the
-clearance rate, while peak response is controlled primarily by the input
-amplitude.
-\end{claimbox}
 
-\subsection{What the model supports}
+\subsection{Ce que le modèle supporte}
 
-List the conclusions that are directly supported by your analysis and
-simulations.
+La simulation réalisée permet de déduire les conclusions suivantes :
 
 \begin{itemize}
-    \item {[Supported conclusion 1]}
-    \item {[Supported conclusion 2]}
-    \item {[Supported conclusion 3]}
+    \item {L'ingestion d'une certaine quantité de chocolat peut entraîner la mort du chien}
+    \item {Les symptômes et risques associés dépendent de la dose ingérée et du gabarit du chien}
+    \item {L'élimination naturelle estimée permet souvent d'éviter la mort mais des 
+    symptômes plus ou moins graves peuvent se manifester selon la dose initiale de chocolat 
+    et le gabarit du chien}
+    \item {Les chiens de petite taille sont plus à risque que les chiens à gros gabarit car 
+    ils atteignent facilement et rapidement ? les seuils de symptômes}
 \end{itemize}
 
-\subsection{What the model does not prove}
+\subsection{Ce que le modèle ne prouve pas}
 
 List conclusions that would be overclaims.
 
 \begin{itemize}
-    \item {[Overclaim 1]}
-    \item {[Overclaim 2]}
+    \item {Sur les doses chiffrées précises car le modèle se base encore sur des données 
+    estimées et non vérifiées par des expériences successives sur une population de chiens 
+    et sur différentes races de chiens. Le modèle devrait être soumis au réel et être 
+    alimenté par des données concrètes.}
+    \item {Sur des phénomènes “hors modèle” qui sont rares mais qui peuvent survenir et 
+    entraîner une dynamique particulière ou un pic de la survenue des symptômes par exemple}
 \end{itemize}
+
+Est-ce qu'on rajouterait pas aussi qu'on ne peut pas conclure sur les situations les plus 
+réelles en soit, à savoir le cas où on tente de soigner le chien (ex vomissement) ? 
 
 \subsection{Limitations}
 
-Discuss limitations.
-
-Possible limitations:
+Notre système possède toutefois un certain nombre de limitations, notamment dûes aux 
+hypothèses faites au départ. Les limitations relevées sont les suivantes :
 
 \begin{itemize}
-    \item simplified physiology;
-    \item missing spatial structure;
-    \item no delay;
-    \item constant parameters;
-    \item uncertain parameter values;
-    \item no individual variability;
-    \item no direct data fitting;
-    \item phenomenological variables.
+    \item Absence de données expérimentales en quantité suffisante et de données réelles à 
+    inclure dans notre modèle pour l'ajuster. Il reste fortement hypothétique.
+    \item L'absorption de la théobromine n'est pas nécessairement un phénomène constant. 
+    Il peut interagir avec d'autres dynamiques physiologiques internes dans le corps du 
+    chien. Par exemple, le chien peut être sous traitement ce qui pourrait entraîner des 
+    interactions moléculaires. Une malformation ou anomalie du chien pourrait entraîner 
+    également des absorptions différentes entre les différents compartiments physiologiques, 
+    en raison d'une activité cellulaire modifiée.
+    \item La réponse symptomatique des chiens peut aussi être non linéaire (je sais pas si c'est le bon mot, ça sous entend droite, ce qui n'est pas le cas). Les symptômes 
+    peuvent se superposer et s'inscrire dans différentes dimensions mathématiques plutôt *
+    que derrière une seule lettre “S”.
+    \item Aucun traitement n'est pris en compte, seule la réaction brute du chien est 
+    étudiée. Cela ne reflète pas la réalité. Le chien peut même parfois vomir ce qui réduit 
+    grandement la dose ingérée dès le début. 
 \end{itemize}
 
-\subsection{Possible improvements}
+\subsection{Améliorations possibles}
 
-State how the model could be improved.
-
-Examples:
+Le modèle pourrait être amélioré avec les idées suivantes :
 
 \begin{itemize}
-    \item adding a second compartment;
-    \item adding a delay;
-    \item using experimental data to estimate parameters;
-    \item adding individual variability;
-    \item testing an alternative feedback structure.
+    \item Ajouter d'autres dimensions de symptômes et les différencier selon les zones 
+    qu'ils atteignent. Il s'agirait d'un long travail mais nous pourrions par exemple 
+    différencier les graphes selon les symptômes neurologiques, cardiaques etc.
+    \item Ajouter des dynamiques de soins : élimination augmentée et plus rapide de la 
+    molécule par traitement, vomissement etc.
+    \item Soumettre le modèle à une grande quantité de données à la fois pour l'ajuster 
+    à la réalité et pour continuer de le construire. 
 \end{itemize}
 
 %==================================================
@@ -899,66 +940,45 @@ A good conclusion is precise and modest.
 Do not introduce new results here.
 
 %==================================================
-\section{AI and Software Use Statement}
+\section{Utilisation d'IA et de logiciels spécifiques}
 \label{sec:ai-software}
 %==================================================
 
-\subsection{AI use}
+\subsection{Utilisation d'IA}
 
-State how AI tools were used.
+L'Intelligence Artificielle a été utilisée pour estimer certains paramètres. L'interface
+utilisée est ChatGPT
 
-Examples:
-
-\begin{itemize}
-    \item brainstorming biological mechanisms;
-    \item identifying hidden assumptions;
-    \item checking clarity of explanations;
-    \item debugging code;
-    \item improving English formulation.
-\end{itemize}
-
-State clearly what was verified by the group.
+Les recherches suivantes ont été effectuées : 
 
 \begin{center}
 \begin{tabular}{p{2cm}p{4cm}p{5cm}p{3cm}}
 \toprule
-\textbf{Date} & \textbf{Task} & \textbf{Prompt or use} & \textbf{Group decision} \\
+\textbf{Date} & \textbf{Tâche} & \textbf{Prompt} & \textbf{Décision prise par le groupe} \\
 \midrule
- & & & \\
+ 05/06 & Déterminer une estimation de $k_{abs}$ 
+ & Comment je peux trouver les taux d'absorption et d'élimination de la théobromine chez le chien ? 
+ & Utilisation de la formule ainsi fournie dans la détermination du lien entre la demi-vie
+ et le tau d'élimination \\
  & & & \\
  & & & \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\subsection{Software use}
+\subsection{Utilisation de logiciels}
 
-State the software used.
-
-Examples:
-
+La majorité de ce projet a été réalisé sur GitHub via le logicial Visual Studio Code. \\
+Le rendu latex a également été édité sur Visual Studio Code à l'aide de logiciels d'extension :
 \begin{itemize}
-    \item Python;
-    \item MATLAB;
-    \item Jupyter Notebook;
-    \item NumPy/SciPy;
-    \item Matplotlib;
-    \item Git or shared folder.
+    \item LaTeX Workshop;
+    \item Strawberry Pearl;
+    \item MiKTeX console;
 \end{itemize}
 
-%==================================================
-\section*{Acknowledgments}
-\addcontentsline{toc}{section}{Acknowledgments}
-%==================================================
 
-Optional.
-
-Mention help received from instructors, classmates, or external sources if
-relevant.
-
-%==================================================
 \begin{thebibliography}{99}
-\addcontentsline{toc}{section}{References}
+\addcontentsline{toc}{section}{Bibliographie}
 
 \bibitem{Strogatz}
 S. H. Strogatz,
