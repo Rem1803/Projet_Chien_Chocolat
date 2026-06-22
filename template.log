@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  22 JUN 2026 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  22 JUN 2026 17:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,8 +446,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 39.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 70.
+Package hyperref Info: Option `colorlinks' set `true' on input line 40.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -456,31 +456,31 @@ File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 ) (template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Info: Redefining \microtypecontext on input line 70.
-Package microtype Info: Applying patch `item' on input line 70.
-Package microtype Info: Applying patch `toc' on input line 70.
-Package microtype Info: Applying patch `eqnum' on input line 70.
-Package microtype Info: Applying patch `footnote' on input line 70.
-Package microtype Info: Applying patch `verbatim' on input line 70.
-LaTeX Info: Redefining \microtypesetup on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Info: Redefining \microtypecontext on input line 71.
+Package microtype Info: Applying patch `item' on input line 71.
+Package microtype Info: Applying patch `toc' on input line 71.
+Package microtype Info: Applying patch `eqnum' on input line 71.
+Package microtype Info: Applying patch `footnote' on input line 71.
+Package microtype Info: Applying patch `verbatim' on input line 71.
+LaTeX Info: Redefining \microtypesetup on input line 71.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -550,40 +550,40 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 70.
+Package hyperref Info: Link coloring ON on input line 71.
  (template.out) (template.out)
 \@outlinefile=\write3
 \openout3 = `template.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 73.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 74.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 73.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 74.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 73.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 74.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 73.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 74.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 73.
+(Font)              <12> on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 73.
+(Font)              <8> on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 73.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+(Font)              <6> on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
@@ -593,148 +593,153 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 78.
+(Font)              <10.95> on input line 79.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 []|\T1/lmr/m/n/10.95 (+20) Mathematics/modeling
  []
 
 
-Overfull \hbox (2.19579pt too wide) in paragraph at lines 84--84
+Overfull \hbox (2.19579pt too wide) in paragraph at lines 85--85
 []|\T1/lmr/m/n/10.95 (-20) Computation/simulation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []|\T1/lmr/m/n/10.95 (+20) Critical as-sump-tions
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 85--85
+Underfull \hbox (badness 2809) in paragraph at lines 86--86
 []|\T1/lmr/m/n/10.95 (+20) Assumptions, lim-i-ta-tions, un-cer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 []|\T1/lmr/m/n/10.95 (+20) Communication/report
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 []|\T1/lmr/m/n/10.95 (+20) Coppélia Reynaert-
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 104.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 105.
 (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 125--136
+Underfull \hbox (badness 10000) in paragraph at lines 126--137
 
  []
 
 [1
 
 {C:/Users/clair/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-Underfull \hbox (badness 1052) in paragraph at lines 218--218
+Underfull \hbox (badness 1052) in paragraph at lines 219--219
 []|\T1/lmr/m/it/10.95 (+20) Fraction de théo-bromine non évac-uée di-recte-ment par
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
 
  []
 
 [3{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 7238) in paragraph at lines 260--261
+Underfull \hbox (badness 7238) in paragraph at lines 261--262
 []|\T1/lmr/m/it/10.95 (+20) Le taux d'absorption
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 260--261
+Underfull \hbox (badness 7486) in paragraph at lines 261--262
 \T1/lmr/m/it/10.95 (+20) pour-rait dépen-dre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 \T1/lmr/m/it/10.95 (+20) plusieurs fac-teurs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 \T1/lmr/m/it/10.95 (+20) comme la di-ges-tion/
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 261--262
+Underfull \hbox (badness 1406) in paragraph at lines 262--263
 []|\T1/lmr/m/it/10.95 (+20) Il n'y a pas d'intervention
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 266--267
+Underfull \hbox (badness 2318) in paragraph at lines 267--268
 []|\T1/lmr/m/it/10.95 (+20) Le taux d'élimination
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 266--267
+Underfull \hbox (badness 4048) in paragraph at lines 267--268
 \T1/lmr/m/it/10.95 (+20) peut varier chez dif-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 []|\T1/lmr/m/it/10.95 (+20) Conserver un nom-bre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 \T1/lmr/m/it/10.95 (+20) raisonnable de com-para-
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 269--270
+Underfull \hbox (badness 5460) in paragraph at lines 270--271
 []|\T1/lmr/m/it/10.95 (+20) En réal-ité, la quan-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 272--273
+Underfull \hbox (badness 1748) in paragraph at lines 273--274
 []|\T1/lmr/m/it/10.95 (+20) Les seuils de tox-i-c-ité
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 272--273
+Underfull \hbox (badness 4391) in paragraph at lines 273--274
 \T1/lmr/m/it/10.95 (+20) sont ap-prox-i-mat-ifs et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 []|\T1/lmr/m/it/10.95 (+20) L'impact d'une dose
  []
 
 
-Underfull \hbox (badness 3179) in paragraph at lines 275--276
+Underfull \hbox (badness 3179) in paragraph at lines 276--277
 \T1/lmr/m/it/10.95 (+20) temps est ig-norée de
  []
 
-[4] [5]
+<diagramme2.PNG, id=221, 855.79726pt x 425.79076pt>
+File: diagramme2.PNG Graphic file (type png)
+<use diagramme2.PNG>
+Package pdftex.def Info: diagramme2.PNG  used on input line 290.
+(pdftex.def)             Requested size: 364.19667pt x 181.20232pt.
+[4] [5 <./diagramme2.PNG>]
 
-LaTeX Warning: Command \' invalid in math mode on input line 400.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 400.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 413.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 413.
+LaTeX Warning: Command \' invalid in math mode on input line 398.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 414.
+LaTeX Warning: Command \' invalid in math mode on input line 398.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 414.
+LaTeX Warning: Command \' invalid in math mode on input line 411.
 
-[6] [7] [8{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 646.
+
+LaTeX Warning: Command \' invalid in math mode on input line 411.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 412.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 412.
+
+[6] [7] [8{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [9]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 655.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -742,52 +747,48 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9] [10]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 826--834
+ [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 835--843
 
  []
 
 [12] [13] [14]
-Underfull \hbox (badness 3713) in paragraph at lines 957--958
+Underfull \hbox (badness 3713) in paragraph at lines 966--967
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 960--961
+Underfull \hbox (badness 2818) in paragraph at lines 969--970
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 960--961
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 960--961
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 961--963
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 961--963
+Underfull \hbox (badness 2261) in paragraph at lines 970--972
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 961--963
+Underfull \hbox (badness 4634) in paragraph at lines 970--972
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 961--963
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
@@ -800,17 +801,17 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 9ECEF9C38E0EC6451B0A384E9D7B066F;8562.
  ) 
 Here is how much of TeX's memory you used:
- 17022 strings out of 467682
- 279438 string characters out of 5414700
- 751062 words of memory out of 5000000
- 45624 multiletter control sequences out of 15000+600000
+ 17029 strings out of 467682
+ 279584 string characters out of 5414700
+ 751014 words of memory out of 5000000
+ 45631 multiletter control sequences out of 15000+600000
  693322 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1094b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (16 pages, 337038 bytes).
+Output written on template.pdf (16 pages, 394784 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
+ 380 PDF objects out of 1000 (max. 8388607)
  77 named destinations out of 1000 (max. 500000)
- 39809 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 39814 words of extra memory for PDF output out of 42996 (max. 10000000)
 

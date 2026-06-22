@@ -30,6 +30,7 @@
 %==================================================
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \hypersetup{
     colorlinks=true,
@@ -283,17 +284,14 @@ comme la digestion/ aliments dans l'intestin, le poids, la race...} \\
 
 \subsection{Diagramme conceptuel}
 
-Insert your conceptual diagram.
 
 \begin{figure}[h]
     \centering
-    %\includegraphics[width=0.8\textwidth]{figures/conceptual_diagram.pdf}
+    \includegraphics[width=0.8\textwidth]{diagramme2.PNG}
     \fbox{\parbox{0.8\textwidth}{
     \centering
-    Insert conceptual diagram here.
     }}
-    \caption{Conceptual diagram of the modeled system. Arrows indicate
-    activation, production, transfer, degradation, inhibition, or feedback.}
+    \caption{Diagramme conceptuel du système chien dans l'étude de la toxicité du chocolat}
     \label{fig:conceptual-diagram}
 \end{figure}
 
@@ -536,7 +534,9 @@ Les valeurs propres sont donc :
 \lambda_3=- \mu_S < 0,
 \]
 
-L'équilibre est stable. 
+L'équilibre est stable. En effet, les valeurs de ces paramètres sont estimées comme étant 
+positives de manière à conserver les diminutions de quantités souhaitées physiologiquement
+et dans le modèle mathématique. 
 
 \subsection{Echelles de temps}
 
@@ -578,9 +578,18 @@ pour se remettre de ses symptômes, et donc que $S(t)$ revienne également à 0.
 
 \subsection{Seuils, retours ou bifurcation}
 
-Les équations précédemment énoncées démontre une rétroaction négative. En effet, dans chacun
-des cas, l'augmentation de la variable au sein de l'équation différentielle diminue sa dérivée. 
+Les équations précédemment énoncées démontrent une rétroaction négative. En effet, dans chacun
+des cas, l'augmentation de la variable au sein de l'équation différentielle diminue sa dérivée.
+Cette rétroaction négative peut être mathématiquement prouvée par la négativité de la fonction 
+$\frac{df(X)}{dX}$ avec $X$ une variable : 
 
+\[
+\frac{df(Q)}{dQ}=-k_{abs} < 0,
+\qquad
+\frac{df(D)}{dD}=-k_{e} < 0,
+\qquad
+\frac{df(S)}{dS}=-(\frac{\rho D^n}{D^n + K_D^n}+\mu_S) < 0
+\]
 
 %==================================================
 \section{Protocole de simulation}
