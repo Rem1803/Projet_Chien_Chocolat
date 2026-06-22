@@ -596,98 +596,172 @@ $\frac{df(X)}{dX}$ avec $X$ une variable :
 \label{sec:simulation-protocol}
 %==================================================
 
-\begin{guidancebox}
-A simulation is an experiment on the model. It must be reproducible.
-\end{guidancebox}
 
 \subsection{Valeur des paramètres}
 
-Give the parameter set used for baseline simulations.
 
 \begin{center}
-\begin{tabular}{p{2.5cm}p{3cm}p{3cm}p{5cm}}
+\begin{tabularx}{\textwidth}{p{2.5cm}p{3cm}p{3cm}>{\raggedright\arraybackslash}X}
 \toprule
 \textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
-\(k\) &  &  &  \\
-\(\alpha\) &  &  &  \\
-\(K\) &  &  &  \\
-\(n\) &  &  &  \\
+$\mathbf{k_{abs}}$ & 0,5 & $\mathrm{h^{-1}}$ & valeur trouvée "à la main" en lançant plusieurs simulations, permettant de mieux observer la dynamique du modèle \\
+$\mathbf{k_{e}}$ & 0,040 & $\mathrm{h^{-1}}$ & valeur calculée (voir ci-dessous) \\
+$K_D$ & [20, 45, 60, 150] & $\mathrm{mg/kg}$ & valeurs données dans la project card \\
+$\mu_S$ & 0,026 & $\mathrm{h^{-1}}$ & valeur calculée (voir ci-dessous) \\
+$\rho$ & 0,4 & $\mathrm{h^{-1}}$ & valeur calculée (voir ci-dessous) \\
+$n$ & 4 & / & valeur calculée (voir ci-dessous) \\
+$M_{choc}$ & 200 & g & valeur trouvée "à la main" en lançant plusieurs simulations, permettant de mieux observer la dynamique du modèle \\
+$c_{type}$ & 9,75 & $\mathrm{mg/g}$ & correspond au chocolat noir qui est le plus toxique donc les réponses sont plus observables \\
+$W$ & [15, 40, 60] & kg & poids correspondant à un chien de petite, moyenne et grande taille \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{center}
+
+\subsubsection{Estimation de \(k_e\)}
+
+Le taux d'élimination est estimé à partir de la demi-vie :
+
+\[
+k_e = \frac{\ln 2}{t_{1/2}}
+      \approx \frac{0{,}693}{[17 \; \text{h} ;\, 18 \; \text{h}]}
+      \approx [0{,}039 ;\, 0{,}041]\ \mathrm{h^{-1}}.
+\]
+
+\subsubsection{Estimation de \(\rho\)}
+
+Au tout début de l'évolution des symptômes, on suppose :
+\(D \approx K_D\), \(S \approx 0\) et \(\mu_S \approx 0\).
+
+La loi de Hill donne alors :
+
+\[
+\frac{dS}{dt}
+= \rho\,\frac{D^n}{K_D^n + D^n}(1-S) - \mu_S S
+\approx \frac{\rho}{2}.
+\]
+
+En intégrant avec \(S(0)=0\) :
+
+\[
+S(t) \approx \frac{\rho}{2}\,t.
+\]
+
+Le seuil de significativité des premiers signes cliniques est fixé à
+\(S = 0{,}1\). Si l'apparition des symptômes se situe entre
+\(t=[2;4]\) heures, on obtient :
+
+\[
+0{,}1 = \frac{\rho}{2}\,t
+\quad \Rightarrow \quad
+\rho = \frac{0{,}2}{t}
+      \approx [0{,}05 ;\, 0{,}1]\ \mathrm{h^{-1}}.
+\]
+
+\subsubsection{Estimation de \(n\)}
+
+Le coefficient de Hill est estimé à partir des concentrations efficaces
+pour 10\% et 90\% de réponse :
+
+\[
+n = \frac{\log(81)}{\log\!\left(\frac{EC_{90}}{EC_{10}}\right)}.
+\]
+
+Avec \(EC_{10}\approx 20\ \mathrm{mg/kg}\) et
+\(EC_{90}\approx 60\ \mathrm{mg/kg}\) :
+
+\[
+n
+= \frac{\log(81)}{\log(60/20)}
+= 4.
+\]
+
+\subsubsection{Estimation de \(\mu_S\)}
+
+D'après la littérature :
+
+\begin{itemize}
+    \item demi-vie de la théobromine : environ \(17{,}5\ \mathrm{h}\),
+    \item pic de concentration : autour de \(10\ \mathrm{h}\),
+    \item premiers symptômes : à partir de \(2\ \mathrm{h}\),
+    \item symptômes complètement disparus : vers \(48\ \mathrm{h}\).
+\end{itemize}
+
+Nous assumons que le pic de concentration correspond à peu près au pic des symptômes.
+Dans ce cas, au voisinage du maximum, la fraction de Hill
+\(\frac{D^n}{K_D^n + D^n}\)
+tend vers \(1\). La dynamique des symptômes se simplifie alors en :
+
+\[
+\frac{dS}{dt}
+\approx \rho\,(1-S) - \mu_S S.
+\]
+
+Après le pic, si \(D\) reste élevé, la rétroaction de Hill est proche de \(1\),
+et la décroissance des symptômes est dominée par le terme de récupération.
+Pour \(S\) proche de \(1\), on peut approcher :
+
+\[
+\frac{dS}{dt} \approx -\mu_S.
+\]
+
+Si les symptômes passent d’un état maximum (\(S\approx 1\)) à un état nul
+(\(S\approx 0\)) en environ \(48 - 10 = 38\) heures, alors :
+
+\[
+1 \approx \mu_S \times 38
+\qquad \Rightarrow \qquad
+\mu_S \approx \frac{1}{38}
+              \approx 0{,}026\ \mathrm{h^{-1}}.
+\]
+
 
 \subsection{Conditions initiales}
 
-State the initial conditions:
 
 \[
-X(0)=X_0,
+D(0)=0,
 \qquad
-Y(0)=Y_0,
+S(0)=0,
 \qquad
-Z(0)=Z_0.
+Q(0)=f\,c_{\mathrm{type}}[0]\,M_{\mathrm{choc}}[0]
 \]
 
 Explain their biological meaning.
 
-\subsection{Protocole d'entrée}
-
-Describe any external input.
-
-Example:
-
-\[
-u(t)=
-\begin{cases}
-u_0, & 0\leq t\leq T_{\mathrm{stim}},\\
-0, & t>T_{\mathrm{stim}}.
-\end{cases}
-\]
 
 \subsection{Méthode numérique}
 
-State the software and solver used.
-
-Example:
-
 \begin{quote}
-The ODE system was integrated in Python using \texttt{solve\_ivp} from
-\texttt{scipy.integrate}, with relative tolerance \(\ldots\) and absolute
-tolerance \(\ldots\).
+Le système d'EDOs a été intégré en Python en utilisant \texttt{solve\_ivp} de
+\texttt{scipy.integrate}, avec une tolérance relative \(\ldots\) et une tolérance absolue
+\(\ldots\).
 \end{quote}
 
-or
 
-\begin{quote}
-The ODE system was integrated in MATLAB using \texttt{ode45}.
-\end{quote}
 
 \subsection{Simulation des observables}
 
-Define the quantities extracted from simulations.
-
-Examples:
 
 \[
-X_{\max}
+D_{\max}
 =
-\max_{0\leq t\leq T}X(t),
+\max_{0\leq t\leq T}D(t),
 \]
 
 \[
-\mathrm{AUC}
+S_{\max}
 =
-\int_0^T X(t)\,dt,
+\max_{0\leq t\leq T}S(t),
 \]
 
 \[
-T_{\mathrm{rec}}
+T_{\mathrm{recovery}}
 =
 \inf
 \left\{
 t\geq 0:
-|X(s)-X^*|<\varepsilon
+|S(s)-S_{\mathrm{safe}}|<\varepsilon
 \text{ for all }s\geq t
 \right\}.
 \]
@@ -710,6 +784,18 @@ t\geq 0:
     \label{fig:conceptual-diagram}
 \end{figure}
 
+\begin{center}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}}
+\toprule
+\textbf{Poids chien} & $\mathbf{D_{\max}}$ & \textbf{Temps de récupération} \\
+\midrule
+$15\ \text{kg}$ & $96{,}4\ \text{mg/kg}$ & $>48\ \text{h}$ \\
+$40\ \text{kg}$ & $36{,}2\ \text{mg/kg}$ & $24\ \text{h}$ \\
+$60\ \text{kg}$ & $24{,}1\ \text{mg/kg}$ & $14\ \text{h}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
 Questions:
 
 \begin{itemize}
@@ -725,7 +811,7 @@ Questions:
     \newline Oui, le système revient à l'état d'équilibre, ce qui correspond à l'analyse de stabilité.
 \end{itemize}
 
-\newpage
+
 \subsection{Perturbation}
 
 

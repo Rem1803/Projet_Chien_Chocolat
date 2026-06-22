@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  22 JUN 2026 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  23 JUN 2026 01:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -719,7 +719,7 @@ Underfull \hbox (badness 3179) in paragraph at lines 276--277
 \T1/lmr/m/it/10.95 (+20) temps est ig-norée de
  []
 
-<diagramme2.PNG, id=221, 855.79726pt x 425.79076pt>
+<diagramme2.PNG, id=233, 855.79726pt x 425.79076pt>
 File: diagramme2.PNG Graphic file (type png)
 <use diagramme2.PNG>
 Package pdftex.def Info: diagramme2.PNG  used on input line 290.
@@ -744,82 +744,120 @@ LaTeX Warning: Command \' invalid in math mode on input line 412.
 LaTeX Warning: Command \' invalid in math mode on input line 412.
 
 [6] [7] [8{C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [9]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 655.
- (C:\Users\Capucine\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 631.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rho' on input line 631.
+
+[10]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 661.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 679.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 679.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 679.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 736.
+(C:\Users\Capucine\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10]
-<baseline_dynamic.png, id=259, 502.2765pt x 339.669pt>
+
+Overfull \hbox (9.54082pt too wide) in paragraph at lines 736--739
+[]\T1/lmr/m/n/10.95 (-20) Le sys-tème d'EDOs a été in-té-gré en Python en util-isant \T1/lmtt/m/n/10.95 solve_ivp \T1/lmr/m/n/10.95 (-20) de \T1/lmtt/m/n/10.95 scipy.integrate\T1/lmr/m/n/10.95 (-20) ,
+ []
+
+[11] [12]
+<baseline_dynamic.png, id=282, 502.2765pt x 339.669pt>
 File: baseline_dynamic.png Graphic file (type png)
 <use baseline_dynamic.png>
-Package pdftex.def Info: baseline_dynamic.png  used on input line 705.
+Package pdftex.def Info: baseline_dynamic.png  used on input line 779.
 (pdftex.def)             Requested size: 364.19667pt x 246.30295pt.
- [11 <./baseline_dynamic.png>]
-<var_type.png, id=266, 502.2765pt x 339.669pt>
+ [13 <./baseline_dynamic.png>]
+<var_type.png, id=290, 502.2765pt x 339.669pt>
 File: var_type.png Graphic file (type png)
 <use var_type.png>
-Package pdftex.def Info: var_type.png  used on input line 734.
+Package pdftex.def Info: var_type.png  used on input line 820.
 (pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
- [12 <./var_type.png>]
-<low_high_exp.png, id=273, 502.2765pt x 339.669pt>
+ [14 <./var_type.png>]
+<low_high_exp.png, id=297, 502.2765pt x 339.669pt>
 File: low_high_exp.png Graphic file (type png)
 <use low_high_exp.png>
-Package pdftex.def Info: low_high_exp.png  used on input line 753.
+Package pdftex.def Info: low_high_exp.png  used on input line 839.
 (pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./low_high_exp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 835--843
+[15 <./low_high_exp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 921--929
 
  []
 
-[14] [15] [16]
-Underfull \hbox (badness 3713) in paragraph at lines 966--967
+[16] [17] [18]
+Underfull \hbox (badness 3713) in paragraph at lines 1052--1053
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 969--970
+Underfull \hbox (badness 2818) in paragraph at lines 1055--1056
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 970--972
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 970--972
+Underfull \hbox (badness 2261) in paragraph at lines 1056--1058
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 970--972
+Underfull \hbox (badness 4634) in paragraph at lines 1056--1058
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 970--972
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
-[17] [18] (template.aux)
+[19] [20] (template.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
@@ -829,20 +867,20 @@ L3 programming layer <2026-05-26>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: E1CA4A176EFEC33EF4DD9F5C808C8515;8562.
+(rerunfilecheck)             Checksum: DA1C7192ECA6CDBBE03C2CD13C034AF9;9004.
  ) 
 Here is how much of TeX's memory you used:
- 17042 strings out of 467509
- 280620 string characters out of 5407322
- 753664 words of memory out of 5000000
- 45815 multiletter control sequences out of 15000+600000
- 689214 words of font info for 150 fonts, out of 8000000 for 9000
+ 17075 strings out of 467509
+ 281054 string characters out of 5407322
+ 753665 words of memory out of 5000000
+ 45822 multiletter control sequences out of 15000+600000
+ 698819 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,10n,79p,1098b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (18 pages, 523574 bytes).
+ 74i,11n,79p,1098b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on template.pdf (20 pages, 579024 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 37781 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 431 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 43949 words of extra memory for PDF output out of 51595 (max. 10000000)
 
