@@ -857,7 +857,7 @@ This section shows whether your conclusion depends on one arbitrary parameter
 choice or remains true across a reasonable range.
 \end{guidancebox}
 
-\subsection{One-parameter sweep}
+\subsection{Variation de paramètres}
 
 Choose one important parameter \(\lambda\) and vary it.
 
@@ -905,6 +905,22 @@ or
 The conclusion depends strongly on the feedback strength \(\alpha\), so the
 result should be interpreted cautiously.
 \end{quote}
+
+En utilisant la formule de la sensibilité $S_{p}^{X^*}=\frac{p}{X^*}\frac{\partial X^*}{p}$, nous obtenons :
+\\
+$S_{W}^{D^*}=\frac{W}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{k_e}\frac{-1}{W^2}=\frac{-W^2}{W^2}=-1$ \\
+$S_{k_e}^{D^*}=\frac{k_e}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{W}\frac{-1}{k_{e}^2}=\frac{-k_{e}^2}{k_{e}^2}=-1$ \\
+$S_{k_{abs}}^{D^*}=\frac{k_{abs}}{\frac{k_{abs}Q}{k_eW}}\frac{Q}{k_eW}=1$ \\
+et
+$S_{\mu_S}^{S^*}=\frac{\mu_S}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{-(\mu_S+\frac{\rho D^n}{K_D^n + D^n})+\mu_S}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{-\mu_S}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}$ \\
+$S_{\mu_S}^{S^*}=\frac{\rho}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{\mu_S\frac{D^n}{K_D^n + D^n}}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{1}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}$ \\
+
+D'après les résultats obtenus pour $D^*$, tous les paramètres agissent sur l'équilibre de façon
+équivalente, soit dans la même direction, soit dans des directions opposées. Cette variable ne
+dépend pas plus d'un paramètre que d'un autre donc sa définition est assez robuste et les 
+conclusions obtenues également. (?????)
+
+
 
 %==================================================
 \section{Discussion et Critique du modèle}
@@ -1033,6 +1049,34 @@ It should answer:
 A good conclusion is precise and modest.
 
 Do not introduce new results here.
+
+En conclusion, la modélisation des variables représentant la quantité de théobromine dans 
+l'intestin, le sang, et l'intensité des symptômes nous a permis une visualisation générale
+de l'évolution de la théobromine dans le temps et de son action sur les symptômes du chien.
+En particulier, cette modélisation nous a permis de comprendre dans quelles circonstances les
+différents symptômes apparaissent, dont notamment le décès de l'animal, conséquence de 
+l'ingestion de chocolat la plus connue dans l'imaginaire commun. \\
+Etudié physiologiquement et mathématiquement, des conclusions identiques aux deux disciplines
+ont été trouvées. En effet, le système de référence étant celui d'un chien en bonne santé,
+n'ayant pas ingéré de chocolat, celui-ci ne retrouve un état d'équilibre, uniquement lorsque
+toutes les variables reviennent à 0, c'est-à-dire uniquement lorsque l'organisme est parvenu
+à éliminer complétement la menace. L'étude mathématique nous a permis de prouver ce résultat
+en ne trouvant comme unique point d'équilibre le point (0,0,0). Cette combinaison disciplinaire
+a également été un moyen de visualiser les réactions de l'organisme au travers notamment de
+graphiques dose-réponse. \\ 
+Ainsi, ce modèle nous a appris qu'en pénétrant dans le sang, la théobromine déclenche chez
+le chien une série de réaction ayant pour but un retour à un état d'équilibre sans la 
+présence de cette molécule. Cette réponse n'est pas instantanée et permet malgré tout
+à la théobromine de déclencher des symptômes plus ou moins graves chez le chien. Toutefois,
+contrairement à ce qu'on pourrait penser, l'ingestion de théobromine, si elle reste dans des
+quantités mesurées, ne conduit pas forcément au décès de l'animal mais plutôt à d'autres types
+de symptômes pouvant créer de l'inconfort chez ce dernier (crise d'épilpsie, vomissements...).
+Les propriétaires de chiens doivent donc rester vigilants mais ne pas céder à la panique, les 
+bons gestes réflexes pouvant assurer un retour à la normale. \\
+Cependant, le modèle reste assez simpliste et superficiel, bien qu'il permette d'obtenir 
+des ordres de grandeur et une première dynamique proche de la réalité “brute” du phénomène. 
+Les contours de la question biologique restent encore à cerner, en prenant notamment en 
+compte d'autres paramètres plus réalistes tels que la mise en place d'un traitement vétérinaire. 
 
 %==================================================
 \section{Utilisation d'IA et de logiciels spécifiques}

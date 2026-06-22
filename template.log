@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  23 JUN 2026 01:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  23 JUN 2026 01:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -813,51 +813,56 @@ Package pdftex.def Info: low_high_exp.png  used on input line 839.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15 <./low_high_exp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 921--929
+Underfull \hbox (badness 10000) in paragraph at lines 909--917
 
  []
 
-[16] [17] [18]
-Underfull \hbox (badness 3713) in paragraph at lines 1052--1053
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--945
+
+ []
+
+[16] [17] [18] [19]
+Underfull \hbox (badness 3713) in paragraph at lines 1096--1097
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 1055--1056
+Underfull \hbox (badness 2818) in paragraph at lines 1099--1100
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1099--1100
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1099--1100
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1102
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1056--1058
+Underfull \hbox (badness 2261) in paragraph at lines 1100--1102
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 1056--1058
+Underfull \hbox (badness 4634) in paragraph at lines 1100--1102
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1102
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
-[19] [20] (template.aux)
+[20] [21] (template.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
@@ -867,20 +872,20 @@ L3 programming layer <2026-05-26>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: DA1C7192ECA6CDBBE03C2CD13C034AF9;9004.
+(rerunfilecheck)             Checksum: C36B0FBE0BC6E489FE7E0D4DB4654BA7;9030.
  ) 
 Here is how much of TeX's memory you used:
- 17075 strings out of 467509
- 281054 string characters out of 5407322
+ 17082 strings out of 467509
+ 281125 string characters out of 5407322
  753665 words of memory out of 5000000
  45822 multiletter control sequences out of 15000+600000
- 698819 words of font info for 162 fonts, out of 8000000 for 9000
+ 699068 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,11n,79p,1098b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (20 pages, 579024 bytes).
+<C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Capucine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on template.pdf (21 pages, 591060 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
- 85 named destinations out of 1000 (max. 500000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
  43949 words of extra memory for PDF output out of 51595 (max. 10000000)
 
