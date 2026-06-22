@@ -30,6 +30,7 @@
 %==================================================
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \hypersetup{
     colorlinks=true,
@@ -57,17 +58,15 @@
 % Project metadata
 %==================================================
 \title{
-    \textbf{Final Project Manuscript}\\
-    \textbf{Mathematical Modeling of Chocolate Toxcity for Dogs}\\[0.5em]
-    \large BS-3-S2-EC-PHYMAT / Systèmes physiologiques et modélisation mathématique
+    \textbf{Rendu de Projet}\\
+    \textbf{Modélisation Mathématiques de la Toxicité du Chocolat chez le Chien}\\[0.5em]
+    \large BS-3-S2-EC-PHYMAT / Systèmes physiologiques et modélisation mathématique\\[0.5em]
+    \large Equipe 6 -- Troisième année Biotechnologies et Bioinformatique, INSA Lyon\\[0.5em]
+    \large Olinda Mendes, Coppélia Reynaert-Verbiese, Doriane Rombaut, Capucine Schmidt, Thao Van Tran, Marion Venerucci
 }
 
-\author{
-    Team 6 -- Third-Year Biotechnology and Bioinformatics, INSA Lyon\\[0.5em]
-    Olinda Mendes, Coppélia Reynaert-Verbiese, Doriane Rombaut, Capucine Schmidt, Thao Van Tran, Marion Venerucci
-}
 
-\date{Academic year 2025--2026}
+\date{Année académique 2025--2026}
 
 \begin{document}
 
@@ -79,9 +78,9 @@
 \begin{center}
 \begin{tabular}{p{4cm}p{6cm}p{4cm}}
 \toprule
-\textbf{Role} & \textbf{Main responsibility} & \textbf{Student name} \\
+\textbf{Rôle} & \textbf{Responsabilité principale} & \textbf{Nom} \\
 \midrule
-Physiology lead & Biological mechanism and physiological consistency & Marion Venrucci \\
+Physiology lead & Biological mechanism and physiological consistency & Marion Venerucci \\
 Mathematics/modeling lead & Variables, equations, assumptions, analysis & Van Tran \\
 Computation/simulation lead & Code, numerical simulations, figures & Capucine Schmidt \\
 Critical assumptions lead & Assumptions, limitations, uncertainty & Olinda Mendes \\
@@ -91,11 +90,6 @@ Coordinator & Organization, integration, deadlines & Coppélia Reynaert-Verbiese
 \end{tabular}
 \end{center}
 
-\begin{guidancebox}
-Roles indicate responsibilities, not isolated tasks. Every student must
-understand the whole model and be able to explain the main biological and
-mathematical ideas.
-\end{guidancebox}
 
 \vspace{1em}
 
@@ -121,17 +115,18 @@ Do not include technical details, long equations, or references in the abstract.
 %\tableofcontents
 
 %==================================================
-\section{Biological and Modeling Question}
+\section{Question biologique et de Modélisation}
 \label{sec:question}
 %==================================================
 
 
-\subsection{Biological context}
+\subsection{Context biologique}
 
 
-Chez le chien, c'est la théobromine qui est responsable de la toxicité du chocolat. En effet, 
-une fois dans le système gastrique, elle est absorbée dans le sang et diffusée dans l'ogranisme,
-impactant ainsi des systèmes essentiels tels que le système nerveux ou cardiovasculaire. \\
+La théobromine est une molécule présente dans le chocolat et connue chez l'homme pour ces effets
+proches de ceux de la cafféine. Chez le chien, c'est elle qui est responsable de la toxicité du chocolat. En effet, 
+une fois dans le système gastrique, elle est absorbée dans le sang et est diffusée dans l'organisme,
+impactant ainsi des systèmes essentiels tels que le système nerveux ou système cardiovasculaire. \\
 La théobromine ayant un impact sur l'entièreté de l'organisme, nous avons choisi de prendre 
 comme système le chien dans son ensemble. Ce système abrite ainsi l'évolution de la concentration
 de la théobromine dans le sang et son impact sur l'organisme. En effet, en augmentant, la quantité
@@ -142,46 +137,40 @@ Cette réaction peut être observée sur plusieurs heures.
 
 
 
-\subsection{Modeling question}
+\subsection{Question de modélisation}
 
-State the precise modeling question.
 
 
 \begin{quote}
 \itshape
-Comment est-ce que la théobromine évolue au cours du temps et agit sur l'évolution des symptômes
-chez le chien ? A partir de quelle seuil la dose ingérée est-elle mortelle ? 
+Quelle est l'évolution de la théobromine au cours du temmps et comment agit-elle sur la modification
+des symptômes chez le chien ? A partir de quel seuil la dose ingérée est-elle mortelle ? 
 \end{quote}
 
 
-\subsection{Reference regime and perturbation}
+\subsection{Régime de référence et perturbation}
 
 Pour répondre à cette question, nous prendrons comme régime de référence un modèle sain, c'est-à-dire
-un chien n'ayant pas ingéré de chocolat. La perturbation étudiée est l'entrée dans le système
+un chien n'ayant pas ingéré de chocolat. Dans ces conditions, la quantité de théobromine présente
+dans le système est alors nulle. La perturbation étudiée est l'entrée dans le système
 de chocolat, et donc de théobromine, à un instant $t{_0}$. 
 
 
 
 %==================================================
-\section{System Boundary, Variables, Parameters, and Assumptions}
+\section{Limites du système, Variables, Paramètres, et Hypothèses}
 \label{sec:variables-assumptions}
 %==================================================
 
-\begin{guidancebox}
-This section defines the model before equations are written. A model with
-unclear variables or hidden assumptions is not scientifically controlled.
-\end{guidancebox}
 
-\subsection{System boundary}
-
-State what is inside and outside the model.
+\subsection{Limites du système}
 
 \begin{itemize}
     \item Dans le modèle :
     \begin{itemize}
         \item {Voies circulatoires et sang}
         \item {Système digestif}
-        \item {Autres voies métaboliques indirectement impliquée : système nerveux, respiratoire...}
+        \item {Autres voies métaboliques indirectement impliquées : système nerveux, respiratoire...}
         \item {Organes}
         \item {Récepteurs, protéines, enzymes}
         \item {Hormones et neurotransmetteurs}
@@ -191,16 +180,15 @@ State what is inside and outside the model.
     \begin{itemize}
         \item {Potentiels problèmes de santé antérieurs du chien}
         \item {Température pouvant impacter l'activité du métabolisme}
-        \item {Le reste est-ce que c'est vraiment en dehors ?}
     \end{itemize}
 \end{itemize}
 
-\subsection{State variables}
+\subsection{Définition des variables}
 
 \begin{center}
 \begin{tabular}{p{2.5cm}p{8cm}p{3cm}}
 \toprule
-\textbf{Symbol} & \textbf{Meaning} & \textbf{Unit} \\
+\textbf{Symbôle} & \textbf{Signification} & \textbf{Unité} \\
 \midrule
 \(Q(t)\) & {Masse de théobromine présente dans le système digestif} & {mg} \\
 \(D(t)\) & {Concentration de théobromine absorbée dans le sang par la masse corporelle} & {mg/kg} \\
@@ -209,17 +197,17 @@ State what is inside and outside the model.
 \end{tabular}
 \end{center}
 
-\subsection{Parameters}
+\subsection{Paramètres}
 
 \begin{center}
 \begin{tabularx}{\textwidth}{p{2.3cm}X p{2.5cm}}
 \toprule
-\textbf{Symbol} & \textbf{Meaning} & \textbf{Unit} \\
+\textbf{Symbôle} & \textbf{Signification} & \textbf{Unité} \\
 \midrule
 \(M{_{choc}}\) & \emph{Masse de chocolat ingérée} & \emph{g} \\
 \(C{_{type}}\) & \emph{Concentration en théobromine selon le type de chocolat} & \emph{mg/g} \\
 \(W\) & \emph{Masse du chien} & \emph{kg} \\
-\(f\) & \emph{Fraction de théobromine no évacuée directement par l'organisme} & \emph{\%} \\
+\(f\) & \emph{Fraction de théobromine non évacuée directement par l'organisme} & \emph{\%} \\
 \(k{_{abs}}\) & \emph{Taux d'absorption de théobromine dans le sang} & \emph{$h^{-1}$} \\
 \(k{_{e}}\) & \emph{Taux d'élimination de la théobromine} & \emph{$h^{-1}$} \\
 \(\rho\) & \emph{Taux d'activation des symptômes} & \emph{$h^{-1}$} \\
@@ -231,16 +219,16 @@ State what is inside and outside the model.
 \end{tabularx}
 \end{center}
 
-\subsection{Inputs and observables}
-\paragraph{Inputs.}
-Nos variables d'entrée sont toutes celles liées à l'ingestion de chocolat. On compte ainsi : 
+\subsection{Entrées et Observables}
+\paragraph{Entrées.}
+Nos variables d'entrée sont toutes celles liées à l'ingestion de chocolat. On considère ainsi : 
 \begin{itemize}
         \item {La masse de chocolat ingérée : \(M{_{choc}}\)}
         \item {La concentration en théobromine pour le type de chocolat ingéré : \(C{_{type}}\)}
         \item {La fraction de théobromine non évacuée direactement par l'organisme : \(f\)}
 \end{itemize}
 
-Describe your input protocol.
+Describe your input protocol. (Ca j'ai pas compris ce que c'était)
 
 \paragraph{Observables.}
 Les observables sont des points caractéristiques des courbes, apportant des précisions
@@ -249,54 +237,40 @@ sur le modèle biologique et ses limites. \\
     \item {La quantité de théobromine présente dans le système digestif décroit linéairement :
     il n'y a pas d'observables}
     \item {La concentration en théobromine dans le sang commence d'abord par augmenter
-    puis diminue. Elle atteint un maximum : \(D{_{max}}=\lim_{t \to \infty} D(t)\)}
+    puis diminue. Elle atteint un maximum : \(D{_{max}}\)}
     \item {L'intensité des symptômes évolue en suivant une courbe sigmoïdale. Elle atteint
-    donc une saturation maximale : \(S{_{max}}=\lim_{t \to \infty} S(t)\)}
+    donc une saturation maximale : \(S{_{max}}\)}
     \item {Certains temps peuvent être caractéristiques. On y inclut : 
     \begin{itemize}
-        \item {Le temps d'atteinte du seuil d'activation des symptômes : 
-        \(T{_{thr}}|S(T{_{thr}}-1)=0 \cap S(T{_{thr}})\ge 0\)}
-        \item {Le temps de rétablissemnt : \(T{_{ret}}|S(T{_{thr}-1})\ge 0 \cap S(T{_{thr}})=0\)}
+        \item {Le temps d'atteinte du seuil opérationnel d'activation des symptômes : 
+        \(T{_{sym}}|S(T{_{sym}}-1)=0 \cap S(T{_{sym}})\ge 0\)}
+        \item {Le temps de rétablissement : \(T{_{ret}}|S(T{_{sym}-1})\ge 0 \cap S(T{_{sym}})=0\)}
     \end{itemize}}
 \end{itemize}
 
-Examples:
-
-\[
-X_{\max},
-\qquad
-T_{\mathrm{rec}},
-\qquad
-\int_0^T X(t)\,dt,
-\qquad
-X(T).
-\]
-
-List the observables used in your project.
-
-\subsection{Assumptions}
+\subsection{Hypothèses}
 
 \begin{center}
 \begin{tabular}{p{5cm}p{5cm}p{4cm}}
 \toprule
-\textbf{Assumption} & \textbf{Reason} & \textbf{Possible limitation} \\
+\textbf{Hypothèse} & \textbf{Raison} & \textbf{Limites} \\
 \midrule
-\emph{Le taux d'absorption est constant (et le même chez tous les chiens)} 
+\emph{Le taux d'absorption est constant (et le même chez tous les chiens) (A enlever d'après la def de kabs)} 
 & \emph{Pour simplifier le modèle} 
 & \emph{Le taux d'absorption pourrait dépendre de plusieurs facteurs 
-comme la digestion/ aliments dans l'intestin (poids ? race ?)} \\
+comme la digestion/ aliments dans l'intestin, le poids, la race...} \\
 \emph{Il n'y a pas d'intervention vétérinaire pendant la simulation} 
 & \emph{Pour simplifier le modèle et étudier son évolution naturelle} 
 & \emph{Ne représente pas forcément une situation réelle} \\
 \emph{Le taux d'élimination est constant (et le même chez tous les chiens)} 
 & \emph{Pour simplifier le modèle} 
 & \emph{Le taux d'élimination peut varier chez différents types de chien. (poids ?)} \\
-\emph{La quantité de théobromine est la même pour tous les marques de chocolat} 
+\emph{La quantité de théobromine est la même pour chaque type de chocolat, indépendemment de la marque} 
 & \emph{Conserver un nombre raisonnable de comparaisons} 
 & \emph{En réalité, la quantité de théobromine peut varier selon la marque du chocolat} \\
 \emph{Les seuils de symptômes sont applicables pour tous les chiens} 
 & \emph{Obtenir une liste exhaustive de comparaisons, tirer des conclusions groupées} 
-& \emph{Les seuils de toxicité sont approximatifs et peuvent dépendre de la sensibilité individuelle.} \\
+& \emph{Les seuils de toxicité sont approximatifs et peuvent dépendre de la sensibilité individuelle} \\
 \emph{Une seule ingestion de théobromine } 
 & \emph{Simplifier le modèle en supprimant une évolution de la quantité de matière ingérée} 
 & \emph{L'impact d'une dose augmentée au cours du temps est ignorée de même qu'une potentielle diminution de l'efficacité du métabolisme } \\
@@ -304,36 +278,26 @@ comme la digestion/ aliments dans l'intestin (poids ? race ?)} \\
 \end{tabular}
 \end{center}
 %==================================================
-\section{Model Construction}
+\section{Construction du Modèle}
 \label{sec:model}
 %==================================================
 
-\begin{guidancebox}
-Each equation must be readable as a biological sentence. Do not write a term
-unless you can explain what it represents.
-\end{guidancebox}
+\subsection{Diagramme conceptuel}
 
-\subsection{Conceptual diagram}
-
-Insert your conceptual diagram.
 
 \begin{figure}[h]
     \centering
-    %\includegraphics[width=0.8\textwidth]{figures/conceptual_diagram.pdf}
+    \includegraphics[width=0.8\textwidth]{diagramme2.PNG}
     \fbox{\parbox{0.8\textwidth}{
     \centering
-    Insert conceptual diagram here.
     }}
-    \caption{Conceptual diagram of the modeled system. Arrows indicate
-    activation, production, transfer, degradation, inhibition, or feedback.}
+    \caption{Diagramme conceptuel du système chien dans l'étude de la toxicité du chocolat}
     \label{fig:conceptual-diagram}
 \end{figure}
 
-\subsection{Model equations}
+\subsection{Equations du modèle}
 
-Write the final model.
-
-For example:
+Le modèle final possède la dynamique suivante :
 
 \[
 \frac{dD}{dt}
@@ -343,7 +307,7 @@ For example:
 \text{élimination}.
 \]
 
-Then give the actual equations:
+Dans le détail, cela donne les équations :
 
 \[
 \frac{dQ}{dt}=-k{_{abs}}Q,
@@ -358,24 +322,22 @@ Then give the actual equations:
 \]
 
 
-\subsection{Meaning of each term}
+\subsection{Signification de chaque terme}
 
-Explain each term.
-
-For example:
+Découpons les équations précédemment obtenues en plusieurs termes : 
 
 \[
 -k{_{abs}}Q
 \]
 
-réprésente la sortie de théobromine du système digestif vers le sang avec un taux d'absorption
+représente la sortie de théobromine du système digestif vers le sang avec un taux d'absorption
 \(k{_{abs}} \ge 0\).
 
 \[
 \frac{k{_{abs}}}{W}Q
 \]
 
-répresente la concentration de théobromine absorbée dans le sang depuis le système digestif, 
+représente la concentration de théobromine absorbée dans le sang depuis le système digestif, 
 en fonction du poids du chien. 
 
 \[
@@ -405,7 +367,7 @@ permet de maintenir S entre 0 et 1.
 représente la diminution des symptômes, c'est-à-dire le rétablissement du chien, à un taux
 $\mu{_S}$
 
-\subsection{Units and dimensional consistency}
+\subsection{Unités et dimensions}
 
 \[
 \frac{dQ}{dt}=\frac{masse (mg)}{temps (h)},
@@ -433,17 +395,24 @@ et
 Les dimensions sont cohérentes.
 
 \[
-\frac{dS}{dt}=\frac{intensité (sans unité)}{temps (h)}.
+\frac{dS}{dt}=\frac{intensité (sans~unité)}{temps (h)}.
 \]
 
 et
 
 \[
-\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S=temps^{-1} (h^{-1}) \times \frac{concentration^n (mg/kg)^n}{concentration^n (mg/kg)^n 
-+ concentration^n (mg/kg)^n}(1-intensité (sans unité))-temps (h^{-1})\times intensité (sans unité).
+\rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S=
+\]
+\[
+temps^{-1} (h^{-1}) \times \frac{concentration^n (mg/kg)^n}
+{concentration^n (mg/kg)^n + concentration^n (mg/kg)^n}\times
+\]
+\[
+(1-intensité (sans~unité))-temps (h^{-1})\times 
+intensité (sans~unité).
 \]
 
-\subsection{Biological domain}
+\subsection{Domaine biologique}
 
 Les variables sont comprises dans les domaines suivants :
 
@@ -462,7 +431,7 @@ D(t)\geq 0,
 Les formules précédemment définies permettent bien de rester dans ces domaines. En effet :
 \begin{itemize}
     \item {Pour $Q(t)$, la variable décroît à partir d'un $Q_0 \geq 0$. Ainsi, $Q(t)$ est
-    positive jusqu'à atteindre 0, valeur à laquelle elle restera, d'après la formule, constante.}
+    positive jusqu'à atteindre 0, valeur à laquelle elle restera, d'après la formule et les hypothèses, constante.}
     \item {Pour $D(t)$, la formule $\frac{dD}{dt}$ possède un terme croissant dépendant de 
     $Q(t)$ et un terme décroissant dépendant de $D(t)$. Ainsi, puisque $Q(t)\geq 0$, le terme 
     croissant est toujours positif. D'autre part, la valeur initiale de 
@@ -473,7 +442,7 @@ Les formules précédemment définies permettent bien de rester dans ces domaine
 \end{itemize}
 
 %==================================================
-\section{Mathematical Analysis}
+\section{Analyse Mathématique}
 \label{sec:analysis}
 %==================================================
 
@@ -482,120 +451,148 @@ This is the mathematical core of the report. It should contain more than
 simulation. At minimum, identify equilibria and discuss stability.
 \end{guidancebox}
 
-\subsection{Equilibria}
+\subsection{Equilibres}
 
-Set the derivatives equal to zero.
-
-For a one-variable model:
+Le modèle précédemment développé contient 3 variables : 
 
 \[
-\frac{dX}{dt}=f(X),
-\]
-
-equilibria satisfy
-
-\[
-f(X^*)=0.
-\]
-
-For a two-variable model:
-
-\[
-\frac{dX}{dt}=f(X,Y),
+\frac{dQ}{dt}=-k_{abs}Q,
 \qquad
-\frac{dY}{dt}=g(X,Y),
-\]
-
-equilibria satisfy
-
-\[
-f(X^*,Y^*)=0,
+\frac{dD}{dt}=\frac{k_{abs}}{W}Q-k_eD,
 \qquad
-g(X^*,Y^*)=0.
+\frac{dS}{dt}=\rho\frac{D^n}{K_D^n + D^n}(1-S)-\mu_SS,
 \]
 
-List the equilibria and interpret them biologically.
-
-\subsection{Stability}
-
-For a one-dimensional model, compute
+Ainsi, l'équilibre se situe au(x) point(s) d'intersection de leurs nullclines respectives. 
+Mathématiquemnt parlant, cela donne : 
 
 \[
-f'(X^*).
+-k_{abs}Q=0\Leftrightarrow Q^*=0 \Rightarrow N_Q : Q^*=0,
+\] 
+\[
+\frac{k_{abs}}{W}Q-k_eD=0\Leftrightarrow D^*=\frac{k_{abs}Q}{k_eW} \Rightarrow N_D : D^*=\frac{k_{abs}Q}{k_eW}.
+\]
+\[
+\frac{dS}{dt}=\rho\frac{D^n}{K_D^n + D^n}(1-S)-\mu_SS\Leftrightarrow S^*=\frac{\rho D^n}{\rho D^n + \mu_S(K_D^n+D^n)}
+\]
+\[
+\Rightarrow N_S : S^*= \frac{\rho D^n}{\rho D^n + \mu_S(K_D^n+D^n)}
 \]
 
-If
-
+Le seul équilibre existant est donc :
 \[
-f'(X^*)<0,
+Q^*=0,
+\qquad
+D^*=0,
+\qquad
+S^*=0,
 \]
 
-the equilibrium is locally stable.
+Ainsi, le système n'est à l'équilibre que lorsque le système revient à l'état du régime de
+référence, c'est-à-dire, lorsque l'entièreté de la théobromine a été éliminée et que les 
+symptômes ont disparus. Cela est biologiquement cohérent puisque tant que la théobromine 
+est présente dans le corps, celui-ci cherche à l'éliminer afin que le chien se retrouve dans
+un état de santé optimal. 
 
-If
+\subsection{Stabilité}
+
+
+Calcul du Jacobien :
 
 \[
-f'(X^*)>0,
-\]
-
-the equilibrium is unstable.
-
-For a two-dimensional model, compute the Jacobian:
-
-\[
-J(X,Y)
+J(Q,D,S)
 =
 \begin{pmatrix}
-\frac{\partial f}{\partial X} & \frac{\partial f}{\partial Y}
+-k_{abs} & 0 & 0
 \\[0.4em]
-\frac{\partial g}{\partial X} & \frac{\partial g}{\partial Y}
+\frac{k_{abs}}{W} & -k_e & 0
+\\[0.4em]
+0 & \rho(1-S)nD^{n-1}K_D^n & - (\frac{\rho D^n}{D^n + K_D^n}+\mu_S)
 \end{pmatrix}.
 \]
 
-Evaluate \(J\) at equilibrium and discuss trace, determinant, or eigenvalues.
-
-\subsection{Time scales}
-
-Identify the main time scales.
-
-Examples:
+D'où
 
 \[
-\tau=\frac{1}{k},
+J(0,0,0)
+=
+\begin{pmatrix}
+-k_{abs} & 0 & 0
+\\[0.4em]
+\frac{k_{abs}}{W} & -k_e & 0
+\\[0.4em]
+0 & 0 & - \mu_S
+\end{pmatrix}.
 \]
 
-or
+Les valeurs propres sont donc : 
+\[
+\lambda_1=-k_{abs} < 0,
+\qquad
+\lambda_2=-k_e < 0,
+\qquad
+\lambda_3=- \mu_S < 0,
+\]
+
+L'équilibre est stable. En effet, les valeurs de ces paramètres sont estimées comme étant 
+positives de manière à conserver les diminutions de quantités souhaitées physiologiquement
+et dans le modèle mathématique. 
+
+\subsection{Echelles de temps}
+
+Les échelles de temps dépendent du paramètre régulant la variable principale. Ainsi :
+
 
 \[
-t_{1/2}=\frac{\ln 2}{k}.
+\tau_1=\frac{1}{k_{abs}},
+\qquad
+\tau_2=\frac{1}{k_e}
+\qquad
+\tau_3=\frac{1}{\mu_S}
 \]
 
-Interpret them biologically.
+Le temps caractéristique est le temps pour lequel une grande partie de la perturbation a été
+corrigée de façon à se rapprocher de l'équilibre. De notre cas, nous avons estimé, à l'aide
+de la bibliographie les valeurs suivantes : 
 
-\subsection{Thresholds, feedback, or bifurcations}
+\[
+k_{abs}=\frac{0,9 \times M_{choc} \times c_{type}}{W \times 3} h^{-1},
+\qquad
+k_e \backsimeq 0,04 h^{-1}
+\qquad
+\mu_S \backsimeq 0,026 h^{-1}
+\]
 
-Use this subsection only if relevant.
+Plus le temps caractéristique est court, plus le retour à l'équilibre est rapide. Ainsi, pour
+$Q(t)$, plus la masse de chocolat ingéré et la concentration en théobromine seront grandes,
+plus le retour à l'équilibre sera rapide. De même, plus la masse du chien sera faible, plus 
+le retour sera rapide. Cela est cohérent : pour un petit chien et/ou une grande dose de 
+théobromine ingérée, l'absorption dans le sang sera plus rapide. La variable caractérisant 
+la quantité de théobromine toujours présente dans le système digestif retrouve alors plus 
+rapidement son équilibre, à savoir, 0. \\
+Concernant $D(t)$ et $S(t)$, leurs temps caractéristiques ne dépendent, au vu de notre
+modèle et de nos hypothèses, d'aucun paramètres extérieurs. Ainsi, le temps caractéristique
+est plus élevé dans le cas de $S(t)$ que de $D(t)$. Cela est une nouvelle fois cohérent : 
+une fois que la théobromine a été éliminée de l'organisme, c'est-à-dire une fois que $D(t)$ vaut 0, il faut encore du temps au chien
+pour se remettre de ses symptômes, et donc que $S(t)$ revienne également à 0. 
 
-State clearly whether the project involves:
+\subsection{Seuils, retours ou bifurcation}
 
-\begin{itemize}
-    \item an operational threshold;
-    \item a dynamical threshold;
-    \item positive feedback;
-    \item negative feedback;
-    \item bistability;
-    \item hysteresis;
-    \item bifurcation;
-    \item irreversible loss.
-\end{itemize}
+Les équations précédemment énoncées démontrent une rétroaction négative. En effet, dans chacun
+des cas, l'augmentation de la variable au sein de l'équation différentielle diminue sa dérivée.
+Cette rétroaction négative peut être mathématiquement prouvée par la négativité de la fonction 
+$\frac{df(X)}{dX}$ avec $X$ une variable : 
 
-\begin{limitationbox}
-Do not claim bistability, hysteresis, Hopf bifurcation, or point of no return
-unless your equations actually support that interpretation.
-\end{limitationbox}
+\[
+\frac{df(Q)}{dQ}=-k_{abs} < 0,
+\qquad
+\frac{df(D)}{dD}=-k_{e} < 0,
+\qquad
+\frac{df(S)}{dS}=-(\frac{\rho D^n}{D^n + K_D^n}+\mu_S) < 0
+\]
 
 %==================================================
-\section{Simulation Protocol}
+\section{Protocole de simulation}
 \label{sec:simulation-protocol}
 %==================================================
 
@@ -603,14 +600,14 @@ unless your equations actually support that interpretation.
 A simulation is an experiment on the model. It must be reproducible.
 \end{guidancebox}
 
-\subsection{Parameter values}
+\subsection{Valeur des paramètres}
 
 Give the parameter set used for baseline simulations.
 
 \begin{center}
 \begin{tabular}{p{2.5cm}p{3cm}p{3cm}p{5cm}}
 \toprule
-\textbf{Parameter} & \textbf{Value} & \textbf{Unit} & \textbf{Justification} \\
+\textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
 \(k\) &  &  &  \\
 \(\alpha\) &  &  &  \\
@@ -620,7 +617,7 @@ Give the parameter set used for baseline simulations.
 \end{tabular}
 \end{center}
 
-\subsection{Initial conditions}
+\subsection{Conditions initiales}
 
 State the initial conditions:
 
@@ -634,7 +631,7 @@ Z(0)=Z_0.
 
 Explain their biological meaning.
 
-\subsection{Input protocol}
+\subsection{Protocole d'entrée}
 
 Describe any external input.
 
@@ -648,7 +645,7 @@ u_0, & 0\leq t\leq T_{\mathrm{stim}},\\
 \end{cases}
 \]
 
-\subsection{Numerical method}
+\subsection{Méthode numérique}
 
 State the software and solver used.
 
@@ -666,7 +663,7 @@ or
 The ODE system was integrated in MATLAB using \texttt{ode45}.
 \end{quote}
 
-\subsection{Simulation observables}
+\subsection{Simulation des observables}
 
 Define the quantities extracted from simulations.
 
@@ -696,32 +693,20 @@ t\geq 0:
 \]
 
 %==================================================
-\section{Results}
+\section{Résultats}
 \label{sec:results}
 %==================================================
 
-\begin{guidancebox}
-Each figure must answer a question. Do not include plots only because they look
-nice.
-\end{guidancebox}
 
-\subsection{Baseline dynamics}
+\subsection{Dynamique initiale}
 
-Present the baseline simulation.
+La dynamique initiale n'a pas directement été simulée. En effet, notre modèle s'intéresse à 
+l'impact du chocolat sur le chien. Le régime basal est donc, comme expliqué précédemment, un
+système chien n'ayant pas ingéré de chocolat. Ainsi, par définition, toutes les variables 
+sont et restent à l'état d'équilibre, à savoir 0. 
+\\
+Je sais pas si c'est ça qu'il attend...? 
 
-\begin{figure}[h]
-    \centering
-    %\includegraphics[width=0.75\textwidth]{figures/baseline_dynamics.pdf}
-    \fbox{\parbox{0.75\textwidth}{
-    \centering
-    Insert baseline trajectory figure here.
-    }}
-    \caption{Baseline dynamics of the model. The figure should show the main
-    state variables and the relevant time scale.}
-    \label{fig:baseline}
-\end{figure}
-
-Interpret the figure.
 
 Questions:
 
@@ -733,7 +718,7 @@ Questions:
     \item Does the result match the stability analysis?
 \end{itemize}
 
-\subsection{Perturbation or treatment scenario}
+\subsection{Perturbation}
 
 Present the main perturbation scenario.
 
@@ -750,7 +735,7 @@ Present the main perturbation scenario.
 
 Interpret the result.
 
-\subsection{Scenario comparison}
+\subsection{Comparaison des scénarios}
 
 Compare at least two scenarios.
 
@@ -765,7 +750,7 @@ Examples:
 \end{itemize}
 
 %==================================================
-\section{Sensitivity and Robustness Analysis}
+\section{Analyse de la sensibilité et de la robustesse}
 \label{sec:sensitivity}
 %==================================================
 
@@ -805,7 +790,7 @@ D \longmapsto X_{\max}(D),
     \label{fig:parameter-sweep}
 \end{figure}
 
-\subsection{Robustness of the main conclusion}
+\subsection{Robustesse de la conclusion principale}
 
 State whether the main conclusion is robust.
 
@@ -824,7 +809,7 @@ result should be interpreted cautiously.
 \end{quote}
 
 %==================================================
-\section{Discussion and Model Criticism}
+\section{Discussion et Critique du modèle}
 \label{sec:discussion}
 %==================================================
 
@@ -833,67 +818,101 @@ This section is not a place to repeat the results. It is where you explain what
 the model suggests and what it cannot prove.
 \end{guidancebox}
 
-\subsection{Main biological interpretation}
+\subsection{Interprétation biologique principale}
 
-Explain the biological meaning of the results.
+\underline{Conclusion clé :} Le modèle suggère que la sévérité des symptômes dus à l'ingestion de chocolat est liée à la 
+quantité de théobromine ingérée puis absorbée dans le sang, ainsi qu'à la sensibilité propre 
+du chien vis-à-vis de la molécule (par rapport au poids tu veux dire ?). Le rétablissement du chien dépend de la vitesse 
+d'élimination de la théobromine par son métabolisme. La tendance globale associe une grande 
+quantité initiale de chocolat ingérée (je dirai peut-être plutôt un fort rapport entre la quantité ingérée vis à vis du poids du chien
+même si là comme ça c'est trèèèès mal dit) avec une réaction plus forte et qui s'étend dans le 
+temps.
+\\
 
-\begin{claimbox}
-State your main claim in one or two sentences.
+\underline{Interprétation biologique détaillée :} Les résultats prouvent d'une part qu'il existe un risque avéré associé à la prise de 
+chocolat chez les chiens, pouvant induire la mort. D'après le modèle, elle surviendrait 
+pour une ingestion de …g de chocolat pour un chien de …kg. D'autre part, ils présentent une 
+grande variabilité selon le gabarit c'est-à-dire selon la taille et selon le poids du chien. 
+Par exemple, il faudrait …g de chocolat pour qu'un chien de [insérer poids d'un gros gros 
+chien] kg meure. (A voir peut-être si on l'aura pas déjà mis dans la partie résultat) Ainsi, les résultats permettent de conclure à des effets physiologiques 
+potentiellement graves avérés sur le chien mais ils permettent aussi de réaliser une 
+échelle dose/risque hypothétique. De ce fait, les résultats tendent à prouver qu'une 
+ingestion accidentelle de chocolat par un chien ne met pas sa vie en danger 
+significativement et ce, quel que soit son gabarit. Elle peut cependant atteindre des seuils 
+d'apparition des symptômes mettant l'animal dans l'inconfort. En effet, en remettant les 
+équations dans leur contexte réel, on suppose le fait que les ingestions sont accidentelles 
+(et non criminelles). Ainsi, les quantités ingérées sont faibles (une tablette de chocolat 
+pesant généralement 100g) et dépassent très rarement la dose de …g qu'il faut pour qu'un 
+chien de …kg y succombe. (compléter avec les valeurs des graphes que j'ai pas). Enfin, le 
+modèle n'intègre pas l'élimination de la théobromine par un traitement ni aucune forme 
+d'augmentation de la quantité éliminée dans l'équation. Cela limite les conclusions au cas 
+le plus grave : celui qui se ferait sans la prise en charge du chien. 
 
-Example: The model suggests that recovery time is controlled primarily by the
-clearance rate, while peak response is controlled primarily by the input
-amplitude.
-\end{claimbox}
 
-\subsection{What the model supports}
+\subsection{Ce que le modèle supporte}
 
-List the conclusions that are directly supported by your analysis and
-simulations.
+La simulation réalisée permet de déduire les conclusions suivantes :
 
 \begin{itemize}
-    \item {[Supported conclusion 1]}
-    \item {[Supported conclusion 2]}
-    \item {[Supported conclusion 3]}
+    \item {L'ingestion d'une certaine quantité de chocolat peut entraîner la mort du chien}
+    \item {Les symptômes et risques associés dépendent de la dose ingérée et du gabarit du chien}
+    \item {L'élimination naturelle estimée permet souvent d'éviter la mort mais des 
+    symptômes plus ou moins graves peuvent se manifester selon la dose initiale de chocolat 
+    et le gabarit du chien}
+    \item {Les chiens de petite taille sont plus à risque que les chiens à gros gabarit car 
+    ils atteignent facilement et rapidement ? les seuils de symptômes}
 \end{itemize}
 
-\subsection{What the model does not prove}
+\subsection{Ce que le modèle ne prouve pas}
 
 List conclusions that would be overclaims.
 
 \begin{itemize}
-    \item {[Overclaim 1]}
-    \item {[Overclaim 2]}
+    \item {Sur les doses chiffrées précises car le modèle se base encore sur des données 
+    estimées et non vérifiées par des expériences successives sur une population de chiens 
+    et sur différentes races de chiens. Le modèle devrait être soumis au réel et être 
+    alimenté par des données concrètes.}
+    \item {Sur des phénomènes “hors modèle” qui sont rares mais qui peuvent survenir et 
+    entraîner une dynamique particulière ou un pic de la survenue des symptômes par exemple}
 \end{itemize}
+
+Est-ce qu'on rajouterait pas aussi qu'on ne peut pas conclure sur les situations les plus 
+réelles en soit, à savoir le cas où on tente de soigner le chien (ex vomissement) ? 
 
 \subsection{Limitations}
 
-Discuss limitations.
-
-Possible limitations:
+Notre système possède toutefois un certain nombre de limitations, notamment dûes aux 
+hypothèses faites au départ. Les limitations relevées sont les suivantes :
 
 \begin{itemize}
-    \item simplified physiology;
-    \item missing spatial structure;
-    \item no delay;
-    \item constant parameters;
-    \item uncertain parameter values;
-    \item no individual variability;
-    \item no direct data fitting;
-    \item phenomenological variables.
+    \item Absence de données expérimentales en quantité suffisante et de données réelles à 
+    inclure dans notre modèle pour l'ajuster. Il reste fortement hypothétique.
+    \item L'absorption de la théobromine n'est pas nécessairement un phénomène constant. 
+    Il peut interagir avec d'autres dynamiques physiologiques internes dans le corps du 
+    chien. Par exemple, le chien peut être sous traitement ce qui pourrait entraîner des 
+    interactions moléculaires. Une malformation ou anomalie du chien pourrait entraîner 
+    également des absorptions différentes entre les différents compartiments physiologiques, 
+    en raison d'une activité cellulaire modifiée.
+    \item La réponse symptomatique des chiens peut aussi être non linéaire (je sais pas si c'est le bon mot, ça sous entend droite, ce qui n'est pas le cas). Les symptômes 
+    peuvent se superposer et s'inscrire dans différentes dimensions mathématiques plutôt *
+    que derrière une seule lettre “S”.
+    \item Aucun traitement n'est pris en compte, seule la réaction brute du chien est 
+    étudiée. Cela ne reflète pas la réalité. Le chien peut même parfois vomir ce qui réduit 
+    grandement la dose ingérée dès le début. 
 \end{itemize}
 
-\subsection{Possible improvements}
+\subsection{Améliorations possibles}
 
-State how the model could be improved.
-
-Examples:
+Le modèle pourrait être amélioré avec les idées suivantes :
 
 \begin{itemize}
-    \item adding a second compartment;
-    \item adding a delay;
-    \item using experimental data to estimate parameters;
-    \item adding individual variability;
-    \item testing an alternative feedback structure.
+    \item Ajouter d'autres dimensions de symptômes et les différencier selon les zones 
+    qu'ils atteignent. Il s'agirait d'un long travail mais nous pourrions par exemple 
+    différencier les graphes selon les symptômes neurologiques, cardiaques etc.
+    \item Ajouter des dynamiques de soins : élimination augmentée et plus rapide de la 
+    molécule par traitement, vomissement etc.
+    \item Soumettre le modèle à une grande quantité de données à la fois pour l'ajuster 
+    à la réalité et pour continuer de le construire. 
 \end{itemize}
 
 %==================================================
@@ -918,66 +937,45 @@ A good conclusion is precise and modest.
 Do not introduce new results here.
 
 %==================================================
-\section{AI and Software Use Statement}
+\section{Utilisation d'IA et de logiciels spécifiques}
 \label{sec:ai-software}
 %==================================================
 
-\subsection{AI use}
+\subsection{Utilisation d'IA}
 
-State how AI tools were used.
+L'Intelligence Artificielle a été utilisée pour estimer certains paramètres. L'interface
+utilisée est ChatGPT
 
-Examples:
-
-\begin{itemize}
-    \item brainstorming biological mechanisms;
-    \item identifying hidden assumptions;
-    \item checking clarity of explanations;
-    \item debugging code;
-    \item improving English formulation.
-\end{itemize}
-
-State clearly what was verified by the group.
+Les recherches suivantes ont été effectuées : 
 
 \begin{center}
 \begin{tabular}{p{2cm}p{4cm}p{5cm}p{3cm}}
 \toprule
-\textbf{Date} & \textbf{Task} & \textbf{Prompt or use} & \textbf{Group decision} \\
+\textbf{Date} & \textbf{Tâche} & \textbf{Prompt} & \textbf{Décision prise par le groupe} \\
 \midrule
- & & & \\
+ 05/06 & Déterminer une estimation de $k_{abs}$ 
+ & Comment je peux trouver les taux d'absorption et d'élimination de la théobromine chez le chien ? 
+ & Utilisation de la formule ainsi fournie dans la détermination du lien entre la demi-vie
+ et le tau d'élimination \\
  & & & \\
  & & & \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\subsection{Software use}
+\subsection{Utilisation de logiciels}
 
-State the software used.
-
-Examples:
-
+La majorité de ce projet a été réalisé sur GitHub via le logicial Visual Studio Code. \\
+Le rendu latex a également été édité sur Visual Studio Code à l'aide de logiciels d'extension :
 \begin{itemize}
-    \item Python;
-    \item MATLAB;
-    \item Jupyter Notebook;
-    \item NumPy/SciPy;
-    \item Matplotlib;
-    \item Git or shared folder.
+    \item LaTeX Workshop;
+    \item Strawberry Pearl;
+    \item MiKTeX console;
 \end{itemize}
 
-%==================================================
-\section*{Acknowledgments}
-\addcontentsline{toc}{section}{Acknowledgments}
-%==================================================
 
-Optional.
-
-Mention help received from instructors, classmates, or external sources if
-relevant.
-
-%==================================================
 \begin{thebibliography}{99}
-\addcontentsline{toc}{section}{References}
+\addcontentsline{toc}{section}{Bibliographie}
 
 \bibitem{Strogatz}
 S. H. Strogatz,
