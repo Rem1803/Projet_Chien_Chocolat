@@ -247,7 +247,16 @@ sur le modèle biologique et ses limites. \\
     \begin{itemize}
         \item {Le temps d'atteinte du seuil opérationnel d'activation des symptômes : 
         \(T{_{sym}}|S(T{_{sym}}-1)=0 \cap S(T{_{sym}})\ge 0\)}
-        \item {Le temps de rétablissement : \(T{_{ret}}|S(T{_{sym}-1})\ge 0 \cap S(T{_{sym}})=0\)}
+        \item {$
+        T_{\mathrm{recovery}}
+        =
+        \inf
+        \left\{
+        t\geq 0:
+        |S(s)-S_{\mathrm{safe}}|<\varepsilon
+        \text{ for all }s\geq t
+        \right\}.
+        $}
     \end{itemize}}
 \end{itemize}
 
@@ -1285,20 +1294,20 @@ B=\frac{A}{k_e-k{abs}}=\frac{k_{abs}Q(0)}{W(k_e-k_{abs})}
 Puisque E s'annule au cours de la précédent équation, sa valeur n'a pas d'importance. Nous 
 choisirons $E=0$. 
 Ainsi, 
+\[
+D(t)=Ce^{-k_et}+\frac{k_{abs}Q(0)}{W(k_e-k_{abs})}e^{-k_{abs}t}
+\]
+
+Puisque $D(0)=0, C+\frac{k_{abs}Q(0)}{W(k_e-k_{abs})}=0 \Rightarrow C=\frac{-k_{abs}Q(0)}{W(k_e-k_{abs})}$
+
+Ainsi, 
+\[
+D(t)=\frac{k_{abs}Q(0)}{W(k_e-k_{abs})}(e^{-k_{abs}t}-e^{-k_e}t)
+\]
 
 \section{Annexe B : Disponibilité du code}
 
-State where the code is available.
+Le code est accessible sur GitHub à l'aide du lien suivant : \url{https://github.com/Rem1803/Projet_Chien_Chocolat.git}
 
-Example:
-
-\begin{quote}
-The Python scripts and notebooks used for the simulations are included in the
-Moodle submission as supplementary files.
-\end{quote}
-
-\section{Appendix C: Additional Figures}
-
-Include additional simulations or parameter sweeps if needed.
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -652,139 +652,139 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--240
  []
 
 [3{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 7238) in paragraph at lines 264--265
+Underfull \hbox (badness 7238) in paragraph at lines 273--274
 []|\T1/lmr/m/it/10.95 (+20) Le taux d'absorption
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 264--265
+Underfull \hbox (badness 7486) in paragraph at lines 273--274
 \T1/lmr/m/it/10.95 (+20) pour-rait dépen-dre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 \T1/lmr/m/it/10.95 (+20) plusieurs fac-teurs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 \T1/lmr/m/it/10.95 (+20) comme la di-ges-tion/
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 265--266
+Underfull \hbox (badness 1406) in paragraph at lines 274--275
 []|\T1/lmr/m/it/10.95 (+20) Il n'y a pas d'intervention
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 270--271
+Underfull \hbox (badness 2318) in paragraph at lines 279--280
 []|\T1/lmr/m/it/10.95 (+20) Le taux d'élimination
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 270--271
+Underfull \hbox (badness 4048) in paragraph at lines 279--280
 \T1/lmr/m/it/10.95 (+20) peut varier chez dif-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 []|\T1/lmr/m/it/10.95 (+20) Conserver un nom-bre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 \T1/lmr/m/it/10.95 (+20) raisonnable de com-para-
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 273--274
+Underfull \hbox (badness 5460) in paragraph at lines 282--283
 []|\T1/lmr/m/it/10.95 (+20) En réal-ité, la quan-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 276--277
+Underfull \hbox (badness 1748) in paragraph at lines 285--286
 []|\T1/lmr/m/it/10.95 (+20) Les seuils de tox-i-c-ité
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 276--277
+Underfull \hbox (badness 4391) in paragraph at lines 285--286
 \T1/lmr/m/it/10.95 (+20) sont ap-prox-i-mat-ifs et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 []|\T1/lmr/m/it/10.95 (+20) L'impact d'une dose
  []
 
 
-Underfull \hbox (badness 3179) in paragraph at lines 279--280
+Underfull \hbox (badness 3179) in paragraph at lines 288--289
 \T1/lmr/m/it/10.95 (+20) temps est ig-norée de
  []
 
 [4]
-<diagramme2.PNG, id=234, 855.79726pt x 425.79076pt>
+<diagramme2.PNG, id=230, 855.79726pt x 425.79076pt>
 File: diagramme2.PNG Graphic file (type png)
 <use diagramme2.PNG>
-Package pdftex.def Info: diagramme2.PNG  used on input line 291.
+Package pdftex.def Info: diagramme2.PNG  used on input line 300.
 (pdftex.def)             Requested size: 400.31824pt x 199.16928pt.
  [5]
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 293.
+(caption)                outside box or environment on input line 302.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 293.
+(caption)                particular \caption on input line 302.
 See the caption package documentation for explanation.
 
 [6 <./diagramme2.PNG>]
 
-LaTeX Warning: Command \' invalid in math mode on input line 405.
+LaTeX Warning: Command \' invalid in math mode on input line 414.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 405.
+LaTeX Warning: Command \' invalid in math mode on input line 414.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 418.
+LaTeX Warning: Command \' invalid in math mode on input line 427.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 418.
+LaTeX Warning: Command \' invalid in math mode on input line 427.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 419.
+LaTeX Warning: Command \' invalid in math mode on input line 428.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 419.
+LaTeX Warning: Command \' invalid in math mode on input line 428.
 
 [7] [8] [9{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 627.
+(hyperref)                removing `math shift' on input line 636.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 627.
+(hyperref)                removing `subscript' on input line 636.
 
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 638.
+(hyperref)                removing `math shift' on input line 647.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 656.
+(hyperref)                removing `math shift' on input line 665.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 656.
+(hyperref)                removing `\mu' on input line 665.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 656.
+(hyperref)                removing `subscript' on input line 665.
 
 [12]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 718.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 727.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -793,227 +793,227 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 2326) in paragraph at lines 718--721
+Underfull \hbox (badness 2326) in paragraph at lines 727--730
 []\T1/lmr/m/n/10.95 (+20) Le sys-tème d'EDOs a été in-té-gré en Python en util-isant \T1/lmtt/m/n/10.95 solve_ivp \T1/lmr/m/n/10.95 (+20) de
  []
 
 [13]
-<baseline_dynamic.png, id=283, 502.2765pt x 339.669pt>
+<baseline_dynamic.png, id=279, 502.2765pt x 339.669pt>
 File: baseline_dynamic.png Graphic file (type png)
 <use baseline_dynamic.png>
-Package pdftex.def Info: baseline_dynamic.png  used on input line 761.
+Package pdftex.def Info: baseline_dynamic.png  used on input line 770.
 (pdftex.def)             Requested size: 364.19667pt x 246.30295pt.
-<symptom_dynamic.png, id=284, 516.0078pt x 339.669pt>
+<symptom_dynamic.png, id=280, 516.0078pt x 339.669pt>
 File: symptom_dynamic.png Graphic file (type png)
 <use symptom_dynamic.png>
-Package pdftex.def Info: symptom_dynamic.png  used on input line 796.
+Package pdftex.def Info: symptom_dynamic.png  used on input line 805.
 (pdftex.def)             Requested size: 364.19667pt x 239.73619pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./baseline_dynamic.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 817--820
+Underfull \hbox (badness 10000) in paragraph at lines 826--829
 
  []
 
 [15 <./symptom_dynamic.png>]
-<var_type.png, id=298, 575.2692pt x 339.669pt>
+<var_type.png, id=294, 575.2692pt x 339.669pt>
 File: var_type.png Graphic file (type png)
 <use var_type.png>
-Package pdftex.def Info: var_type.png  used on input line 827.
+Package pdftex.def Info: var_type.png  used on input line 836.
 (pdftex.def)             Requested size: 341.43307pt x 201.60541pt.
 
-Underfull \hbox (badness 1067) in paragraph at lines 838--838
+Underfull \hbox (badness 1067) in paragraph at lines 847--847
 []|\T1/lmr/bx/n/10.95 (+20) Type choco-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 847--851
+Underfull \hbox (badness 10000) in paragraph at lines 856--860
 
  []
 
 [16 <./var_type.png>]
-<low_high_exp.png, id=305, 506.6127pt x 339.669pt>
+<low_high_exp.png, id=301, 506.6127pt x 339.669pt>
 File: low_high_exp.png Graphic file (type png)
 <use low_high_exp.png>
-Package pdftex.def Info: low_high_exp.png  used on input line 859.
+Package pdftex.def Info: low_high_exp.png  used on input line 868.
 (pdftex.def)             Requested size: 341.43307pt x 228.9246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--870
+Underfull \hbox (badness 10000) in paragraph at lines 879--879
 []|\T1/lmr/bx/n/10.95 (+20) Quantité
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--885
+Underfull \hbox (badness 10000) in paragraph at lines 890--894
 
  []
 
-<Dmax_kabs.PNG, id=306, 442.65375pt x 353.52075pt>
+<Dmax_kabs.PNG, id=302, 442.65375pt x 353.52075pt>
 File: Dmax_kabs.PNG Graphic file (type png)
 <use Dmax_kabs.PNG>
-Package pdftex.def Info: Dmax_kabs.PNG  used on input line 899.
+Package pdftex.def Info: Dmax_kabs.PNG  used on input line 908.
 (pdftex.def)             Requested size: 249.38387pt x 199.16928pt.
 [17 <./low_high_exp.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 901.
+(caption)                particular \caption on input line 910.
 See the caption package documentation for explanation.
 
-<Dmax_ke.PNG, id=313, 473.97075pt x 381.22424pt>
+<Dmax_ke.PNG, id=309, 473.97075pt x 381.22424pt>
 File: Dmax_ke.PNG Graphic file (type png)
 <use Dmax_ke.PNG>
-Package pdftex.def Info: Dmax_ke.PNG  used on input line 907.
+Package pdftex.def Info: Dmax_ke.PNG  used on input line 916.
 (pdftex.def)             Requested size: 247.62335pt x 199.16928pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 909.
+(caption)                particular \caption on input line 918.
 See the caption package documentation for explanation.
 
-<Smax_Kd.PNG, id=314, 469.15276pt x 370.38374pt>
+<Smax_Kd.PNG, id=310, 469.15276pt x 370.38374pt>
 File: Smax_Kd.PNG Graphic file (type png)
 <use Smax_Kd.PNG>
-Package pdftex.def Info: Smax_Kd.PNG  used on input line 915.
+Package pdftex.def Info: Smax_Kd.PNG  used on input line 924.
 (pdftex.def)             Requested size: 252.28638pt x 199.16928pt.
 [18 <./Dmax_kabs.PNG> <./Dmax_ke.PNG>]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 917.
-See the caption package documentation for explanation.
-
-<Smax_rho.PNG, id=323, 475.17525pt x 372.1905pt>
-File: Smax_rho.PNG Graphic file (type png)
-<use Smax_rho.PNG>
-Package pdftex.def Info: Smax_rho.PNG  used on input line 924.
-(pdftex.def)             Requested size: 254.27788pt x 199.16928pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 926.
 See the caption package documentation for explanation.
 
-<Smax_mu.PNG, id=324, 534.798pt x 414.95026pt>
+<Smax_rho.PNG, id=319, 475.17525pt x 372.1905pt>
+File: Smax_rho.PNG Graphic file (type png)
+<use Smax_rho.PNG>
+Package pdftex.def Info: Smax_rho.PNG  used on input line 933.
+(pdftex.def)             Requested size: 254.27788pt x 199.16928pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 935.
+See the caption package documentation for explanation.
+
+<Smax_mu.PNG, id=320, 534.798pt x 414.95026pt>
 File: Smax_mu.PNG Graphic file (type png)
 <use Smax_mu.PNG>
-Package pdftex.def Info: Smax_mu.PNG  used on input line 934.
+Package pdftex.def Info: Smax_mu.PNG  used on input line 943.
 (pdftex.def)             Requested size: 256.70012pt x 199.16928pt.
 [19 <./Smax_Kd.PNG> <./Smax_rho.PNG>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 936.
+(caption)                particular \caption on input line 945.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1028
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1037
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1028
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1037
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1066
 
  []
 
 [20 <./Smax_mu.PNG>] [21] [22]
-Underfull \hbox (badness 3713) in paragraph at lines 1186--1187
+Underfull \hbox (badness 3713) in paragraph at lines 1195--1196
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 1189--1190
+Underfull \hbox (badness 2818) in paragraph at lines 1198--1199
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1190--1192
+Underfull \hbox (badness 10000) in paragraph at lines 1199--1201
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1190--1192
+Underfull \hbox (badness 2261) in paragraph at lines 1199--1201
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 1190--1192
+Underfull \hbox (badness 4634) in paragraph at lines 1199--1201
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1190--1192
+Underfull \hbox (badness 10000) in paragraph at lines 1199--1201
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1221
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1230
 \T1/lmtt/m/n/10.95 tox-[]infos / intoxication-[]du-[]chien-[]par-[]le-[]chocolat-[]pour-[]les-[]veterinaires / # : ~ :
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 1238--1241
+Underfull \hbox (badness 1406) in paragraph at lines 1247--1250
 []\T1/lmr/m/n/10.95 (+20) Urgences Vétéri-naires, \T1/lmr/m/it/10.95 (+20) Cal-cu-la-teur Tox-i-c-ité du choco-lat chez le Chien\T1/lmr/m/n/10.95 (+20) . [en ligne].
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1238--1241
+Underfull \hbox (badness 1259) in paragraph at lines 1247--1250
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . urgences-[]veterinaires . fr / veterinaire-[]de-[]garde /
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1246
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
 []\T1/lmr/m/n/10.95 (+20) Clinique Vétéri-naire Co-queli-cots, \T1/lmr/m/it/10.95 (+20) Mon chien a mangé du choco-lat : que
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 1243--1246
+Underfull \hbox (badness 3525) in paragraph at lines 1252--1255
 \T1/lmr/m/it/10.95 (+20) faire im-mé-di-ate-ment ?\T1/lmr/m/n/10.95 (+20) . Clin-ique Vétéri-naire Co-queli-cots [en ligne]. 15/12/2025.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1246
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . cliniqueveterinairedescoquelicots . com /
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 1243--1246
+Underfull \hbox (badness 3690) in paragraph at lines 1252--1255
 \T1/lmtt/m/n/10.95 mon-[]chien-[]a-[]mange-[]du-[]chocolat-[]-[]-[]que-[]faire-[]immediatement-[]-[] _ ad172 . html$[][] \T1/lmr/m/n/10.95 (+20) (Con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1256--1260
+Underfull \hbox (badness 10000) in paragraph at lines 1265--1269
 
  []
 
@@ -1027,20 +1027,20 @@ L3 programming layer <2026-04-28>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: A4F203F2E477DB03009D77DC32E3BD14;8898.
+(rerunfilecheck)             Checksum: 495388958EF42BDADE16DE2B78D4F7AE;8695.
  ) 
 Here is how much of TeX's memory you used:
- 17149 strings out of 467682
- 281772 string characters out of 5414700
+ 17147 strings out of 467682
+ 281752 string characters out of 5414700
  751043 words of memory out of 5000000
- 45699 multiletter control sequences out of 15000+600000
+ 45698 multiletter control sequences out of 15000+600000
  703049 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1094b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (26 pages, 1156591 bytes).
+Output written on template.pdf (26 pages, 1157234 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 43971 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 43963 words of extra memory for PDF output out of 51595 (max. 10000000)
 
