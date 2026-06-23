@@ -97,20 +97,7 @@ Coordinator & Organization, integration, deadlines & Coppélia Reynaert-Verbiese
 % Abstract
 %==================================================
 \begin{abstract}
-Write 150--200 words.
 
-Your abstract should contain:
-
-\begin{itemize}
-    \item the biological question;
-    \item the modeling hypothesis;
-    \item the type of mathematical model used;
-    \item the main result;
-    \item one important limitation.
-\end{itemize}
-
-Do not include technical details, long equations, or references in the abstract.
-\\
 Contrairement aux Hommes, la théobromine, une molécule présente principalement dans le 
 cacao, est toxique pour les chiens. L'étude menée aujourd'hui permet de comprendre comment 
 cette molécule évolue au sein de l'animal et quelles sont ses conséquences sur la santé de 
@@ -136,7 +123,7 @@ diffèrent en fonction de ces données.
 %==================================================
 
 
-\subsection{Context biologique}
+\subsection{Contexte biologique}
 
 
 La théobromine est une molécule présente dans le chocolat et connue chez l'homme pour ces effets
@@ -567,7 +554,7 @@ corrigée de façon à se rapprocher de l'équilibre. De notre cas, nous avons e
 de la bibliographie les valeurs suivantes : 
 
 \[
-k_{abs}=\backsimeq 0,5~h^{-1},
+k_{abs}=\backsimeq 0,25~h^{-1},
 \qquad
 k_e \backsimeq 0,04~h^{-1}
 \qquad
@@ -580,8 +567,9 @@ modèle et de nos hypothèses, d'aucun paramètres extérieurs. Ainsi, le temps 
 est plus élevé dans le cas de $S(t)$ que de $D(t)$ et $Q(t)$. Cela est physiologiquement cohérent : 
 une fois que la théobromine a été éliminée de l'organisme, c'est-à-dire une fois que $D(t)$ vaut 0, 
 il faut encore du temps au chien pour se remettre de ses symptômes, et donc que $S(t)$ 
-revienne également à 0. De même, puisque l'élimination de la théobromine de l'intestin est 
-uniquement due à une et non à une réaction du corps 
+revienne également à une faible valeur, puis à 0. De même, puisque l'élimination de la théobromine de l'intestin est 
+uniquement due à une absorption et non à une réaction du corps, il semble cohérent que le retour
+à l'équilibre, et donc le temps caractéristique, soit plus rapides que pour les autres variables.
 
 \subsection{Seuils, retours ou bifurcation}
 
@@ -938,7 +926,9 @@ quantité de théobromine ingérée puis absorbée dans le sang, ainsi qu'à la 
 du chien vis-à-vis de la molécule, sensibilité due à son poids. Le rétablissement du chien dépend de la vitesse 
 d'élimination de la théobromine par son métabolisme. La tendance globale associe une grande 
 quantité initiale de chocolat ingérée (rajouter : par rapport au poids de l'animal ?) avec une 
-réaction plus forte et qui s'étend dans le temps.
+réaction plus forte et qui s'étend dans le temps. La tendance globale associe une grande 
+quantité initiale de chocolat ingérée avec une forte réaction qui s'étend dans le temps. 
+La taille du chien est un paramètre clé : un chien de faible poids est plus à risque.
 \\
 
 
@@ -1008,7 +998,8 @@ hypothèses faites au départ. Les limitations relevées sont les suivantes :
     chien. Par exemple, le chien peut être sous traitement ce qui pourrait entraîner des 
     interactions moléculaires. Une malformation ou anomalie du chien pourrait entraîner 
     également des absorptions différentes entre les différents compartiments physiologiques, 
-    en raison d'une activité cellulaire modifiée.
+    en raison d'une activité cellulaire modifiée. La remarque est la même concernant 
+    l'élimination de la théobromine dans le sang.
     \item La réponse symptomatique des chiens peut aussi être non linéaire (je sais pas si c'est le bon mot, ça sous entend droite, ce qui n'est pas le cas). Les symptômes 
     peuvent se superposer et s'inscrire dans différentes dimensions mathématiques plutôt 
     que derrière une seule lettre “S”.
@@ -1032,6 +1023,9 @@ Le modèle pourrait être amélioré avec les idées suivantes :
     pas la forme mathématique réelle de la courbe d'absorption car il faudrait des données 
     temporelles (heure par heure) précises de la quantité de théobromine dans le sang de 
     plusieurs chiens.
+    \item De la même façon, transformer le taux d'élimination $k_e$ en fonction car il est 
+    actuellement estimé selon la demi-vie. Cela reste une modélisation simple, loin de la 
+    réalité.
     \item Ajouter d'autres dimensions de symptômes et les différencier selon les zones 
     qu'ils atteignent. Il s'agirait d'un long travail mais nous pourrions par exemple 
     différencier les graphes selon les symptômes neurologiques, cardiaques etc.
@@ -1046,29 +1040,14 @@ Le modèle pourrait être amélioré avec les idées suivantes :
 \label{sec:conclusion}
 %==================================================
 
-Write a short conclusion.
 
-It should answer:
-
-\begin{itemize}
-    \item What was the biological question?
-    \item What was the model?
-    \item What was the main mathematical result?
-    \item What is the main biological interpretation?
-    \item What is the main limitation?
-\end{itemize}
-
-A good conclusion is precise and modest.
-
-Do not introduce new results here.
-
-En conclusion, la modélisation des variables représentant la quantité de théobromine dans 
+\indent En conclusion, la modélisation des variables représentant la quantité de théobromine dans 
 l'intestin, le sang, et l'intensité des symptômes nous a permis une visualisation générale
 de l'évolution de la théobromine dans le temps et de son action sur les symptômes du chien.
 En particulier, cette modélisation nous a permis de comprendre dans quelles circonstances les
-différents symptômes apparaissent, dont notamment le décès de l'animal, conséquence de 
+différents symptômes apparaissent, dont notamment le décès de l'animal, qui est la conséquence de 
 l'ingestion de chocolat la plus connue dans l'imaginaire commun. \\
-Etudié physiologiquement et mathématiquement, des conclusions identiques aux deux disciplines
+\indent Etudié physiologiquement et mathématiquement, des conclusions identiques aux deux disciplines
 ont été trouvées. En effet, le système de référence étant celui d'un chien en bonne santé,
 n'ayant pas ingéré de chocolat, celui-ci ne retrouve un état d'équilibre, uniquement lorsque
 toutes les variables reviennent à 0, c'est-à-dire uniquement lorsque l'organisme est parvenu
@@ -1076,8 +1055,8 @@ toutes les variables reviennent à 0, c'est-à-dire uniquement lorsque l'organis
 en ne trouvant comme unique point d'équilibre le point (0,0,0). Cette combinaison disciplinaire
 a également été un moyen de visualiser les réactions de l'organisme au travers notamment de
 graphiques dose-réponse. \\ 
-Ainsi, ce modèle nous a appris qu'en pénétrant dans le sang, la théobromine déclenche chez
-le chien une série de réaction ayant pour but un retour à un état d'équilibre sans la 
+\indent Ainsi, ce modèle nous a appris qu'en pénétrant dans le sang, la théobromine déclenche chez
+le chien une série de réactions ayant pour but un retour à un état d'équilibre sans la 
 présence de cette molécule. Cette réponse n'est pas instantanée et permet malgré tout
 à la théobromine de déclencher des symptômes plus ou moins graves chez le chien. Toutefois,
 contrairement à ce qu'on pourrait penser, l'ingestion de théobromine, si elle reste dans des
@@ -1085,7 +1064,7 @@ quantités mesurées, ne conduit pas forcément au décès de l'animal mais plut
 de symptômes pouvant créer de l'inconfort chez ce dernier (crise d'épilpsie, vomissements...).
 Les propriétaires de chiens doivent donc rester vigilants mais ne pas céder à la panique, les 
 bons gestes réflexes pouvant assurer un retour à la normale. \\
-Cependant, le modèle reste assez simpliste et superficiel, bien qu'il permette d'obtenir 
+\indent Cependant, il est à noter que ce modèle reste assez simpliste et superficiel, bien qu'il permette d'obtenir 
 des ordres de grandeur et une première dynamique proche de la réalité “brute” du phénomène. 
 Les contours de la question biologique restent encore à cerner, en prenant notamment en 
 compte d'autres paramètres plus réalistes tels que la mise en place d'un traitement vétérinaire. 
