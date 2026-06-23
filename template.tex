@@ -717,8 +717,8 @@ Les conditions initiales représentent un chien sain juste après l'ingestion du
 
 \begin{quote}
 Le système d'EDOs a été intégré en Python en utilisant \texttt{solve\_ivp} de
-\texttt{scipy.integrate}, avec une tolérance relative \(\ldots\) et une tolérance absolue
-\(\ldots\).
+\texttt{scipy.integrate}, avec une tolérance relative de $10^{-3}$ et une tolérance absolue
+$10^{-6}$.
 \end{quote}
 
 
@@ -891,17 +891,27 @@ result should be interpreted cautiously.
 
 En utilisant la formule de la sensibilité $S_{p}^{X^*}=\frac{p}{X^*}\frac{\partial X^*}{p}$, nous obtenons :
 \\
-$S_{W}^{D^*}=\frac{W}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{k_e}\frac{-1}{W^2}=\frac{-W^2}{W^2}=-1$ \\
-$S_{k_e}^{D^*}=\frac{k_e}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{W}\frac{-1}{k_{e}^2}=\frac{-k_{e}^2}{k_{e}^2}=-1$ \\
-$S_{k_{abs}}^{D^*}=\frac{k_{abs}}{\frac{k_{abs}Q}{k_eW}}\frac{Q}{k_eW}=1$ \\
+\[S_{W}^{D^*}=\frac{W}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{k_e}\frac{-1}{W^2}=\frac{-W^2}{W^2}=-1\]\\
+\[S_{k_e}^{D^*}=\frac{k_e}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{W}\frac{-1}{k_{e}^2}=\frac{-k_{e}^2}{k_{e}^2}=-1\]\\
+\[S_{k_{abs}}^{D^*}=\frac{k_{abs}}{\frac{k_{abs}Q}{k_eW}}\frac{Q}{k_eW}=1\] \\
 et
-$S_{\mu_S}^{S^*}=\frac{\mu_S}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{-(\mu_S+\frac{\rho D^n}{K_D^n + D^n})+\mu_S}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{-\mu_S}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}$ \\
-$S_{\mu_S}^{S^*}=\frac{\rho}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{\mu_S\frac{D^n}{K_D^n + D^n}}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{1}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}$ \\
+\[S_{\mu_S}^{S^*}=\frac{\mu_S}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{-(\mu_S+\frac{\rho D^n}{K_D^n + D^n})+\mu_S}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{-\mu_S}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}\] \\
+\[S_{\rho}^{S^*}=\frac{\rho}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{\mu_S\frac{D^n}{K_D^n + D^n}}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{1}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}\] \\
+\[S_{K_D}^{S^*}=\frac{-K_D(\mu_S+ \frac{\rho D^n}{K_D^n + D^n})}{\frac{\rho D^n}{K_D^n+D^n}}\frac{\mu_S \rho D^n n K_D^{n-1}}{(K_D^n + D^n)^2 (\mu_S + \frac{\rho D^n}{K_D^n + D^n})^2}=\frac{-K_D^n \mu_S n}{(K_D^n + D^n)(\mu_S +\frac{\rho D^n}{K_D^n + D^n})}\] \\
+
+Comme expliqué précédemment, le seul équilibre du modèle est au point (0,0,0). Ainsi, puisque
+la sensibilité est calculée par rapport au point d'équilibre, nous pouvons en déduire que D 
+vaut ici 0. \\
+Ainsi, les précédents résultats deviennent : \\
+\[S_{\mu_S}^{S^*}=\frac{-\mu_S}{\mu_S}=-1, \qquad S_{\rho}^{S^*}=\frac{1}{\mu_S} \backsimeq 38,46, \qquad S_{K_D}^{S^*}=\frac{-K_D^n \mu_S n}{K_D^n \mu_S}=-n=-4\]
+
 
 D'après les résultats obtenus pour $D^*$, tous les paramètres agissent sur l'équilibre de façon
 équivalente, soit dans la même direction, soit dans des directions opposées. Cette variable ne
 dépend pas plus d'un paramètre que d'un autre donc sa définition est assez robuste et les 
-conclusions obtenues également. (?????)
+conclusions obtenues également. De plus, les $\left\vert S_{W}^{D^*} \right\vert$ valent 1 et
+sont donc relativement petites. Un changement de 1 \% chez $p$ n'entraîne qu'un changement de 
+1 \% chez $D^*$. 
 
 
 
@@ -1126,28 +1136,32 @@ INSA Lyon.
 \bibitem{Belgian Poison Center}
 Belgian Poison Center,
 \textit{Intoxication du chien au chocolat (scientifique)}.
-Belgian Poison Center [en ligne]. (s.d) Disponible sur : \url{https://www.centreantipoisons.be/tox-infos/intoxication-du-chien-par-le-chocolat-pour-les-veterinaires/#:~:text=Cin%C3%A9tique,%3A%20environ%2017%2C5%20heures}.
+Belgian Poison Center [en ligne]. (s.d) Disponible sur : \url{https://www.centreantipoisons.be/tox-infos/intoxication-du-chien-par-le-chocolat-pour-les-veterinaires/#:~:text=Cin%C3%A9tique,%3A%20environ%2017%2C5%20heures} (Consulté le 05/06/2026).
 
 \bibitem{IARC Working Group on the Evaluation of Carcinogenic Risks to Humans}
 IARC Working Group on the Evaluation of Carcinogenic Risks to Humans,
 \textit{Coffee, Tea, Mate, Methylxanthines and Methylglyoxal}.
-IARC Monographs on the Evaluation of Carcinogenic Risks to Humans [en ligne]. 1991, No. 51. Disponible sur : \url{https://www.ncbi.nlm.nih.gov/books/NBK507026/}
+IARC Monographs on the Evaluation of Carcinogenic Risks to Humans [en ligne]. 1991, No. 51. Disponible sur : \url{https://www.ncbi.nlm.nih.gov/books/NBK507026/} (Consulté le 05/06/2026).
 
 \bibitem{Finlay, Guiton}
 F. Finlay, S. Guiton,
 \textit{Chocolate poisoning}.
-MIT Press.
+BMJ [en ligne] 2005, vol. 331, p633. Disponible sur : \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC1215566/pdf/bmj33100633.pdf} (Consulté le 05/06/2026). 
 
-\bibitem{Alon}
-U. Alon,
-\textit{An Introduction to Systems Biology: Design Principles of Biological
-Circuits}.
-Chapman and Hall/CRC.
+\bibitem{Okivét Univet}
+Okivét Univet,
+\textit{Le chien et le chocolat : attention aux intoxications}.
+Okivét Univet [en ligne]. 20/11/2021. Disponible sur : \url{https://www.okivet.com/conseils/chien-chocolat/} (Consulté le 05/06/2026). 
 
-\bibitem{Saltelli}
-A. Saltelli et al.,
-\textit{Global Sensitivity Analysis: The Primer}.
-Wiley.
+\bibitem{Urgences Vétérinaires}
+Urgences Vétérinaires,
+\textit{Calculateur Toxicité du chocolat chez le Chien}.
+[en ligne]. Disponible sur : \url{https://www.urgences-veterinaires.fr/veterinaire-de-garde/calculateur-toxicite-chocolat-chien.php} (Consulté le 12/06/2026). 
+
+\bibitem{Clinique Vétérinaire Coquelicots}
+Clinique Vétérinaire Coquelicots,
+\textit{Mon chien a mangé du chocolat : que faire immédiatement ?}.
+Clinique Vétérinaire Coquelicots [en ligne]. 15/12/2025. Disponible sur : \url{https://www.cliniqueveterinairedescoquelicots.com/mon-chien-a-mange-du-chocolat---que-faire-immediatement--_ad172.html} (Consulté le 12/06/2026). 
 
 % Add project-specific references here.
 
