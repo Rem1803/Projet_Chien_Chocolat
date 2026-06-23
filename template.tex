@@ -620,7 +620,6 @@ Dans notre modèle, il n'existe aucun seuil ni bistabilité. En effet, il n'exis
 \textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
 $\mathbf{k_{abs}}$ & 0,25 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
-$\mathbf{k_{abs}}$ & 0,2 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
 $\mathbf{k_{e}}$ & 0,040 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
 $K_D$ & [20, 45, 60, 150] & $\mathrm{mg/kg}$ & Valeurs données dans le document Project Card \\
 $\mu_S$ & 0,026 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
@@ -1198,8 +1197,19 @@ Les recherches suivantes ont été effectuées :
  & Comment je peux trouver les taux d'absorption et d'élimination de la théobromine chez le chien ? 
  & Utilisation de la formule ainsi fournie dans la détermination du lien entre la demi-vie
  et le tau d'élimination \\
- & & & \\
- & & & \\
+ 08/06 & Définir les observables du modèle 
+ & Comment calculer $(D_{max}), (S_{max})$ et le temps de récupération à partir des simulations ? 
+ & Obtention et utilisation d'un code pour calculer ces valeurs\\
+ 09/06 & Construire la figure « Baseline dynamics » 
+ & Quelle figure permet de répondre aux questions : équilibre, overshoot, caractère transitoire et temps de récupération ? 
+ & Il faut tracer D en fonction de t, c'est ce qui a été fait\\
+ 10/06 & Interpréter les variables symptomatiques 
+ & Quelle est la signification biologique des variables $(S_1, S_2, S_3, S_4)$ et de leurs valeurs maximales ?
+ & Aucune, l'explication a simplement permis une meilleure compréhension\\
+ 11/06 & Choisir le scénario de perturbation
+ & Quelle figure est la plus pertinente pour illustrer un scénario de perturbation : masse ingérée, type de chocolat ou vitesse d'élimination ?
+ & La réponse était que selon lui c'était la masse ingérée et le type de chocolat qui étaient plus pertinente, 
+ donc nous avons suivi son conseil.\\
 \bottomrule
 \end{tabular}
 \end{center}
