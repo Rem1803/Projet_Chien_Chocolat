@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -750,35 +750,34 @@ LaTeX Warning: Command \' invalid in math mode on input line 428.
 
 LaTeX Warning: Command \' invalid in math mode on input line 428.
 
-[7] [8] [9{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+[7] [8] [9{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 628.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 628.
-
-[10]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 639.
+(hyperref)                removing `math shift' on input line 631.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 657.
+(hyperref)                removing `subscript' on input line 631.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 657.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 657.
+(hyperref)                removing `math shift' on input line 642.
 
 [11]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 719.
- (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 660.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 660.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 660.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 722.
+(C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -786,53 +785,48 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (9.54082pt too wide) in paragraph at lines 719--722
+Overfull \hbox (9.54082pt too wide) in paragraph at lines 722--725
 []\T1/lmr/m/n/10.95 (-20) Le sys-tème d'EDOs a été in-té-gré en Python en util-isant \T1/lmtt/m/n/10.95 solve_ivp \T1/lmr/m/n/10.95 (-20) de \T1/lmtt/m/n/10.95 scipy.integrate\T1/lmr/m/n/10.95 (-20) ,
  []
 
-[12]
-<baseline_dynamic.png, id=278, 502.2765pt x 339.669pt>
+[12] [13]
+<baseline_dynamic.png, id=283, 502.2765pt x 339.669pt>
 File: baseline_dynamic.png Graphic file (type png)
 <use baseline_dynamic.png>
-Package pdftex.def Info: baseline_dynamic.png  used on input line 762.
+Package pdftex.def Info: baseline_dynamic.png  used on input line 765.
 (pdftex.def)             Requested size: 364.19667pt x 246.30295pt.
-<var_type.png, id=279, 502.2765pt x 339.669pt>
+<var_type.png, id=284, 502.2765pt x 339.669pt>
 File: var_type.png Graphic file (type png)
 <use var_type.png>
-Package pdftex.def Info: var_type.png  used on input line 801.
+Package pdftex.def Info: var_type.png  used on input line 804.
 (pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--813
+Underfull \hbox (badness 10000) in paragraph at lines 812--816
 
  []
 
-[13 <./baseline_dynamic.png>] [14 <./var_type.png>]
-<low_high_exp.png, id=293, 502.2765pt x 339.669pt>
+[14 <./baseline_dynamic.png>] [15 <./var_type.png>]
+<low_high_exp.png, id=297, 502.2765pt x 339.669pt>
 File: low_high_exp.png Graphic file (type png)
 <use low_high_exp.png>
-Package pdftex.def Info: low_high_exp.png  used on input line 821.
+Package pdftex.def Info: low_high_exp.png  used on input line 824.
 (pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--832
+Underfull \hbox (badness 10000) in paragraph at lines 832--835
 
  []
 
-[15 <./low_high_exp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 892--894
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--895
+[16 <./low_high_exp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 895--897
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--896
+Underfull \hbox (badness 10000) in paragraph at lines 897--898
 
  []
 
@@ -842,111 +836,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 898--899
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 899--900
+Underfull \hbox (badness 10000) in paragraph at lines 901--902
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 900--901
+Underfull \hbox (badness 10000) in paragraph at lines 902--903
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--906
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 930--940
+Underfull \hbox (badness 10000) in paragraph at lines 903--904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 930--940
+Underfull \hbox (badness 10000) in paragraph at lines 905--909
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 933--943
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 942--962
+Underfull \hbox (badness 10000) in paragraph at lines 933--943
 
  []
 
-[17] [18] [19]
-Underfull \hbox (badness 3713) in paragraph at lines 1105--1106
+
+Underfull \hbox (badness 10000) in paragraph at lines 945--965
+
+ []
+
+[18] [19] [20]
+Underfull \hbox (badness 3713) in paragraph at lines 1108--1109
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 1108--1109
+Underfull \hbox (badness 2818) in paragraph at lines 1111--1112
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1112
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1112
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1111
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1114
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1109--1111
+Underfull \hbox (badness 2261) in paragraph at lines 1112--1114
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 1109--1111
+Underfull \hbox (badness 4634) in paragraph at lines 1112--1114
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1111
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1114
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 1137--1140
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1140--1143
 \T1/lmtt/m/n/10.95 tox-[]infos / intoxication-[]du-[]chien-[]par-[]le-[]chocolat-[]pour-[]les-[]veterinaires / # : ~ :
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 1157--1160
+Underfull \hbox (badness 1406) in paragraph at lines 1160--1163
 []\T1/lmr/m/n/10.95 (+20) Urgences Vétéri-naires, \T1/lmr/m/it/10.95 (+20) Cal-cu-la-teur Tox-i-c-ité du choco-lat chez le Chien\T1/lmr/m/n/10.95 (+20) . [en ligne].
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1157--1160
+Underfull \hbox (badness 1259) in paragraph at lines 1160--1163
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . urgences-[]veterinaires . fr / veterinaire-[]de-[]garde /
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 1162--1165
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1168
 []\T1/lmr/m/n/10.95 (+20) Clinique Vétéri-naire Co-queli-cots, \T1/lmr/m/it/10.95 (+20) Mon chien a mangé du choco-lat : que
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 1162--1165
+Underfull \hbox (badness 3525) in paragraph at lines 1165--1168
 \T1/lmr/m/it/10.95 (+20) faire im-mé-di-ate-ment ?\T1/lmr/m/n/10.95 (+20) . Clin-ique Vétéri-naire Co-queli-cots [en ligne]. 15/12/2025.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1162--1165
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1168
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . cliniqueveterinairedescoquelicots . com /
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 1162--1165
+Underfull \hbox (badness 3690) in paragraph at lines 1165--1168
 \T1/lmtt/m/n/10.95 mon-[]chien-[]a-[]mange-[]du-[]chocolat-[]-[]-[]que-[]faire-[]immediatement-[]-[] _ ad172 . html$[][] \T1/lmr/m/n/10.95 (+20) (Con-
  []
 
-[22] (template.aux)
+[23] (template.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -959,17 +958,17 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 900EC831CFA25EBFC435698B0BE907B5;8886.
  ) 
 Here is how much of TeX's memory you used:
- 17109 strings out of 467682
- 281076 string characters out of 5414700
+ 17110 strings out of 467682
+ 281083 string characters out of 5414700
  751164 words of memory out of 5000000
  45662 multiletter control sequences out of 15000+600000
  703674 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1094b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (22 pages, 601500 bytes).
+Output written on template.pdf (23 pages, 602398 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
  45989 words of extra memory for PDF output out of 51595 (max. 10000000)
 
