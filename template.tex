@@ -280,7 +280,7 @@ comme la digestion/ aliments dans l'intestin, le poids, la race...} \\
 & \emph{Ne représente pas forcément une situation réelle} \\
 \emph{Le taux d'élimination est constant (et le même chez tous les chiens)} 
 & \emph{Pour simplifier le modèle} 
-& \emph{Le taux d'élimination peut varier chez différents types de chien. (poids ?)} \\
+& \emph{Le taux d'élimination peut varier chez différents types de chien. (en fonction du poids par exemple)} \\
 \emph{La quantité de théobromine est la même pour chaque type de chocolat, indépendemment de la marque} 
 & \emph{Conserver un nombre raisonnable de comparaisons} 
 & \emph{En réalité, la quantité de théobromine peut varier selon la marque du chocolat} \\
@@ -612,15 +612,15 @@ $\frac{df(X)}{dX}$ avec $X$ une variable :
 \toprule
 \textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
-$\mathbf{k_{abs}}$ & 0,5 & $\mathrm{h^{-1}}$ & valeur trouvée "à la main" en lançant plusieurs simulations, permettant de mieux observer la dynamique du modèle \\
-$\mathbf{k_{e}}$ & 0,040 & $\mathrm{h^{-1}}$ & valeur calculée (voir ci-dessous) \\
-$K_D$ & [20, 45, 60, 150] & $\mathrm{mg/kg}$ & valeurs données dans la project card \\
-$\mu_S$ & 0,026 & $\mathrm{h^{-1}}$ & valeur calculée (voir ci-dessous) \\
-$\rho$ & 0,4 & $\mathrm{h^{-1}}$ & valeur trouvée "à la main" en lançant plusieurs simulations, permettant d'obtenir des symptômes visibles \\
-$n$ & 4 & / & valeur calculée (voir ci-dessous) \\
-$M_{choc}$ & 200 & g & valeur trouvée "à la main" en lançant plusieurs simulations, permettant de mieux observer la dynamique du modèle \\
-$c_{type}$ & 9,75 & $\mathrm{mg/g}$ & correspond au chocolat noir qui est le plus toxique donc les réponses sont plus observables \\
-$W$ & [15, 40, 60] & kg & poids correspondant à un chien de petite, moyenne et grande taille \\
+$\mathbf{k_{abs}}$ & 0,5 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
+$\mathbf{k_{e}}$ & 0,040 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
+$K_D$ & [20, 45, 60, 150] & $\mathrm{mg/kg}$ & Valeurs données dans le document Project Card \\
+$\mu_S$ & 0,026 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
+$\rho$ & 0,4 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à obtenir des symptômes visibles tout en respectant les ordres de grandeurs réelles \\
+$n$ & 4 & / & Valeur calculée (voir ci-dessous) \\
+$M_{choc}$ & 200 & g & Valeur trouvée "à la main" en lançant plusieurs simulations, e façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
+$c_{type}$ & 9,75 & $\mathrm{mg/g}$ & Correspond au chocolat noir, qui est le plus toxique, donc avec des réponses plus observables \\
+$W$ & [15, 40, 60] & kg & Poids correspondant à un chien de petite, moyenne et grande taille \\
 \bottomrule
 \end{tabularx}
 \end{center}
@@ -779,16 +779,16 @@ $60\ \text{kg}$ & $24{,}1\ \text{mg/kg}$ & $14\ \text{h}$ \\
 \end{tabular}
 \end{center}
 
-Questions:
+\underline{Questions :}
 
 \begin{itemize}
-    \item Does the system approach equilibrium? 
-    \newline Les courbes décroissent progressivement vers l'équilibre D*=0, sans l'atteindre exactement sur l'intervalle simulé.
-    \item Is the response transient or persistent?
+    \item Est-ce que le système approche l'équilibre ?  
+    \newline Les courbes décroissent progressivement vers l'équilibre $D^*=0$, sans l'atteindre exactement sur l'intervalle simulé.
+    \item Est-ce que la réponse est transitoire ou constante ? 
     \newline La réponse est transitoire puisque la concentration augmente avant de diminuer et de revenir proche de 0.
-    \item Is there overshoot?
+    \item Y a-t-il un dépassement ?
     \newline Il y a un dépassement puisque la concentration atteint un maximum avant de diminuer.
-    \item Does the result match the stability analysis?
+    \item Est-ce que le résultat correspond à l'analyse de stabilité ?
     \newline Oui, le système revient à l'état d'équilibre, ce qui correspond à l'analyse de stabilité.
 \end{itemize}
 
@@ -806,7 +806,8 @@ Questions:
     \label{fig:perturbation}
 \end{figure}
 
-Interprétation:
+\underline{Interprétation :}
+\\
 \newline On observe que la concentration de théobromine dans le sang est bien plus élevée pour le chocolat noir que pour le chocolat au lait, ce qui est cohérent avec la concentration en théobromine plus élevée dans le chocolat noir. De plus, le temps de récupération est plus long pour le chocolat noir que pour le chocolat au lait, ce qui est également cohérent avec la toxicité plus élevée du chocolat noir.
 \newline Quant au chocolat blanc, la conentration de théobromine dans le sang est trop proche de 0 pour être visible sur la figure, ce qui est cohérent avec la faible concentration en théobromine dans le chocolat blanc.
 
@@ -825,7 +826,8 @@ Interprétation:
     \label{fig:perturbation}
 \end{figure}
 
-Interprétation :
+\underline{Interprétation :}
+\\
 \newline On observe que plus la quantité de chocolat ingérée est importante, plus la concentration de théobromine dans le sang est élevée et plus le temps de récupération est long. Cela est cohérent avec l'idée que plus la dose ingérée est importante, plus les symptômes sont sévères et durables.
 
 %==================================================
@@ -915,21 +917,26 @@ the model suggests and what it cannot prove.
 
 \subsection{Interprétation biologique principale}
 
-\underline{Conclusion clé :} Le modèle suggère que la sévérité des symptômes dus à l'ingestion de chocolat est liée à la 
+\underline{Conclusion clé :} 
+\\
+\\
+Le modèle suggère que la sévérité des symptômes dus à l'ingestion de chocolat est liée à la 
 quantité de théobromine ingérée puis absorbée dans le sang, ainsi qu'à la sensibilité propre 
-du chien vis-à-vis de la molécule (par rapport au poids tu veux dire ?). Le rétablissement du chien dépend de la vitesse 
+du chien vis-à-vis de la molécule, sensibilité due à son poids. Le rétablissement du chien dépend de la vitesse 
 d'élimination de la théobromine par son métabolisme. La tendance globale associe une grande 
-quantité initiale de chocolat ingérée (je dirai peut-être plutôt un fort rapport entre la quantité ingérée vis à vis du poids du chien
-même si là comme ça c'est trèèèès mal dit) avec une réaction plus forte et qui s'étend dans le 
-temps.
+quantité initiale de chocolat ingérée (rajouter : par rapport au poids de l'animal ?) avec une 
+réaction plus forte et qui s'étend dans le temps.
 \\
 
-\underline{Interprétation biologique détaillée :} Les résultats prouvent d'une part qu'il existe un risque avéré associé à la prise de 
+
+\underline{Interprétation biologique détaillée :} 
+\\
+\\ Les résultats prouvent d'une part qu'il existe un risque avéré associé à la prise de 
 chocolat chez les chiens, pouvant induire la mort. D'après le modèle, elle surviendrait 
-pour une ingestion de …g de chocolat pour un chien de …kg. D'autre part, ils présentent une 
+pour une ingestion de 500g de chocolat noir pour un chien de 15kg. D'autre part, ils présentent une 
 grande variabilité selon le gabarit c'est-à-dire selon la taille et selon le poids du chien. 
-Par exemple, il faudrait …g de chocolat pour qu'un chien de [insérer poids d'un gros gros 
-chien] kg meure. (A voir peut-être si on l'aura pas déjà mis dans la partie résultat) Ainsi, les résultats permettent de conclure à des effets physiologiques 
+Par exemple, on imagine qu'il faudrait plusieurs kg de chocolat pour qu'un chien de 60kg atteigne la dose létale (A voir peut-être si on l'aura pas déjà mis dans la partie résultat) 
+Ainsi, les résultats permettent de conclure à des effets physiologiques 
 potentiellement graves avérés sur le chien mais ils permettent aussi de réaliser une 
 échelle dose/risque hypothétique. De ce fait, les résultats tendent à prouver qu'une 
 ingestion accidentelle de chocolat par un chien ne met pas sa vie en danger 
@@ -937,8 +944,8 @@ significativement et ce, quel que soit son gabarit. Elle peut cependant atteindr
 d'apparition des symptômes mettant l'animal dans l'inconfort. En effet, en remettant les 
 équations dans leur contexte réel, on suppose le fait que les ingestions sont accidentelles 
 (et non criminelles). Ainsi, les quantités ingérées sont faibles (une tablette de chocolat 
-pesant généralement 100g) et dépassent très rarement la dose de …g qu'il faut pour qu'un 
-chien de …kg y succombe. (compléter avec les valeurs des graphes que j'ai pas). Enfin, le 
+pesant généralement 100g) et dépassent très rarement la dose nécessaire pour atteindre le 
+seuil létal. (compléter avec les valeurs des graphes que j'ai pas). Enfin, le 
 modèle n'intègre pas l'élimination de la théobromine par un traitement ni aucune forme 
 d'augmentation de la quantité éliminée dans l'équation. Cela limite les conclusions au cas 
 le plus grave : celui qui se ferait sans la prise en charge du chien. 
@@ -954,13 +961,14 @@ La simulation réalisée permet de déduire les conclusions suivantes :
     \item {L'élimination naturelle estimée permet souvent d'éviter la mort mais des 
     symptômes plus ou moins graves peuvent se manifester selon la dose initiale de chocolat 
     et le gabarit du chien}
-    \item {Les chiens de petite taille sont plus à risque que les chiens à gros gabarit car 
-    ils atteignent facilement et rapidement ? les seuils de symptômes}
+    \item {Les chiens de petite taille sont plus à risque que les chiens à gros gabarit. La 
+    théobromine est rapidement à forte concentration dans leur sang et ils atteignent 
+    facilement les seuils de symptômes.}
 \end{itemize}
 
 \subsection{Ce que le modèle ne prouve pas}
 
-List conclusions that would be overclaims.
+Avec ce modèle nous ne pouvons pas conclure :
 
 \begin{itemize}
     \item {Sur les doses chiffrées précises car le modèle se base encore sur des données 
@@ -989,7 +997,7 @@ hypothèses faites au départ. Les limitations relevées sont les suivantes :
     également des absorptions différentes entre les différents compartiments physiologiques, 
     en raison d'une activité cellulaire modifiée.
     \item La réponse symptomatique des chiens peut aussi être non linéaire (je sais pas si c'est le bon mot, ça sous entend droite, ce qui n'est pas le cas). Les symptômes 
-    peuvent se superposer et s'inscrire dans différentes dimensions mathématiques plutôt *
+    peuvent se superposer et s'inscrire dans différentes dimensions mathématiques plutôt 
     que derrière une seule lettre “S”.
     \item Aucun traitement n'est pris en compte, seule la réaction brute du chien est 
     étudiée. Cela ne reflète pas la réalité. Le chien peut même parfois vomir ce qui réduit 
@@ -1001,6 +1009,16 @@ hypothèses faites au départ. Les limitations relevées sont les suivantes :
 Le modèle pourrait être amélioré avec les idées suivantes :
 
 \begin{itemize}
+    \item Transformer le $k_{abs}$, actuellement constant, en fonction à part entière. L'objectif 
+    étant de modéliser une absorption variable ne suivant pas une tendance prédéfinie, mais 
+    plutôt une tendance adaptée à certaines caractéritsiques du chien. 
+    A l'heure actuelle, il est possible, grâce à al bibliographie, de connaître le moment 
+    où la concentration de théobromine est maximale dans le sang (pic plasmatique autour des 
+    10 h après ingestion). Cependant, rien ne garantit par exemple la présence (l'absence plutôt ?) d'un premier pic, 
+    plus faible, d'absorption au début de l'ingestion de chocolat. Nous ne connaissons 
+    pas la forme mathématique réelle de la courbe d'absorption car il faudrait des données 
+    temporelles (heure par heure) précises de la quantité de théobromine dans le sang de 
+    plusieurs chiens.
     \item Ajouter d'autres dimensions de symptômes et les différencier selon les zones 
     qu'ils atteignent. Il s'agirait d'un long travail mais nous pourrions par exemple 
     différencier les graphes selon les symptômes neurologiques, cardiaques etc.
@@ -1100,25 +1118,24 @@ Le rendu latex a également été édité sur Visual Studio Code à l'aide de lo
 \begin{thebibliography}{99}
 \addcontentsline{toc}{section}{Bibliographie}
 
-\bibitem{Strogatz}
-S. H. Strogatz,
-\textit{Nonlinear Dynamics and Chaos: With Applications to Physics, Biology,
-Chemistry, and Engineering}.
-CRC Press.
+\bibitem{Trujillo}
+L. Trujillo,
+\textit{Project Cards}.
+INSA Lyon.
 
-\bibitem{EdelsteinKeshet}
-L. Edelstein-Keshet,
-\textit{Mathematical Models in Biology}.
-SIAM Classics in Applied Mathematics.
+\bibitem{Belgian Poison Center}
+Belgian Poison Center,
+\textit{Intoxication du chien au chocolat (scientifique)}.
+Belgian Poison Center [en ligne]. (s.d) Disponible sur : \url{https://www.centreantipoisons.be/tox-infos/intoxication-du-chien-par-le-chocolat-pour-les-veterinaires/#:~:text=Cin%C3%A9tique,%3A%20environ%2017%2C5%20heures}.
 
-\bibitem{Murray}
-J. D. Murray,
-\textit{Mathematical Biology I: An Introduction}.
-Springer.
+\bibitem{IARC Working Group on the Evaluation of Carcinogenic Risks to Humans}
+IARC Working Group on the Evaluation of Carcinogenic Risks to Humans,
+\textit{Coffee, Tea, Mate, Methylxanthines and Methylglyoxal}.
+IARC Monographs on the Evaluation of Carcinogenic Risks to Humans [en ligne]. 1991, No. 51. Disponible sur : \url{https://www.ncbi.nlm.nih.gov/books/NBK507026/}
 
-\bibitem{Ingalls}
-B. P. Ingalls,
-\textit{Mathematical Modeling in Systems Biology: An Introduction}.
+\bibitem{Finlay, Guiton}
+F. Finlay, S. Guiton,
+\textit{Chocolate poisoning}.
 MIT Press.
 
 \bibitem{Alon}
