@@ -2,7 +2,13 @@
 
 ## Objectif
 
-Ce dépôt contient le notebook `Modèle.ipynb` qui simule la dynamique de la théobromine chez le chien et l'activation des symptômes après ingestion de chocolat.
+Ce dépôt contient des notebooks qui simulent et analysent la dynamique de la théobromine chez le chien après ingestion de chocolat.
+
+## Fichiers du projet
+
+- **`Modèle.ipynb`** : Simulation du modèle mathématique. Contient la définition des équations différentielles, les conditions initiales et les simulations de scénarios (variations de poids, quantité et type de chocolat).
+
+- **`Sensibilité_Robustesse.ipynb`** : Analyse de sensibilité et robustesse du modèle. Évalue l'impact de la variation des paramètres clés sur les observables (Dmax, Smax, temps de récupération).
 
 ## Prérequis
 
@@ -19,7 +25,9 @@ python -m pip install --upgrade pip
 python -m pip install numpy scipy matplotlib jupyter
 ```
 
-## Exécution du notebook
+## Exécution des notebooks
+
+### Modèle.ipynb
 
 Option 1 : avec Jupyter Notebook
 
@@ -35,7 +43,12 @@ Option 2 : avec VS Code
 3. Choisir un interpréteur Python avec les paquets installés.
 4. Exécuter les cellules du notebook.
 
+### Sensibilité_Robustesse.ipynb
+
+Même procédure que pour `Modèle.ipynb`, en remplaçant le nom du fichier.
+
 ## Notes
-.
-- Le notebook contient la définition du modèle, les simulations et les figures correspondantes.
+
+- `Modèle.ipynb` contient la définition du modèle, les simulations et les figures correspondantes.
+- `Sensibilité_Robustesse.ipynb` analyse comment les résultats changent selon les paramètres du modèle.
 
