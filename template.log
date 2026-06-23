@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 17:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 18:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -151,6 +151,37 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@dimlist=\toks22
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen163
+\captionmargin=\dimen164
+\caption@leftmargin=\dimen165
+\caption@rightmargin=\dimen166
+\caption@width=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count292
+\c@continuedfloat=\count293
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip52
@@ -161,21 +192,21 @@ Package: amstext 2024/11/17 v2.01 AMS text
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
-\ex@=\dimen161
+\ex@=\dimen171
 )) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen162
+\pmbraise@=\dimen172
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count292
+\inf@bad=\count294
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count293
-\leftroot@=\count294
+\uproot@=\count295
+\leftroot@=\count296
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count295
-\DOTSCASE@=\count296
+\classnum@=\count297
+\DOTSCASE@=\count298
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -185,30 +216,30 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen163
+\big@size=\dimen173
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count297
+\macc@depth=\count299
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count298
+\c@MaxMatrixCols=\count300
 \dotsspace@=\muskip17
-\c@parentequation=\count299
-\dspbrk@lvl=\count300
+\c@parentequation=\count301
+\dspbrk@lvl=\count302
 \tag@help=\toks24
-\row@=\count301
-\column@=\count302
-\maxfields@=\count303
+\row@=\count303
+\column@=\count304
+\maxfields@=\count305
 \andhelp@=\toks25
-\eqnshift@=\dimen164
-\alignsep@=\dimen165
-\tagshift@=\dimen166
-\tagwidth@=\dimen167
-\totwidth@=\dimen168
-\lineht@=\dimen169
+\eqnshift@=\dimen174
+\alignsep@=\dimen175
+\tagshift@=\dimen176
+\tagwidth@=\dimen177
+\totwidth@=\dimen178
+\lineht@=\dimen179
 \@envbody=\toks26
 \multlinegap=\skip53
 \multlinetaggap=\skip54
@@ -228,69 +259,54 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count304
-\calc@Bcount=\count305
-\calc@Adimen=\dimen170
-\calc@Bdimen=\dimen171
+\calc@Acount=\count306
+\calc@Bcount=\count307
+\calc@Adimen=\dimen180
+\calc@Bdimen=\dimen181
 \calc@Askip=\skip55
 \calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count306
+\calc@Ccount=\count308
 \calc@Cskip=\skip57
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count307
-\l_MT_multwidth_dim=\dimen172
+\g_MT_multlinerow_int=\count309
+\l_MT_multwidth_dim=\dimen182
 \origjot=\skip58
-\l_MT_shortvdotswithinadjustabove_dim=\dimen173
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen174
-\l_MT_above_intertext_sep=\dimen175
-\l_MT_below_intertext_sep=\dimen176
-\l_MT_above_shortintertext_sep=\dimen177
-\l_MT_below_shortintertext_sep=\dimen178
+\l_MT_shortvdotswithinadjustabove_dim=\dimen183
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen184
+\l_MT_above_intertext_sep=\dimen185
+\l_MT_below_intertext_sep=\dimen186
+\l_MT_above_shortintertext_sep=\dimen187
+\l_MT_below_shortintertext_sep=\dimen188
 \xmathstrut@box=\box56
-\xmathstrut@dim=\dimen179
-) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen180
-\Gin@req@width=\dimen181
+\xmathstrut@dim=\dimen189
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen182
-\lightrulewidth=\dimen183
-\cmidrulewidth=\dimen184
-\belowrulesep=\dimen185
-\belowbottomsep=\dimen186
-\aboverulesep=\dimen187
-\abovetopsep=\dimen188
-\cmidrulesep=\dimen189
-\cmidrulekern=\dimen190
-\defaultaddspace=\dimen191
-\@cmidla=\count308
-\@cmidlb=\count309
-\@aboverulesep=\dimen192
-\@belowrulesep=\dimen193
-\@thisruleclass=\count310
-\@lastruleclass=\count311
-\@thisrulewidth=\dimen194
+\heavyrulewidth=\dimen190
+\lightrulewidth=\dimen191
+\cmidrulewidth=\dimen192
+\belowrulesep=\dimen193
+\belowbottomsep=\dimen194
+\aboverulesep=\dimen195
+\abovetopsep=\dimen196
+\cmidrulesep=\dimen197
+\cmidrulekern=\dimen198
+\defaultaddspace=\dimen199
+\@cmidla=\count310
+\@cmidlb=\count311
+\@aboverulesep=\dimen256
+\@belowrulesep=\dimen257
+\@thisruleclass=\count312
+\@lastruleclass=\count313
+\@thisrulewidth=\dimen258
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen195
+\col@sep=\dimen259
 \ar@mcellbox=\box57
-\extrarowheight=\dimen196
+\extrarowheight=\dimen260
 \NC@list=\toks28
 \extratabsurround=\skip59
 \backup@length=\skip60
@@ -298,27 +314,11 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip61
-\enit@outerparindent=\dimen197
+\enit@outerparindent=\dimen261
 \enit@toks=\toks29
 \enit@inbox=\box59
-\enit@count@id=\count312
-\enitdp@description=\count313
-) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen198
-\captionmargin=\dimen199
-\caption@leftmargin=\dimen256
-\caption@rightmargin=\dimen257
-\caption@width=\dimen258
-\caption@indent=\dimen259
-\caption@parindent=\dimen260
-\caption@hangindent=\dimen261
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count314
-\c@continuedfloat=\count315
+\enit@count@id=\count314
+\enitdp@description=\count315
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
@@ -446,8 +446,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 40.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71.
+Package hyperref Info: Option `colorlinks' set `true' on input line 42.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 73.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -463,31 +463,31 @@ LaTeX Warning: Label `fig:perturbation' multiply defined.
 )
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Info: Redefining \microtypecontext on input line 71.
-Package microtype Info: Applying patch `item' on input line 71.
-Package microtype Info: Applying patch `toc' on input line 71.
-Package microtype Info: Applying patch `eqnum' on input line 71.
-Package microtype Info: Applying patch `footnote' on input line 71.
-Package microtype Info: Applying patch `verbatim' on input line 71.
-LaTeX Info: Redefining \microtypesetup on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 73.
+Package microtype Info: Applying patch `item' on input line 73.
+Package microtype Info: Applying patch `toc' on input line 73.
+Package microtype Info: Applying patch `eqnum' on input line 73.
+Package microtype Info: Applying patch `footnote' on input line 73.
+Package microtype Info: Applying patch `verbatim' on input line 73.
+LaTeX Info: Redefining \microtypesetup on input line 73.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -557,40 +557,40 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 71.
+Package hyperref Info: Link coloring ON on input line 73.
  (template.out) (template.out)
 \@outlinefile=\write3
 \openout3 = `template.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 74.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 76.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 74.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 76.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 74.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 76.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 74.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 76.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 74.
+(Font)              <12> on input line 76.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 76.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 74.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+(Font)              <6> on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
  (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
@@ -600,124 +600,124 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 79.
+(Font)              <10.95> on input line 81.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []|\T1/lmr/m/n/10.95 (+20) Mathematics/modeling
  []
 
 
-Overfull \hbox (2.19579pt too wide) in paragraph at lines 85--85
+Overfull \hbox (2.19579pt too wide) in paragraph at lines 87--87
 []|\T1/lmr/m/n/10.95 (-20) Computation/simulation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 []|\T1/lmr/m/n/10.95 (+20) Critical as-sump-tions
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 86--86
+Underfull \hbox (badness 2809) in paragraph at lines 88--88
 []|\T1/lmr/m/n/10.95 (+20) Assumptions, lim-i-ta-tions, un-cer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 []|\T1/lmr/m/n/10.95 (+20) Communication/report
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 []|\T1/lmr/m/n/10.95 (+20) Coppélia Reynaert-
  []
 
 [1
 
 {C:/Users/clair/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 129--140
+Underfull \hbox (badness 10000) in paragraph at lines 131--142
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 172.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 174.
 (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 1052) in paragraph at lines 222--222
+Underfull \hbox (badness 1052) in paragraph at lines 224--224
 []|\T1/lmr/m/it/10.95 (+20) Fraction de théo-bromine non évac-uée di-recte-ment par
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--240
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
 
  []
 
 [3{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 7238) in paragraph at lines 264--265
+Underfull \hbox (badness 7238) in paragraph at lines 266--267
 []|\T1/lmr/m/it/10.95 (+20) Le taux d'absorption
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 264--265
+Underfull \hbox (badness 7486) in paragraph at lines 266--267
 \T1/lmr/m/it/10.95 (+20) pour-rait dépen-dre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 \T1/lmr/m/it/10.95 (+20) plusieurs fac-teurs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 \T1/lmr/m/it/10.95 (+20) comme la di-ges-tion/
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 265--266
+Underfull \hbox (badness 1406) in paragraph at lines 267--268
 []|\T1/lmr/m/it/10.95 (+20) Il n'y a pas d'intervention
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 270--271
+Underfull \hbox (badness 2318) in paragraph at lines 272--273
 []|\T1/lmr/m/it/10.95 (+20) Le taux d'élimination
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 270--271
+Underfull \hbox (badness 4048) in paragraph at lines 272--273
 \T1/lmr/m/it/10.95 (+20) peut varier chez dif-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 []|\T1/lmr/m/it/10.95 (+20) Conserver un nom-bre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 \T1/lmr/m/it/10.95 (+20) raisonnable de com-para-
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 273--274
+Underfull \hbox (badness 5460) in paragraph at lines 275--276
 []|\T1/lmr/m/it/10.95 (+20) En réal-ité, la quan-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 276--277
+Underfull \hbox (badness 1748) in paragraph at lines 278--279
 []|\T1/lmr/m/it/10.95 (+20) Les seuils de tox-i-c-ité
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 276--277
+Underfull \hbox (badness 4391) in paragraph at lines 278--279
 \T1/lmr/m/it/10.95 (+20) sont ap-prox-i-mat-ifs et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 []|\T1/lmr/m/it/10.95 (+20) L'impact d'une dose
  []
 
 
-Underfull \hbox (badness 3179) in paragraph at lines 279--280
+Underfull \hbox (badness 3179) in paragraph at lines 281--282
 \T1/lmr/m/it/10.95 (+20) temps est ig-norée de
  []
 
@@ -725,7 +725,7 @@ Underfull \hbox (badness 3179) in paragraph at lines 279--280
 <diagramme2.PNG, id=234, 855.79726pt x 425.79076pt>
 File: diagramme2.PNG Graphic file (type png)
 <use diagramme2.PNG>
-Package pdftex.def Info: diagramme2.PNG  used on input line 293.
+Package pdftex.def Info: diagramme2.PNG  used on input line 295.
 (pdftex.def)             Requested size: 364.19667pt x 181.20232pt.
 
 
@@ -733,50 +733,50 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6 <./diagramme2.PNG>]
 
-LaTeX Warning: Command \' invalid in math mode on input line 401.
+LaTeX Warning: Command \' invalid in math mode on input line 403.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 401.
+LaTeX Warning: Command \' invalid in math mode on input line 403.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 414.
+LaTeX Warning: Command \' invalid in math mode on input line 416.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 414.
+LaTeX Warning: Command \' invalid in math mode on input line 416.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 415.
+LaTeX Warning: Command \' invalid in math mode on input line 417.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 415.
+LaTeX Warning: Command \' invalid in math mode on input line 417.
 
 [7] [8] [9{C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 619.
+(hyperref)                removing `math shift' on input line 621.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 619.
+(hyperref)                removing `subscript' on input line 621.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 630.
+(hyperref)                removing `math shift' on input line 632.
 
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 648.
+(hyperref)                removing `math shift' on input line 650.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 648.
+(hyperref)                removing `\mu' on input line 650.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 648.
+(hyperref)                removing `subscript' on input line 650.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 710.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 712.
 (C:\Users\clair\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -785,7 +785,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (9.54082pt too wide) in paragraph at lines 710--713
+Overfull \hbox (9.54082pt too wide) in paragraph at lines 712--715
 []\T1/lmr/m/n/10.95 (-20) Le sys-tème d'EDOs a été in-té-gré en Python en util-isant \T1/lmtt/m/n/10.95 solve_ivp \T1/lmr/m/n/10.95 (-20) de \T1/lmtt/m/n/10.95 scipy.integrate\T1/lmr/m/n/10.95 (-20) ,
  []
 
@@ -793,19 +793,19 @@ Overfull \hbox (9.54082pt too wide) in paragraph at lines 710--713
 <baseline_dynamic.png, id=283, 502.2765pt x 339.669pt>
 File: baseline_dynamic.png Graphic file (type png)
 <use baseline_dynamic.png>
-Package pdftex.def Info: baseline_dynamic.png  used on input line 753.
+Package pdftex.def Info: baseline_dynamic.png  used on input line 755.
 (pdftex.def)             Requested size: 364.19667pt x 246.30295pt.
 <var_type.png, id=284, 502.2765pt x 339.669pt>
 File: var_type.png Graphic file (type png)
 <use var_type.png>
-Package pdftex.def Info: var_type.png  used on input line 792.
+Package pdftex.def Info: var_type.png  used on input line 794.
 (pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 800--804
+Underfull \hbox (badness 10000) in paragraph at lines 802--806
 
  []
 
@@ -813,135 +813,167 @@ Underfull \hbox (badness 10000) in paragraph at lines 800--804
 <low_high_exp.png, id=297, 502.2765pt x 339.669pt>
 File: low_high_exp.png Graphic file (type png)
 <use low_high_exp.png>
-Package pdftex.def Info: low_high_exp.png  used on input line 812.
+Package pdftex.def Info: low_high_exp.png  used on input line 814.
 (pdftex.def)             Requested size: 341.43307pt x 230.90448pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--823
+Underfull \hbox (badness 10000) in paragraph at lines 822--825
 
  []
 
-[16 <./low_high_exp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 883--885
+<Dmax_Qo.PNG, id=298, 468.5505pt x 366.77025pt>
+File: Dmax_Qo.PNG Graphic file (type png)
+<use Dmax_Qo.PNG>
+Package pdftex.def Info: Dmax_Qo.PNG  used on input line 834.
+(pdftex.def)             Requested size: 254.43625pt x 199.16928pt.
+
+Package caption Warning: \setcaptiontype
+(caption)                outside box or environment on input line 836.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 836.
+See the caption package documentation for explanation.
+
+<Dmax_kabs.PNG, id=299, 442.65375pt x 353.52075pt>
+File: Dmax_kabs.PNG Graphic file (type png)
+<use Dmax_kabs.PNG>
+Package pdftex.def Info: Dmax_kabs.PNG  used on input line 838.
+(pdftex.def)             Requested size: 249.38387pt x 199.16928pt.
+[16 <./low_high_exp.png> <./Dmax_Qo.PNG>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 840.
+See the caption package documentation for explanation.
+
+<Dmax_ke.PNG, id=308, 473.97075pt x 381.22424pt>
+File: Dmax_ke.PNG Graphic file (type png)
+<use Dmax_ke.PNG>
+Package pdftex.def Info: Dmax_ke.PNG  used on input line 842.
+(pdftex.def)             Requested size: 247.62335pt x 199.16928pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 844.
+See the caption package documentation for explanation.
+
+<Smax_Kd.PNG, id=309, 469.15276pt x 370.38374pt>
+File: Smax_Kd.PNG Graphic file (type png)
+<use Smax_Kd.PNG>
+Package pdftex.def Info: Smax_Kd.PNG  used on input line 846.
+(pdftex.def)             Requested size: 252.28638pt x 199.16928pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 848.
+See the caption package documentation for explanation.
+
+<Smax_rho.PNG, id=310, 475.17525pt x 372.1905pt>
+File: Smax_rho.PNG Graphic file (type png)
+<use Smax_rho.PNG>
+Package pdftex.def Info: Smax_rho.PNG  used on input line 850.
+(pdftex.def)             Requested size: 254.27788pt x 199.16928pt.
+[17 <./Dmax_kabs.PNG> <./Dmax_ke.PNG> <./Smax_Kd.PNG>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 852.
+See the caption package documentation for explanation.
+
+<Smax_mu.PNG, id=320, 534.798pt x 414.95026pt>
+File: Smax_mu.PNG Graphic file (type png)
+<use Smax_mu.PNG>
+Package pdftex.def Info: Smax_mu.PNG  used on input line 854.
+(pdftex.def)             Requested size: 256.70012pt x 199.16928pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 856.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--945
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 885--886
+Underfull \hbox (badness 10000) in paragraph at lines 933--945
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--887
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 889--890
+[18 <./Smax_rho.PNG> <./Smax_mu.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 947--967
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 890--891
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--892
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 893--897
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 921--933
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 921--933
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 935--955
-
- []
-
-[18] [19] [20]
-Underfull \hbox (badness 3713) in paragraph at lines 1087--1088
+[19] [20] [21]
+Underfull \hbox (badness 3713) in paragraph at lines 1099--1100
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 1090--1091
+Underfull \hbox (badness 2818) in paragraph at lines 1102--1103
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1093
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1091--1093
+Underfull \hbox (badness 2261) in paragraph at lines 1103--1105
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 1091--1093
+Underfull \hbox (badness 4634) in paragraph at lines 1103--1105
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1093
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1122
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1134
 \T1/lmtt/m/n/10.95 tox-[]infos / intoxication-[]du-[]chien-[]par-[]le-[]chocolat-[]pour-[]les-[]veterinaires / # : ~ :
  []
 
-
-Underfull \hbox (badness 1406) in paragraph at lines 1139--1142
+[22]
+Underfull \hbox (badness 1406) in paragraph at lines 1151--1154
 []\T1/lmr/m/n/10.95 (+20) Urgences Vétéri-naires, \T1/lmr/m/it/10.95 (+20) Cal-cu-la-teur Tox-i-c-ité du choco-lat chez le Chien\T1/lmr/m/n/10.95 (+20) . [en ligne].
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1139--1142
+Underfull \hbox (badness 1259) in paragraph at lines 1151--1154
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . urgences-[]veterinaires . fr / veterinaire-[]de-[]garde /
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1147
+
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1159
 []\T1/lmr/m/n/10.95 (+20) Clinique Vétéri-naire Co-queli-cots, \T1/lmr/m/it/10.95 (+20) Mon chien a mangé du choco-lat : que
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 1144--1147
+Underfull \hbox (badness 3525) in paragraph at lines 1156--1159
 \T1/lmr/m/it/10.95 (+20) faire im-mé-di-ate-ment ?\T1/lmr/m/n/10.95 (+20) . Clin-ique Vétéri-naire Co-queli-cots [en ligne]. 15/12/2025.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1147
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1159
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . cliniqueveterinairedescoquelicots . com /
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 1144--1147
+Underfull \hbox (badness 3690) in paragraph at lines 1156--1159
 \T1/lmtt/m/n/10.95 mon-[]chien-[]a-[]mange-[]du-[]chocolat-[]-[]-[]que-[]faire-[]immediatement-[]-[] _ ad172 . html$[][] \T1/lmr/m/n/10.95 (+20) (Con-
  []
 
@@ -955,20 +987,20 @@ L3 programming layer <2026-04-28>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 74D1CFA58E30DF6202E0680D82A228FE;8891.
+(rerunfilecheck)             Checksum: 7E108B3BAB68D6FCDAF03CBB83FB45E7;8891.
  ) 
 Here is how much of TeX's memory you used:
- 17108 strings out of 467682
- 281044 string characters out of 5414700
- 750164 words of memory out of 5000000
- 45660 multiletter control sequences out of 15000+600000
- 703345 words of font info for 176 fonts, out of 8000000 for 9000
+ 17150 strings out of 467682
+ 281783 string characters out of 5414700
+ 750033 words of memory out of 5000000
+ 45701 multiletter control sequences out of 15000+600000
+ 703179 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1094b,692s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (23 pages, 602550 bytes).
+ 75i,12n,79p,1094b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on template.pdf (23 pages, 1204093 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
- 43941 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 469 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 43971 words of extra memory for PDF output out of 51595 (max. 10000000)
 

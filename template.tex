@@ -12,6 +12,8 @@
 \geometry{margin=2.5cm}
 \usepackage{setspace}
 \onehalfspacing
+\usepackage{graphicx}
+\usepackage{caption}
 
 %==================================================
 % Mathematics, figures, tables
@@ -674,7 +676,7 @@ Pour \(S\) proche de \(1\), on peut approcher :
 \frac{dS}{dt} \approx -\mu_S.
 \]
 
-Si les symptômes passent d’un état maximum (\(S\approx 1\)) à un état nul
+Si les symptômes passent d'un état maximum (\(S\approx 1\)) à un état nul
 (\(S\approx 0\)) en environ \(48 - 10 = 38\) heures, alors :
 
 \[
@@ -826,83 +828,98 @@ $60\ \text{kg}$ & $24{,}1\ \text{mg/kg}$ & $14\ \text{h}$ \\
 \label{sec:sensitivity}
 %==================================================
 
-\begin{guidancebox}
-This section shows whether your conclusion depends on one arbitrary parameter
-choice or remains true across a reasonable range.
-\end{guidancebox}
-
 \subsection{Variation de paramètres}
 
-Choose one important parameter \(\lambda\) and vary it.
+\begin{center}
+\includegraphics[height=7cm]{Dmax_Qo.PNG}
+\end{center}
+\captionof{figure}{Effet de la variation de $Q(0)$ sur $D_{max}$ pour différents poids de chien.}
+\begin{center}
+\includegraphics[height=7cm]{Dmax_kabs.PNG}
+\end{center}
+\captionof{figure}{Effet de la variation de $k_{abs}$ sur $D_{max}$ pour différents poids de chien.}
+\begin{center}
+\includegraphics[height=7cm]{Dmax_ke.PNG} 
+\end{center}
+\captionof{figure}{Effet de la variation de $k_{e}$ sur $D_{max}$ pour différents poids de chien.}
+\begin{center}
+\includegraphics[height=7cm]{Smax_Kd.PNG}
+\end{center}
+\captionof{figure}{Effet de la variation de $K_D$ sur $S_{max}$ pour différents poids de chien.}
+\begin{center}
+\includegraphics[height=7cm]{Smax_rho.PNG} 
+\end{center}
+\captionof{figure}{Effet de la variation de $\rho$ sur $S_{max}$ pour différents poids de chien.}
+\begin{center}
+\includegraphics[height=7cm]{Smax_mu.PNG}
+\end{center}
+\captionof{figure}{Effet de la variation de $\mu_S$ sur $S_{max}$ pour différents poids de chien.}
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.75\textwidth]{Dmax_Qo.PNG}
+    %\fbox{\parbox{0.75\textwidth}{
+    %\centering
+    %}}
+    %\caption{Effet de la variation de $Q(0)$ sur $D_{max}$ pour différents poids de chien.}
+    %\label{fig:parameter-sweep}
+%\end{figure}
+%~
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.75\textwidth]{Dmax_kabs.PNG}
+    %\fbox{\parbox{0.75\textwidth}{
+    %\centering
+    %}}
+    %\caption{Effet de la variation de $k_{abs}$ sur $D_{max}$ pour différents poids de chien.}
+    %\label{fig:parameter-sweep}
+%\end{figure}
 
-Define an observable \(Q(\lambda)\).
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.75\textwidth]{Dmax_ke.PNG}
+    %\fbox{\parbox{0.75\textwidth}{
+    %\centering
+    %}}
+    %\caption{Effet de la variation de $k_{e}$ sur $D_{max}$ pour différents poids de chien.}
+    %\label{fig:parameter-sweep}
+%\end{figure}
 
-Examples:
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.75\textwidth]{Smax_Kd.PNG}
+    %\fbox{\parbox{0.75\textwidth}{
+    %\centering
+    %}}
+    %\caption{Effet de la variation de $K_D$ sur $S_{max}$ pour différents poids de chien.}
+    %\label{fig:parameter-sweep}
+%\end{figure}
 
-\[
-k \longmapsto T_{\mathrm{rec}}(k),
-\]
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.75\textwidth]{Smax_rho.PNG}
+    %\fbox{\parbox{0.75\textwidth}{
+    %\centering
+    %}}
+    %\caption{Effet de la variation de $\rho$ sur $S_{max}$ pour différents poids de chien.}
+    %\label{fig:parameter-sweep}
+%\end{figure}
 
-\[
-D \longmapsto X_{\max}(D),
-\]
-
-\[
-\alpha \longmapsto X(T;\alpha).
-\]
-
-\begin{figure}[h]
-    \centering
-    %\includegraphics[width=0.75\textwidth]{figures/parameter_sweep.pdf}
-    \fbox{\parbox{0.75\textwidth}{
-    \centering
-    Insert parameter sweep figure here.
-    }}
-    \caption{Effect of parameter variation on the selected observable.}
-    \label{fig:parameter-sweep}
-\end{figure}
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.75\textwidth]{Smax_mu.PNG}
+    %\fbox{\parbox{0.75\textwidth}{
+    %\centering
+    %}}
+    %\caption{Effet de la variation de $\mu_S$ sur $S_{max}$ pour différents poids de chien.}
+    %\label{fig:parameter-sweep}
+%\end{figure}
 
 \subsection{Robustesse de la conclusion principale}
 
-State whether the main conclusion is robust.
-
-Examples:
-
-\begin{quote}
-The conclusion remains valid when \(k\) varies over the interval
-\([k_{\min},k_{\max}]\).
-\end{quote}
-
-or
-
-\begin{quote}
-The conclusion depends strongly on the feedback strength \(\alpha\), so the
-result should be interpreted cautiously.
-\end{quote}
-
-En utilisant la formule de la sensibilité $S_{p}^{X^*}=\frac{p}{X^*}\frac{\partial X^*}{p}$, nous obtenons :
-\\
-\[S_{W}^{D^*}=\frac{W}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{k_e}\frac{-1}{W^2}=\frac{-W^2}{W^2}=-1\]\\
-\[S_{k_e}^{D^*}=\frac{k_e}{\frac{k_{abs}Q}{k_eW}}\frac{k_{abs}Q}{W}\frac{-1}{k_{e}^2}=\frac{-k_{e}^2}{k_{e}^2}=-1\]\\
-\[S_{k_{abs}}^{D^*}=\frac{k_{abs}}{\frac{k_{abs}Q}{k_eW}}\frac{Q}{k_eW}=1\] \\
-et
-\[S_{\mu_S}^{S^*}=\frac{\mu_S}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{-(\mu_S+\frac{\rho D^n}{K_D^n + D^n})+\mu_S}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{-\mu_S}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}\] \\
-\[S_{\rho}^{S^*}=\frac{\rho}{\frac{\frac{\rho D^n}{K_D^n+D^n}}{\mu_S+\frac{\rho D^n}{K_D^n+D^n}}}\frac{\mu_S\frac{D^n}{K_D^n + D^n}}{(\mu_S + \rho\frac{D^n}{K_D^n+D^n})^2}=\frac{1}{\mu_S + \frac{\rho D^n}{K_D^n + D^n}}\] \\
-\[S_{K_D}^{S^*}=\frac{-K_D(\mu_S+ \frac{\rho D^n}{K_D^n + D^n})}{\frac{\rho D^n}{K_D^n+D^n}}\frac{\mu_S \rho D^n n K_D^{n-1}}{(K_D^n + D^n)^2 (\mu_S + \frac{\rho D^n}{K_D^n + D^n})^2}=\frac{-K_D^n \mu_S n}{(K_D^n + D^n)(\mu_S +\frac{\rho D^n}{K_D^n + D^n})}\] \\
-
-Comme expliqué précédemment, le seul équilibre du modèle est au point (0,0,0). Ainsi, puisque
-la sensibilité est calculée par rapport au point d'équilibre, nous pouvons en déduire que D 
-vaut ici 0. \\
-Ainsi, les précédents résultats deviennent : \\
-\[S_{\mu_S}^{S^*}=\frac{-\mu_S}{\mu_S}=-1, \qquad S_{\rho}^{S^*}=\frac{1}{\mu_S} \backsimeq 38,46, \qquad S_{K_D}^{S^*}=\frac{-K_D^n \mu_S n}{K_D^n \mu_S}=-n=-4\]
-
-
-D'après les résultats obtenus pour $D^*$, tous les paramètres agissent sur l'équilibre de façon
-équivalente, soit dans la même direction, soit dans des directions opposées. Cette variable ne
-dépend pas plus d'un paramètre que d'un autre donc sa définition est assez robuste et les 
-conclusions obtenues également. De plus, les $\left\vert S_{W}^{D^*} \right\vert$ valent 1 et
-sont donc relativement petites. Un changement de 1 \% chez $p$ n'entraîne qu'un changement de 
-1 \% chez $D^*$. 
+Comme démontré précédemment, ce modèle ne possède qu'un seul point d'équilibre : (0,0,0).
+Ainsi, l'équilibre ne dépend d'aucun paramètre et n'évolue pas en fonction de leur modification. 
+C'est pour cela que le calcul de la sensibilité et la détermination de la robustesse ne sont ni
+applicables ni pertinents ici.
 
 
 
@@ -910,11 +927,6 @@ sont donc relativement petites. Un changement de 1 \% chez $p$ n'entraîne qu'un
 \section{Discussion et Critique du modèle}
 \label{sec:discussion}
 %==================================================
-
-\begin{guidancebox}
-This section is not a place to repeat the results. It is where you explain what
-the model suggests and what it cannot prove.
-\end{guidancebox}
 
 \subsection{Interprétation biologique principale}
 
