@@ -438,7 +438,15 @@ Les formules précédemment définies permettent bien de rester dans ces domaine
     \item {D'après la formule de $\frac{dQ}{dt}$, $Q(t)=Be^{-k_{abs}t}+A$ avec A et B des constantes.
     Ainsi, $Q(t)$ décroit exponentiellement à partir d'une valeur $Q_0(t) > 0$. Par définition, 
     $Q(t)\geq 0$}
-    \item {}
+    \item {D'après la formule de $\frac{dD}{dt}$ et $Q(t)=Be^{-k_{abs}t}+A$, nous pouvons déduire
+    que $D(t)=\frac{k_{abs}Q(0)}{W(k_e-k_{abs})}(e^{-k_{abs}}-e^{-k_et})$. Ainsi, $D(t)$, dont
+    la valeur initiale $D(0)=0$, puisqu'aucune théobromine n'est présente dans le sang avant 
+    absorption depuis l'intestin, croît puis décroît en suivant une exponentielle. Par définition, 
+    $D(t)\geq 0$}
+    \item {Dans la formule de $\frac{dS}{dt}$ se trouve le terme (1-S). Par définition, ce
+    terme permet de s'assurer du maintien de S entre 0 et 1. En effet, aucune valeur dépassant
+    1 ne pourra, grâce à cette soustraction, exister et les valeurs resteront postives puisque
+    $S(0)=0$ (aucun symptômes n'est présent avant l'absorption de théobromine).}
 \end{itemize}
 
 %==================================================
@@ -888,29 +896,48 @@ $S_{4\text{max}} $ & 0,24 & 0,01 & 0,00 & \text{Death Risks} \\
 \subsection{Variation de paramètres}
 
 \begin{center}
-\includegraphics[height=7cm]{Dmax_Qo.PNG}
-\end{center}
-\captionof{figure}{Effet de la variation de $Q(0)$ sur $D_{max}$ pour différents poids de chien.}
-\begin{center}
 \includegraphics[height=7cm]{Dmax_kabs.PNG}
 \end{center}
 \captionof{figure}{Effet de la variation de $k_{abs}$ sur $D_{max}$ pour différents poids de chien.}
+
+Pour un $k_{abs}$ compris entre 0 et 0,5, $D_{max}$ ne varie que très peu. Cependant, 
+au-delà de 0,5, $D_{max}$ dépend fortement de $k_{abs}$. Le système devient donc moins robuste.
+
 \begin{center}
 \includegraphics[height=7cm]{Dmax_ke.PNG} 
 \end{center}
 \captionof{figure}{Effet de la variation de $k_{e}$ sur $D_{max}$ pour différents poids de chien.}
+
+Entre 0,2 et 0,4, le système est robuste : il n'y a que peu de variation de $D_{max}$. 
+En dehors de cette plage, le système n'est plus robuste car il dépend fortement de $k_e$.
+
 \begin{center}
 \includegraphics[height=7cm]{Smax_Kd.PNG}
 \end{center}
 \captionof{figure}{Effet de la variation de $K_D$ sur $S_{max}$ pour différents poids de chien.}
+
+Ici, les $K_D$ inférieurs à 80 (pour un 
+chien de 15kg) ou à 40 (pour un chien de 40 ou 60 kg) diminuent la robustesse du système, 
+alors que ceux au dessus la renforce puisqu'il n'y a pas de variation de $S_{max}$.
+
 \begin{center}
 \includegraphics[height=7cm]{Smax_rho.PNG} 
 \end{center}
 \captionof{figure}{Effet de la variation de $\rho$ sur $S_{max}$ pour différents poids de chien.}
+
+Lorsque le poids est faible, l'impact de $\rho$ apparaît comme plus important. Le système 
+n'est pas robuste puisque $S_{max}$ varie fortement. Pour des poids plus importants (des 
+chiens de 40 ou 60 kg), $S_{max}$ est constant. L'impact de $\rho$ est restreint par l'importance
+du poids et le système sembre plus robuste.
+
 \begin{center}
 \includegraphics[height=7cm]{Smax_mu.PNG}
 \end{center}
 \captionof{figure}{Effet de la variation de $\mu_S$ sur $S_{max}$ pour différents poids de chien.}
+
+Similairement, $\mu_S$ influence beaucoup $S_{max}$ pour un chien de 15 kg, donc le système 
+n'est pas robuste. Pour des chiens de 40 ou 60 kg, l'impact est plus faible et le système plus robuste. 
+
 %\begin{figure}[h]
     %\centering
     %\includegraphics[width=0.75\textwidth]{Dmax_Qo.PNG}
