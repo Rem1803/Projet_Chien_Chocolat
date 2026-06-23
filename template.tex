@@ -110,6 +110,22 @@ Your abstract should contain:
 \end{itemize}
 
 Do not include technical details, long equations, or references in the abstract.
+\\
+Contrairement aux Hommes, la théobromine, une molécule présente principalement dans le 
+cacao, est toxique pour les chiens. L'étude menée aujourd'hui permet de comprendre comment 
+cette molécule évolue au sein de l'animal et quelles sont ses conséquences sur la santé de 
+ce dernier. Pour répondre à cette question, un modèle mathématique simple est utilisé. Il 
+est composé de 3 équations caractérisant l'évolution de la théobromine dans l'intestin, le 
+sang, et l'évolution des symptômes associés, et ce en utilisant des fonctions aux 
+comportements caractéristiques comme par exemple la courbe de Hill.  Les paramètres et 
+actions extérieurs, ainsi que les variations potentielles dues à la singularité de chaque 
+individu sont ignorés. Ce système se limite alors à une situation basale, à savoir, 
+l'observation, la qualification et la quantification de l'évolution naturelle de la 
+théobromine chez le chien. Toutefois, les résultats peuvent varier en fonction de 
+caractéristiques intrinsèques (masse de chocolat ingérée, poids de l'animal…). Ce modèle 
+nous permet alors de comparer comment les résultats et l'impact d'une ingestion de cacao 
+diffèrent en fonction de ces données.
+
 \end{abstract}
 
 %\tableofcontents
@@ -255,7 +271,7 @@ sur le modèle biologique et ses limites. \\
 \toprule
 \textbf{Hypothèse} & \textbf{Raison} & \textbf{Limites} \\
 \midrule
-\emph{Le taux d'absorption est constant (et le même chez tous les chiens) (A enlever d'après la def de kabs)} 
+\emph{Le taux d'absorption est constant (et le même chez tous les chiens)} 
 & \emph{Pour simplifier le modèle} 
 & \emph{Le taux d'absorption pourrait dépendre de plusieurs facteurs 
 comme la digestion/ aliments dans l'intestin, le poids, la race...} \\
@@ -370,32 +386,32 @@ $\mu{_S}$
 \subsection{Unités et dimensions}
 
 \[
-\frac{dQ}{dt}=\frac{masse (mg)}{temps (h)},
+\frac{dQ}{dt}=\frac{masse~(mg)}{temps~(h)},
 \]
 
 et
 
 \[
--k{_{abs}}Q=temps^{-1} (h^{-1}) \times masse (mg),
+-k{_{abs}}Q=temps^{-1}~(h^{-1}) \times masse~(mg),
 \]
 
 donc les dimensions sont cohérentes. 
 
 \[
-\frac{dD}{dt}=\frac{concentration (mg/kg)}{temps (h)}
+\frac{dD}{dt}=\frac{concentration~(mg/kg)}{temps~(h)}
 \]
 
 et 
 
 \[
-\frac{k{_{abs}}}{W}Q-k{_{e}}D=\frac{temps^{-1} (h^{-1})}{masse (kg)} \times masse (mg)-temps^{-1} (h^{-1})
-\times concentration (mg/kg),
+\frac{k{_{abs}}}{W}Q-k{_{e}}D=\frac{temps^{-1}~(h^{-1})}{masse~(kg)} \times masse~(mg)-temps^{-1}~(h^{-1})
+\times concentration~(mg/kg),
 \]
 
 Les dimensions sont cohérentes.
 
 \[
-\frac{dS}{dt}=\frac{intensité (sans~unité)}{temps (h)}.
+\frac{dS}{dt}=\frac{intensité~(sans~unité)}{temps~(h)}.
 \]
 
 et
@@ -404,12 +420,12 @@ et
 \rho\frac{D^n}{K{_D}^n + D^n}(1-S)-\mu{_S}S=
 \]
 \[
-temps^{-1} (h^{-1}) \times \frac{concentration^n (mg/kg)^n}
-{concentration^n (mg/kg)^n + concentration^n (mg/kg)^n}\times
+temps^{-1} (h^{-1}) \times \frac{concentration^n~(mg/kg)^n}
+{concentration^n~(mg/kg)^n + concentration^n~(mg/kg)^n}\times
 \]
 \[
-(1-intensité (sans~unité))-temps (h^{-1})\times 
-intensité (sans~unité).
+(1-intensité~(sans~unité))-temps~(h^{-1})\times 
+intensité~(sans~unité).
 \]
 
 \subsection{Domaine biologique}
@@ -430,15 +446,10 @@ D(t)\geq 0,
 
 Les formules précédemment définies permettent bien de rester dans ces domaines. En effet :
 \begin{itemize}
-    \item {Pour $Q(t)$, la variable décroît à partir d'un $Q_0 \geq 0$. Ainsi, $Q(t)$ est
-    positive jusqu'à atteindre 0, valeur à laquelle elle restera, d'après la formule et les hypothèses, constante.}
-    \item {Pour $D(t)$, la formule $\frac{dD}{dt}$ possède un terme croissant dépendant de 
-    $Q(t)$ et un terme décroissant dépendant de $D(t)$. Ainsi, puisque $Q(t)\geq 0$, le terme 
-    croissant est toujours positif. D'autre part, la valeur initiale de 
-    $D_0$ est fixée à 0 puisqu'il n'y a pas de théobromine dans le sang du chien au moment de
-    l'ingestion. Ainsi, la valeur de $D$ juste après la prise de chocolat ne dépend que du terme 
-    croissant et est donc positive. De plus, le terme décroissant s'annule pour $D(t)=0$. 
-    Puisque }
+    \item {D'après la formule de $\frac{dQ}{dt}$, $Q(t)=Be^{-k_{abs}t}+A$ avec A et B des constantes.
+    Ainsi, $Q(t)$ décroit exponentiellement à partir d'une valeur $Q_0(t) > 0$. Par définition, 
+    $Q(t)\geq 0$}
+    \item {}
 \end{itemize}
 
 %==================================================
@@ -556,25 +567,21 @@ corrigée de façon à se rapprocher de l'équilibre. De notre cas, nous avons e
 de la bibliographie les valeurs suivantes : 
 
 \[
-k_{abs}=\frac{0,9 \times M_{choc} \times c_{type}}{W \times 3} h^{-1},
+k_{abs}=\backsimeq 0,5~h^{-1},
 \qquad
-k_e \backsimeq 0,04 h^{-1}
+k_e \backsimeq 0,04~h^{-1}
 \qquad
-\mu_S \backsimeq 0,026 h^{-1}
+\mu_S \backsimeq 0,026~h^{-1}
 \]
 
-Plus le temps caractéristique est court, plus le retour à l'équilibre est rapide. Ainsi, pour
-$Q(t)$, plus la masse de chocolat ingéré et la concentration en théobromine seront grandes,
-plus le retour à l'équilibre sera rapide. De même, plus la masse du chien sera faible, plus 
-le retour sera rapide. Cela est cohérent : pour un petit chien et/ou une grande dose de 
-théobromine ingérée, l'absorption dans le sang sera plus rapide. La variable caractérisant 
-la quantité de théobromine toujours présente dans le système digestif retrouve alors plus 
-rapidement son équilibre, à savoir, 0. \\
-Concernant $D(t)$ et $S(t)$, leurs temps caractéristiques ne dépendent, au vu de notre
+Plus le temps caractéristique est court, plus le retour à l'équilibre est rapide.
+Les temps caractéristiques calculés ne dépendent, au vu de notre
 modèle et de nos hypothèses, d'aucun paramètres extérieurs. Ainsi, le temps caractéristique
-est plus élevé dans le cas de $S(t)$ que de $D(t)$. Cela est une nouvelle fois cohérent : 
-une fois que la théobromine a été éliminée de l'organisme, c'est-à-dire une fois que $D(t)$ vaut 0, il faut encore du temps au chien
-pour se remettre de ses symptômes, et donc que $S(t)$ revienne également à 0. 
+est plus élevé dans le cas de $S(t)$ que de $D(t)$ et $Q(t)$. Cela est physiologiquement cohérent : 
+une fois que la théobromine a été éliminée de l'organisme, c'est-à-dire une fois que $D(t)$ vaut 0, 
+il faut encore du temps au chien pour se remettre de ses symptômes, et donc que $S(t)$ 
+revienne également à 0. De même, puisque l'élimination de la théobromine de l'intestin est 
+uniquement due à une et non à une réaction du corps 
 
 \subsection{Seuils, retours ou bifurcation}
 
