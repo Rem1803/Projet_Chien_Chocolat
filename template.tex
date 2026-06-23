@@ -148,7 +148,7 @@ Cette réaction peut être observée sur plusieurs heures.
 
 \begin{quote}
 \itshape
-Quelle est l'évolution de la théobromine au cours du temmps et comment agit-elle sur la modification
+Quelle est l'évolution de la théobromine au cours du temps et comment agit-elle sur la modification
 des symptômes chez le chien ? A partir de quel seuil la dose ingérée est-elle mortelle ? 
 \end{quote}
 
@@ -605,7 +605,7 @@ Dans notre modèle, il n'existe aucun seuil ni bistabilité. En effet, il n'exis
 \toprule
 \textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
-$\mathbf{k_{abs}}$ & 0,5 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
+$\mathbf{k_{abs}}$ & 0,2 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
 $\mathbf{k_{e}}$ & 0,040 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
 $K_D$ & [20, 45, 60, 150] & $\mathrm{mg/kg}$ & Valeurs données dans le document Project Card \\
 $\mu_S$ & 0,026 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
@@ -658,7 +658,7 @@ D'après la littérature :
     \item symptômes complètement disparus : vers \(48\ \mathrm{h}\).
 \end{itemize}
 
-Nous assumons que le pic de concentration correspond à peu près au pic des symptômes.
+Nous supposons que le pic de concentration correspond à peu près au pic des symptômes.
 Dans ce cas, au voisinage du maximum, la fraction de Hill
 \(\frac{D^n}{K_D^n + D^n}\)
 tend vers \(1\). La dynamique des symptômes se simplifie alors en :
@@ -936,9 +936,8 @@ applicables ni pertinents ici.
 Le modèle suggère que la sévérité des symptômes dus à l'ingestion de chocolat est liée à la 
 quantité de théobromine ingérée puis absorbée dans le sang, ainsi qu'à la sensibilité propre 
 du chien vis-à-vis de la molécule, sensibilité due à son poids. Le rétablissement du chien dépend de la vitesse 
-d'élimination de la théobromine par son métabolisme. La tendance globale associe une grande 
-quantité initiale de chocolat ingérée (rajouter : par rapport au poids de l'animal ?) avec une 
-réaction plus forte et qui s'étend dans le temps. La tendance globale associe une grande 
+d'élimination de la théobromine par son métabolisme. \\
+La tendance globale associe une grande 
 quantité initiale de chocolat ingérée avec une forte réaction qui s'étend dans le temps. 
 La taille du chien est un paramètre clé : un chien de faible poids est plus à risque.
 \\
@@ -950,17 +949,24 @@ La taille du chien est un paramètre clé : un chien de faible poids est plus à
 chocolat chez les chiens, pouvant induire la mort. D'après le modèle, elle surviendrait 
 pour une ingestion de 500g de chocolat noir pour un chien de 15kg. D'autre part, ils présentent une 
 grande variabilité selon le gabarit c'est-à-dire selon la taille et selon le poids du chien. 
-Par exemple, on imagine qu'il faudrait plusieurs kg de chocolat pour qu'un chien de 60kg atteigne la dose létale (A voir peut-être si on l'aura pas déjà mis dans la partie résultat) 
-Ainsi, les résultats permettent de conclure à des effets physiologiques 
+Par exemple, on imagine qu'il faudrait plusieurs kg de chocolat pour qu'un chien de 60kg atteigne la dose létale. \\
+\\
+Ainsi, les résultats permettent de conclure à des effets physiologiques
 potentiellement graves avérés sur le chien mais ils permettent aussi de réaliser une 
-échelle dose/risque hypothétique. De ce fait, les résultats tendent à prouver qu'une 
+échelle dose/risque hypothétique. \\
+\\
+De ce fait, les résultats tendent à prouver qu'une 
 ingestion accidentelle de chocolat par un chien ne met pas sa vie en danger 
 significativement et ce, quel que soit son gabarit. Elle peut cependant atteindre des seuils 
-d'apparition des symptômes mettant l'animal dans l'inconfort. En effet, en remettant les 
+d'apparition des symptômes mettant l'animal dans l'inconfort. \\
+\\
+En effet, en remettant les 
 équations dans leur contexte réel, on suppose le fait que les ingestions sont accidentelles 
 (et non criminelles). Ainsi, les quantités ingérées sont faibles (une tablette de chocolat 
 pesant généralement 100g) et dépassent très rarement la dose nécessaire pour atteindre le 
-seuil létal. (compléter avec les valeurs des graphes que j'ai pas). Enfin, le 
+seuil létal. (compléter avec les valeurs des graphes que j'ai pas). \\
+\\
+Enfin, le 
 modèle n'intègre pas l'élimination de la théobromine par un traitement ni aucune forme 
 d'augmentation de la quantité éliminée dans l'équation. Cela limite les conclusions au cas 
 le plus grave : celui qui se ferait sans la prise en charge du chien. 
@@ -971,11 +977,11 @@ le plus grave : celui qui se ferait sans la prise en charge du chien.
 La simulation réalisée permet de déduire les conclusions suivantes :
 
 \begin{itemize}
-    \item {L'ingestion d'une certaine quantité de chocolat peut entraîner la mort du chien}
-    \item {Les symptômes et risques associés dépendent de la dose ingérée et du gabarit du chien}
+    \item {L'ingestion d'une certaine quantité de chocolat peut entraîner la mort du chien.}
+    \item {Les symptômes et risques associés dépendent de la dose ingérée et du gabarit du chien.}
     \item {L'élimination naturelle estimée permet souvent d'éviter la mort mais des 
     symptômes plus ou moins graves peuvent se manifester selon la dose initiale de chocolat 
-    et le gabarit du chien}
+    et le gabarit du chien.}
     \item {Les chiens de petite taille sont plus à risque que les chiens à gros gabarit. La 
     théobromine est rapidement à forte concentration dans leur sang et ils atteignent 
     facilement les seuils de symptômes.}
@@ -991,11 +997,8 @@ Avec ce modèle nous ne pouvons pas conclure :
     et sur différentes races de chiens. Le modèle devrait être soumis au réel et être 
     alimenté par des données concrètes.}
     \item {Sur des phénomènes “hors modèle” qui sont rares mais qui peuvent survenir et 
-    entraîner une dynamique particulière ou un pic de la survenue des symptômes par exemple}
+    entraîner une dynamique particulière ou un pic de la survenue des symptômes par exemple.}
 \end{itemize}
-
-Est-ce qu'on rajouterait pas aussi qu'on ne peut pas conclure sur les situations les plus 
-réelles en soit, à savoir le cas où on tente de soigner le chien (ex vomissement) ? 
 
 \subsection{Limitations}
 

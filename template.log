@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 18:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.31)  23 JUN 2026 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,92 +888,112 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--945
+Underfull \hbox (badness 10000) in paragraph at lines 933--944
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--945
+Underfull \hbox (badness 10000) in paragraph at lines 933--944
 
  []
 
 [18 <./Smax_rho.PNG> <./Smax_mu.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 947--967
+Underfull \hbox (badness 10000) in paragraph at lines 946--973
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 946--973
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 946--973
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 946--973
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 946--973
 
  []
 
 [19] [20] [21]
-Underfull \hbox (badness 3713) in paragraph at lines 1099--1100
+Underfull \hbox (badness 3713) in paragraph at lines 1102--1103
 []|\T1/lmr/bx/n/10.95 (+20) Décision prise
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 1102--1103
+Underfull \hbox (badness 2818) in paragraph at lines 1105--1106
 []|\T1/lmr/m/n/10.95 (+20) Comment je peux trou-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
 \T1/lmr/m/n/10.95 (+20) les taux d'absorption et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
 \T1/lmr/m/n/10.95 (+20) d'élimination de la théo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1108
 []|\T1/lmr/m/n/10.95 (+20) Utilisation de
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1103--1105
+Underfull \hbox (badness 2261) in paragraph at lines 1106--1108
 \T1/lmr/m/n/10.95 (+20) la for-mule ainsi
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 1103--1105
+Underfull \hbox (badness 4634) in paragraph at lines 1106--1108
 \T1/lmr/m/n/10.95 (+20) fournie dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1108
 \T1/lmr/m/n/10.95 (+20) déter-mi-na-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1131--1134
+Underfull \hbox (badness 10000) in paragraph at lines 1134--1137
 \T1/lmtt/m/n/10.95 tox-[]infos / intoxication-[]du-[]chien-[]par-[]le-[]chocolat-[]pour-[]les-[]veterinaires / # : ~ :
  []
 
 [22]
-Underfull \hbox (badness 1406) in paragraph at lines 1151--1154
+Underfull \hbox (badness 1406) in paragraph at lines 1154--1157
 []\T1/lmr/m/n/10.95 (+20) Urgences Vétéri-naires, \T1/lmr/m/it/10.95 (+20) Cal-cu-la-teur Tox-i-c-ité du choco-lat chez le Chien\T1/lmr/m/n/10.95 (+20) . [en ligne].
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1151--1154
+Underfull \hbox (badness 1259) in paragraph at lines 1154--1157
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . urgences-[]veterinaires . fr / veterinaire-[]de-[]garde /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1156--1159
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1162
 []\T1/lmr/m/n/10.95 (+20) Clinique Vétéri-naire Co-queli-cots, \T1/lmr/m/it/10.95 (+20) Mon chien a mangé du choco-lat : que
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 1156--1159
+Underfull \hbox (badness 3525) in paragraph at lines 1159--1162
 \T1/lmr/m/it/10.95 (+20) faire im-mé-di-ate-ment ?\T1/lmr/m/n/10.95 (+20) . Clin-ique Vétéri-naire Co-queli-cots [en ligne]. 15/12/2025.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1156--1159
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1162
 \T1/lmr/m/n/10.95 (+20) Disponible sur : [][]$\T1/lmtt/m/n/10.95 https : / / www . cliniqueveterinairedescoquelicots . com /
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 1156--1159
+Underfull \hbox (badness 3690) in paragraph at lines 1159--1162
 \T1/lmtt/m/n/10.95 mon-[]chien-[]a-[]mange-[]du-[]chocolat-[]-[]-[]que-[]faire-[]immediatement-[]-[] _ ad172 . html$[][] \T1/lmr/m/n/10.95 (+20) (Con-
  []
 
@@ -990,15 +1010,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 7E108B3BAB68D6FCDAF03CBB83FB45E7;8891.
  ) 
 Here is how much of TeX's memory you used:
- 17150 strings out of 467682
- 281783 string characters out of 5414700
+ 17154 strings out of 467682
+ 281825 string characters out of 5414700
  750033 words of memory out of 5000000
  45701 multiletter control sequences out of 15000+600000
- 703179 words of font info for 174 fonts, out of 8000000 for 9000
+ 703345 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1094b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/clair/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (23 pages, 1204093 bytes).
+Output written on template.pdf (23 pages, 1203740 bytes).
 PDF statistics:
  469 PDF objects out of 1000 (max. 8388607)
  93 named destinations out of 1000 (max. 500000)
