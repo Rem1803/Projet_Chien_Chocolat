@@ -615,7 +615,7 @@ Dans notre modèle, il n'existe aucun seuil ni bistabilité. En effet, il n'exis
 \toprule
 \textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
-$\mathbf{k_{abs}}$ & 0,5 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
+$\mathbf{k_{abs}}$ & 0,25 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
 $\mathbf{k_{e}}$ & 0,040 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
 $K_D$ & [20, 45, 60, 150] & $\mathrm{mg/kg}$ & Valeurs données dans le document Project Card \\
 $\mu_S$ & 0,026 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
@@ -668,7 +668,7 @@ D'après la littérature :
     \item symptômes complètement disparus : vers \(48\ \mathrm{h}\).
 \end{itemize}
 
-Nous assumons que le pic de concentration correspond à peu près au pic des symptômes.
+Nous supposons que le pic de concentration correspond à peu près au pic des symptômes.
 Dans ce cas, au voisinage du maximum, la fraction de Hill
 \(\frac{D^n}{K_D^n + D^n}\)
 tend vers \(1\). La dynamique des symptômes se simplifie alors en :
@@ -775,9 +775,9 @@ t\geq 0:
 \toprule
 \textbf{Poids chien} & $\mathbf{D_{\max}}$ & \textbf{Temps de récupération} \\
 \midrule
-$15\ \text{kg}$ & $96{,}4\ \text{mg/kg}$ & $>48\ \text{h}$ \\
-$40\ \text{kg}$ & $36{,}2\ \text{mg/kg}$ & $24\ \text{h}$ \\
-$60\ \text{kg}$ & $24{,}1\ \text{mg/kg}$ & $14\ \text{h}$ \\
+$15\ \text{kg}$ & $78{,}8\ \text{mg/kg}$ & $>48\ \text{h}$ \\
+$40\ \text{kg}$ & $29{,}6\ \text{mg/kg}$ & $24\ \text{h}$ \\
+$60\ \text{kg}$ & $19{,}7\ \text{mg/kg}$ & $8\ \text{h}$ \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -795,6 +795,33 @@ $60\ \text{kg}$ & $24{,}1\ \text{mg/kg}$ & $14\ \text{h}$ \\
     \newline Oui, le système revient à l'état d'équilibre, ce qui correspond à l'analyse de stabilité.
 \end{itemize}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{symptom_dynamic.png}
+    \fbox{\parbox{0.8\textwidth}{
+    \centering
+    }}
+    \caption{Diagramme dynamique de l'activation des symptômes sur 48 heures, avec une masse de chocolat noir ingérée de 200g par un chien de 15kg}
+    \label{fig:conceptual-diagram}
+\end{figure}
+
+\begin{center}
+\begin{tabular}{p{4cm}p{1.8cm}p{1.8cm}p{1.8cm}p{4.0cm}}
+\toprule
+\textbf{Poids chien -->} & \textbf{15 kg} & \textbf{40 kg} & \textbf{60 kg} &  \\
+\midrule
+$S_{1\text{max}} $ & 0,94 & 0,91 & 0,81 & \text{Mild Signs} \\
+$S_{2\text{max}} $ & 0,93 & 0,44 & 0,13 & \text{Cardiotoxicity} \\
+$S_{3\text{max}} $ & 0,90 & 0,19 & 0,04 & \text{Seizures} \\
+$S_{4\text{max}} $ & 0,24 & 0,01 & 0,00 & \text{Death Risks} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\underline{Interprétation :}
+\\
+\newline L’activation des symptômes suit l’évolution de la concentration en théobromine. Les symptômes légers sont les plus fortement activés, tandis que les symptômes sévères restent plus limités en raison de leurs seuils d’activation plus élevés.
+\newpage 
 
 \subsection{Perturbation}
 
@@ -805,9 +832,21 @@ $60\ \text{kg}$ & $24{,}1\ \text{mg/kg}$ & $14\ \text{h}$ \\
     \fbox{\parbox{0.75\textwidth}{
     \centering
     }}
-    \caption{Effets du type de chocolat ingéré sur la dynamique du modèle.}
+    \caption{Effets du type des 200g de chocolat ingéré par un chien de 15kg sur la dynamique du modèle.}
     \label{fig:perturbation}
 \end{figure}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}}
+\toprule
+\textbf{Type chocolat} & $\mathbf{D_{\max}}$ & \textbf{Temps de récupération} \\
+\midrule
+\(\text{blanc}\) & $0{,}07\ \text{mg/kg}$ & $8\ \text{h}$ \\
+\(\text{au lait}\) & $14{,}96\ \text{mg/kg}$ & $8\ \text{h}$ \\
+\(\text{noir}\) & $78{,}83\ \text{mg/kg}$ & $>48\ \text{h}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
 
 \underline{Interprétation :}
 \\
@@ -825,9 +864,23 @@ $60\ \text{kg}$ & $24{,}1\ \text{mg/kg}$ & $14\ \text{h}$ \\
     \fbox{\parbox{0.75\textwidth}{
     \centering
     }}
-    \caption{Effets de la quantité de chocolat ingéré sur la dynamique du modèle.}
+    \caption{Effets de la quantité de chocolat noir ingérée par un chien de 15kg sur la dynamique du modèle.}
     \label{fig:perturbation}
 \end{figure}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}}
+\toprule
+\textbf{Quantité chocolat} & $\mathbf{D_{\max}}$ & \textbf{Temps de récupération} \\
+\midrule
+\(10 \text{ g}\) & $3{,}94\ \text{mg/kg}$ & $8\ \text{h}$ \\
+\(50 \text{ g}\) & $19{,}71\ \text{mg/kg}$ & $8\ \text{h}$ \\
+\(100 \text{ g}\) & $39{,}41\ \text{mg/kg}$ & $32\ \text{h}$ \\
+\(200 \text{ g}\) & $78{,}83\ \text{mg/kg}$ & $>48\ \text{h}$ \\
+\(500 \text{ g}\) & $197{,}06\ \text{mg/kg}$ & $>48\ \text{h}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
 
 \underline{Interprétation :}
 \\
