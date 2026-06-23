@@ -233,8 +233,6 @@ Nos variables d'entrée sont toutes celles liées à l'ingestion de chocolat. On
         \item {La fraction de théobromine non évacuée direactement par l'organisme : \(f\)}
 \end{itemize}
 
-Describe your input protocol. (Ca j'ai pas compris ce que c'était)
-
 \paragraph{Observables.}
 Les observables sont des points caractéristiques des courbes, apportant des précisions
 sur le modèle biologique et ses limites. \\
@@ -289,16 +287,20 @@ comme la digestion/ aliments dans l'intestin, le poids, la race...} \\
 
 \subsection{Diagramme conceptuel}
 
+\begin{center}
+\includegraphics[height=7cm]{diagramme2.PNG}
+\end{center}
+\captionof{figure}{Diagramme conceptuel du système chien dans l'étude de la toxicité du chocolat}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{diagramme2.PNG}
-    \fbox{\parbox{0.8\textwidth}{
-    \centering
-    }}
-    \caption{Diagramme conceptuel du système chien dans l'étude de la toxicité du chocolat}
-    \label{fig:conceptual-diagram}
-\end{figure}
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.8\textwidth]{diagramme2.PNG}
+    %\fbox{\parbox{0.8\textwidth}{
+    %\centering
+    %}}
+    %\caption{Diagramme conceptuel du système chien dans l'étude de la toxicité du chocolat}
+    %\label{fig:conceptual-diagram}
+%\end{figure}
 
 \subsection{Equations du modèle}
 
@@ -454,11 +456,6 @@ Les formules précédemment définies permettent bien de rester dans ces domaine
 \label{sec:analysis}
 %==================================================
 
-\begin{guidancebox}
-This is the mathematical core of the report. It should contain more than
-simulation. At minimum, identify equilibria and discuss stability.
-\end{guidancebox}
-
 \subsection{Equilibres}
 
 Le modèle précédemment développé contient 3 variables : 
@@ -564,7 +561,7 @@ corrigée de façon à se rapprocher de l'équilibre. De notre cas, nous avons e
 de la bibliographie les valeurs suivantes : 
 
 \[
-k_{abs}=\backsimeq 0,25~h^{-1},
+k_{abs} \backsimeq 0,25~h^{-1},
 \qquad
 k_e \backsimeq 0,04~h^{-1}
 \qquad
@@ -613,11 +610,8 @@ Dans notre modèle, il n'existe aucun seuil ni bistabilité. En effet, il n'exis
 \toprule
 \textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} & \textbf{Justification} \\
 \midrule
-<<<<<<< HEAD
 $\mathbf{k_{abs}}$ & 0,25 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
-=======
 $\mathbf{k_{abs}}$ & 0,2 & $\mathrm{h^{-1}}$ & Valeur trouvée "à la main" en lançant plusieurs simulations, de façon à mieux observer la dynamique du modèle tout en respectant les ordres de grandeurs réelles \\
->>>>>>> 1071a74ec4d6cf119287096c7f476cab0fd6af73
 $\mathbf{k_{e}}$ & 0,040 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
 $K_D$ & [20, 45, 60, 150] & $\mathrm{mg/kg}$ & Valeurs données dans le document Project Card \\
 $\mu_S$ & 0,026 & $\mathrm{h^{-1}}$ & Valeur calculée (voir ci-dessous) \\
@@ -1257,12 +1251,42 @@ Clinique Vétérinaire Coquelicots [en ligne]. 15/12/2025. Disponible sur : \url
 %==================================================
 \appendix
 
-\section{Appendix A: Additional Calculations}
+\section{Annexe A : Calculs additionnels}
 
-Include long algebraic derivations, equilibrium calculations, nondimensionalized
-forms, or stability calculations that would interrupt the main text.
+\underline{Détermination de l'équation $D(t)$ :}
+\\
+A partir de la formule de $\frac{dD}{dt}$ et de celle de $Q(t)$, il est possible de déterminer
+$D(t)$. En effet : \\
+\[
+\frac{dD}{dt}=\frac{k_{abs}Q(0)e^{-k_{abs}}t}{W}-k_eD
+\]
 
-\section{Appendix B: Code Availability}
+Ainsi, la solution quelconque est $\frac{dD}{dt} \Rightarrow D(t)=Ce^{-k_et}$ avec $C$ une constante réelle. 
+De plus, nous noterons $A=\frac{k_{abs}Q(0)}{W}$ pour plus de lisibilité.
+\\
+Ainsi, la solution particulière est telle que $D_{part}(t)=Be^{-k_{abs}t}+Ee^{-k_et}$ avec B et E des constantes réelles. 
+D'où, 
+\[
+\frac{dD}{dt}=\frac{k_{abs}Q(0)e^{-k_{abs}}t}{W}-k_eD \Leftrightarrow -Bk_{abs}e^{-k_{abs}t}-Ek_ee^{-k_et}=-k_eBe^{_k{abs}t}-k_eEe^{-k_et}+Ae^{-k_{abs}t}
+\]
+Ainsi, 
+\[
+-Bk_{abs}e^{-k_{abs}t}-Ek_ee^{-k_et}+k_eBe^{_k{abs}t}+k_eEe^{-k_et}-Ae^{-k_{abs}t}=e^{_k{abs}t}(-Bk_{abs}+k_eB-A)=0
+\]
+et
+\[
+e^{_k{abs}t}(B(k_e + k_{abs})-A)=0
+\]
+Donc, 
+\[
+B=\frac{A}{k_e-k{abs}}=\frac{k_{abs}Q(0)}{W(k_e-k_{abs})}
+\]
+\\
+Puisque E s'annule au cours de la précédent équation, sa valeur n'a pas d'importance. Nous 
+choisirons $E=0$. 
+Ainsi, 
+
+\section{Annexe B : Disponibilité du code}
 
 State where the code is available.
 
